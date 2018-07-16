@@ -1,0 +1,6 @@
+FileHashID,FileName,ShortDesc_Title,UploadedFrom,UploadedBy,ExtractingStatus
+017D896BE4991423EB6653077B93ADA1DCC7FFB2,STIX_Domain_Watchlist.xml,Title line 1 test app 1,1,test app 1,1
+96EA602EDB62CD84D79AFAE3160151A164D07E7C,STIX_Email_wLink.xml,2 Title line 2,1,test app 2,999
+75316315FB66A22C967C9E1C51858900CC6AA8A6,STIX_FileHash_Watchlist.xml,3 Title of STIX_FileHash_Watchlist,2,sean_w_huang,-1
+A2ACEB3BC817922BF2077B083F0EF25894C638E6,STIX_Indicator_Snort.xml,A Title of STIX_IP_Watchlist.xml,2,sean_c_chen,999
+EE857305F4EF1E8A918CC12F1BCA7ED54D243709,STIX_IP_Watchlist.xml,B Title of STIX_IP_Watchlist.xml,2,kevin lin,1

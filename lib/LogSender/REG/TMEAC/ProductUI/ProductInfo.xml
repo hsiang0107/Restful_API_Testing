@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<ProductInfos>
+    <ProductInfo Category="ANTI-VIRUS" Type="SLF_PRODUCT_TMEAC">
+        <ProductVersionInfo TargetVersion="1.0" MenuVersion="1.0" Language="en_US">
+            <LogFormat Type="StatusLog">
+            </LogFormat>
+            <EventLogInfo/>
+            <CommandInfo>
+                <CommandItem Category="configure" Command="EN_CMD_SSO_TMEAC" Page="" UIModule="SSO_PKI" GroupSetting="false" CommandLevel="OP_ENTITY_ONLY"/>
+                <CommandItem Category="nonui" Command="MU_CMD_PR_RENEW_REQUEST"/>
+                <CommandItem Category="nonui" Command="MU_CMD_PR_DEPLOY_REQUEST"/>
+            </CommandInfo>
+            <ConfigurationIDInfo>
+            </ConfigurationIDInfo>
+            <LicenseInfo>
+                <PR_Slot SlotID="6201600">
+                    <ProductProfile>
+                        <ProfileItem ProductCode="EI" ApplicationCode="AM" OSVersion="WW"/>
+                        <ProfileItem ProductCode="EI" ApplicationCode="AB" OSVersion="WW"/>
+                    </ProductProfile>
+                </PR_Slot>
+            </LicenseInfo>
+        </ProductVersionInfo>
+    </ProductInfo>
+</ProductInfos>

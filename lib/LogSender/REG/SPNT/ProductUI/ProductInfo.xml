@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!--
+<!DOCTYPE ProductInfos SYSTEM "ProductInfo.dtd">
+-->
+<ProductInfos>
+	<!-- 
+		ProdutInfo Show how tag can be used to form a product class info 
+	-->
+	<ProductInfo Category="ANTI-VIRUS" Type="SLF_PRODUCT_SERVERPROTECT_WINNT">
+		<ProductVersionInfo TargetVersion="5.8" MenuVersion="2.0" Language="en_US">
+			<LogFormat Type="VirusLog"/>
+			<LogFormat Type="StatusLog"/>
+			<LogFormat Type="EventLog"/>
+			<EventLogInfo/>
+			<CommandInfo>
+				<CommandItem Command="SC_CMD_QUERY_ENTITY_STATUS_REQUEST"/>
+				<CommandItem Command="SC_CMD_QUERY_STATUS_SUMMARY_REQUEST"/>
+				<CommandItem Command="SC_CMD_QUERY_AV_LOGS_REQUEST"/>
+				<CommandItem Command="MU_CMD_DEPLOY_AV_PATTERN_REQUEST"/>
+				<CommandItem Command="MU_CMD_DEPLOY_AV_ENGINE_REQUEST"/>
+				<CommandItem Command="MU_CMD_DEPLOY_PROGRAM_REQUEST"/>
+				<CommandItem Command="EN_CMD_SCAN_NOW_REQUEST"/>
+				<CommandItem Command="EN_CMD_START_SCAN_NOW_REQUEST"/>
+				<CommandItem Command="EN_CMD_START_REALTIME_SCAN_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_GENERIC_COMMAND_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_DEPLOY_PROGRAM_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_GET_PRODUCT_PROFILE_REQUEST"/>
+				<CommandItem Category="nonui" Command="SC_UPLOAD_FILE_PRODUCT_UI_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_START_BLOCKING_NOW_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_GET_DATA_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_SET_DATA_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_DEPLOY_AV_ENGINE_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_DEPLOY_AV_PATTERN_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_STOP_SCAN_NOW_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_REALTIME_SCAN_CONFIGURATION_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_SCAN_NOW_CONFIGURATION_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_STOP_REALTIME_SCAN_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_START_RED_ALERT_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_STOP_RED_ALERT_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_START_BLOCKING_NOW_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_REALTIME_SCAN_CONFIGURATION_REQUEST"/>
+			</CommandInfo>
+			<ConfigurationIDInfo/>
+			<ActiveUpdateInfo>
+				<!-- TM_AU_ENGINE_VSAPI32_NT_KD -->
+				<ActiveUpdateItem ProductID="2" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="0x00000010" NonCtxPattern=""/> 
+				<!-- TM_AU_ENGINE_VSAPI32_NLM -->
+				<ActiveUpdateItem ProductID="2" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="0x00000020" NonCtxPattern=""/>
+				<!-- TM_AU_ENGINE_VSAPI_AMD64_NTKD -->
+				<ActiveUpdateItem ProductID="2" Language="0x0001" Platform="0x1401" ScanEngine="" VirusPattern="" NonCtxEngine="0x00001000" NonCtxPattern=""/>
+				<!-- TM_AU_ENGINE_DCE_MSSIGN -->
+				<ActiveUpdateItem ProductID="2" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="0x21080000" NonCtxPattern=""/>
+				<!-- TM_AU_ENGINE_DCE_MSSIGN_X64 -->
+				<ActiveUpdateItem ProductID="2" Language="0x0001" Platform="0x1401" ScanEngine="" VirusPattern="" NonCtxEngine="0x21100000" NonCtxPattern=""/>
+				<!-- TM_AU_AVENGINE_KERNEL_DRV_32 -->
+				<ActiveUpdateItem ProductID="2" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="0x21000080" NonCtxPattern=""/>
+				<!--TM_AU_PATTERN_VSAPI-->
+				<ActiveUpdateItem ProductID="2" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x00000004"/>
+				<!--TM_AU_PATTERN_TMA_SSA-->
+				<ActiveUpdateItem ProductID="2" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x20000400"/>
+				<!--TM_AU_PATTERN_TSC-->
+				<ActiveUpdateItem ProductID="2" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x00000800"/>
+				<ActiveUpdateItem ProductID="453" Language="0x0001" Platform="0x1401" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="" />
+				<!-- TM_AU_PRODUCT_SPNT_58 (453) -->
+				<!-- TM_AU_LANGUAGE_ENU (0x0001) -->
+				<!-- TM_AU_PLATFORM_NTKD_X64 (0x1401) -->
+				<ActiveUpdateItem ProductID="186" Language="0x0001" Platform="0x1401" ScanEngine="0x1000" VirusPattern="" NonCtxEngine="" NonCtxPattern="" />
+				<!-- TM_AU_PRODUCT_SPNT57_64 (186) -->
+				<!-- TM_AU_LANGUAGE_ENU (0x0001) -->
+				<!-- TM_AU_PLATFORM_NTKD_X64 (0x1401) -->
+				<!-- TM_AU_ENGINE_VSAPI_AMD64_NTKD (0x1000) -->
+				<ActiveUpdateItem ProductID="21" Language="0x0001" Platform="0x01" ScanEngine="0x0030" VirusPattern="0x04" NonCtxEngine="" NonCtxPattern=""/>
+				<!-- PRODUCT_SPNW5 (21) -->
+				<!-- LANGUAGE_ENU (0x0001) -->
+				<!-- PLATFORM_WIN32 (0x01) -->
+				<!-- ENGINE_VSAPI32_NT_KD (0x0010) | ENGINE_VSAPI32_NLM (0x0020) -->
+				<!-- PATTERN_VSAPI -->
+				<ActiveUpdateItem ProductID="43" Language="0x0001" Platform="0x01" ScanEngine="0x0010" VirusPattern="0x04" NonCtxEngine="" NonCtxPattern=""/>
+				<!-- PRODUCT_SP_SOHO (43) -->
+				<!-- LANGUAGE_ENU (0x0001) -->
+				<!-- PLATFORM_WIN32 (0x01) -->
+				<!-- ENGINE_VSAPI32_NT_KD (0x0010) -->
+				<!-- PATTERN_VSAPI -->
+			</ActiveUpdateInfo>
+		</ProductVersionInfo>
+	</ProductInfo>
+</ProductInfos>

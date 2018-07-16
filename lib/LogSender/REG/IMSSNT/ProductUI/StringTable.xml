@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!-- <!DOCTYPE StringTables SYSTEM "StringTable.dtd"> -->
+<StringTables>
+	<Language Type="ja_JP">
+		<Category Type="SLF_PRODUCT_TVCS">
+			<StringTable Name="ProductID">
+				<String ID="SLF_PRODUCT_IMSS_NT" DisplayName="InterScan Messaging Security Suite for Windows"/>
+			</StringTable>
+			<StringTable Name="CommandID">
+				<String ID="EN_CMD_IMSS_NT_CONFIG_REQUEST" DisplayName="Configure InterScan Messaging Security Suite for Windows" Comment="Configuration for InterScan Messaging Security Suite"/>
+			</StringTable>
+			<StringTable Name="EntityServiceID">
+				<String ID="IMSS_NT_SERVICE_ANTI_VIRUS" DisplayName="Antivirus for IMSS"/>
+				<String ID="IMSS_NT_SERVICE_ANTI_SPAM" DisplayName="AntiSpam for IMSS"/>
+				<String ID="IMSS_NT_SERVICE_IP_FILTER" DisplayName="IPfilter for IMSS"/>
+			</StringTable>
+		</Category>
+	</Language>
+	<Language Type="en_US">
+		<Category Type="SLF_PRODUCT_TVCS">
+			<StringTable Name="ProductID">
+				<String ID="SLF_PRODUCT_IMSS_NT" DisplayName="InterScan Messaging Security Suite for Windows"/>
+			</StringTable>
+			<StringTable Name="CommandID">
+				<String ID="EN_CMD_IMSS_NT_CONFIG_REQUEST" DisplayName="Configure InterScan Messaging Security Suite for Windows" Comment="Configuration for InterScan Messaging Security Suite"/>
+			</StringTable>
+			<StringTable Name="EntityServiceID">
+				<String ID="IMSS_NT_SERVICE_ANTI_VIRUS" DisplayName="Antivirus for IMSS"/>
+				<String ID="IMSS_NT_SERVICE_ANTI_SPAM" DisplayName="AntiSpam for IMSS"/>
+				<String ID="IMSS_NT_SERVICE_IP_FILTER" DisplayName="IPfilter for IMSS"/>
+			</StringTable>
+		</Category>
+	</Language>
+</StringTables>

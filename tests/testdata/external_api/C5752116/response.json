@@ -1,0 +1,22 @@
+{
+   "result_code":1,
+   "result_description":"Operation successful",
+   "result_content":[
+      {
+         "entity_id":"492E85840114-694DBF9D-44CC-2014-1501",
+         "product":"SLF_PRODUCT_OFFICESCAN_CE",
+         "managing_server_id":"492E85840114-694DBF9D-44CC-8032-0001",
+         "ad_domain":"",
+         "folder_path":"OSCEdomain1",
+         "ip_address_list":"104.194.16.5",
+         "mac_address_list":"00-51-56-A7-69-01",
+         "host_name":"OSCEClient01",
+         "isolation_status":"normal",
+         "capabilities":[
+            "cmd_uninstall_agent",
+            "cmd_relocate_agent",
+            "cmd_isolate_agent"
+         ]
+      }
+   ]
+}

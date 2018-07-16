@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!--<ProductInfos>
+	<ProductInfo Category="ANTI-VIRUS" Type="SLF_PRODUCT_PLS_TMSM">
+		<ProductVersionInfo TargetVersion="2.0" MenuVersion="1.1" Language="en_US">
+			<LogFormat Type="VirusLog">
+			</LogFormat>
+			<LogFormat Type="StatusLog">
+			</LogFormat>
+			<LogFormat Type="EventLog">
+			</LogFormat>
+			<EventLogInfo/>
+			<CommandInfo>
+				<CommandItem Category="configure" Command="EN_CMD_SSO_TMSM" Page="" UIModule="SSO_PKI_REDIRECT" GroupSetting="false" CommandLevel="OP_ENTITY_ONLY"/>
+				<CommandItem Category="nonui" Command="MU_CMD_PR_RENEW_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_PR_DEPLOY_REQUEST"/>
+			</CommandInfo>			
+			<ConfigurationIDInfo>
+			</ConfigurationIDInfo>
+			<ActiveUpdateInfo>
+				<ActiveUpdateItem ProductID="620" Language="0x0001" Platform="0x1301" ScanEngine="0" VirusPattern="0"/>
+			</ActiveUpdateInfo>
+			<LicenseInfo>
+				<PR_Slot SlotID="6200201">
+					<ProductProfile>
+						<ProfileItem ProductCode="EI" ApplicationCode="NF" OSVersion="MC"/>
+					</ProductProfile>
+				</PR_Slot>
+			</LicenseInfo>
+		</ProductVersionInfo>
+	</ProductInfo>
+</ProductInfos>-->
+
+<ProductInfos>
+	<ProductInfo Category="ANTI-VIRUS" Type="SLF_PRODUCT_WFBS_SVC">
+		<ProductVersionInfo TargetVersion="1.0" MenuVersion="1.0" Language="en_US">
+			<LogFormat Type="VirusLog">
+			</LogFormat>
+			<LogFormat Type="StatusLog">
+			</LogFormat>
+			<LogFormat Type="EventLog">
+			</LogFormat>
+			<EventLogInfo/>
+			<CommandInfo>
+				<CommandItem Category="configure" Command="EN_CMD_SSO_WFBS" Page="" UIModule="SSO_PKI" GroupSetting="false" CommandLevel="OP_ENTITY_ONLY"/>
+			</CommandInfo>			
+			<ConfigurationIDInfo>
+			</ConfigurationIDInfo>
+			<ActiveUpdateInfo>
+			</ActiveUpdateInfo>
+			<LicenseInfo>
+				<PR_Slot SlotID="6221601">
+					<ProductProfile>
+						<ProfileItem ProductCode="WF" ApplicationCode="SB" OSVersion="WX"/>
+					</ProductProfile>
+				</PR_Slot>
+			</LicenseInfo>
+		</ProductVersionInfo>
+	</ProductInfo>
+</ProductInfos>

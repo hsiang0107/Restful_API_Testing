@@ -1,0 +1,29 @@
+{
+   "Data":{
+      "FilingCabinet":[
+         {
+            "FileHashID":"468017D0D4E8F7207335B563B80A7F82F8FF2471",
+            "FileName":"Trojan.Wipbot 2013 core component_v1",
+            "FileAddedDatetime":"06/03/2018 21:22:53",
+            "UploadedFrom":2,
+            "UploadedBy":"kevin lin"
+         }
+      ],
+      "TotalIOCCount":1
+   },
+   "Meta":{
+      "Result":1,
+      "ErrorCode":0,
+      "ErrorMsg":""
+   },
+   "PermissionCtrl":{
+      "permission":"255",
+      "elements":"None"
+   },
+   "FeatureCtrl":{
+      "mode":"0"
+   },
+   "SystemCtrl":{
+      "TmcmSoDist_Role":"none"
+   }
+}

@@ -1,0 +1,25 @@
+11,7,SLF_MsgType,1705
+1001,2,SLF_ProductGUID,
+2021,4,SLF_ProductID,3
+2055,5,SLF_LogMinorVersion,3
+2008,2,SLF_ComputerName,tw-jenniferlin
+2014,2,SLF_ProductVersion,10.2
+2056,4,SLF_ProductPlatformCode,8
+2057,7,SLF_ProductLanguageCode,1701708616
+2060,4,SLF_IsDayLightSaving,0
+2002,4,SLF_LogGenerationTimeZone,-480
+2001,2,SLF_LogGenerationTime,2012-8-30 10:37:50
+2058,4,SLF_SeverityCode,2
+2059,4,SLF_ComponentCode,9
+2061,2,SLF_ReasonCode,
+2062,4,SLF_ReasonCodeSource,20
+2106,2,SLF_MailID,D006D4AC-C474-3E04-A42D-2E70E46FCC0E
+2094,2,SLF_Sender,sender@test.com
+2095,2,SLF_Recipient,recipient@test.com
+2096,2,SLF_Subject,See this girl
+2107,2,SLF_QuarantineAreaName,1
+2091,4,SLF_FilterAction,6
+2093,4,SLF_MessageAction,4
+2101,4,SLF_FilterType,7
+2099,2,SLF_PolicyName,This is a policy name
+2102,2,SLF_FilterName,This is filter name

@@ -1,0 +1,51 @@
+//Field format, in commondef.h
+#define X_STRING					1
+#define X_WSTRING					2
+#define X_BYTE					3
+#define X_INT16					4
+#define X_UINT16					5
+#define X_INT32					6
+#define X_UINT32					7
+#define X_INT64					8
+#define X_UINT64					9
+#define X_GROUP_START				100
+#define X_GROUP_END				101
+
+//Field ID(in SLF_UniqueID.h), Field format, Description, Value
+11,7,SLF_MsgType,1769
+1001,2,SLF_ProductGUID,(can't set)
+2021,4,SLF_ProductID,<PRODUCT_ID>
+2183,5,SLF_LogVersion,1
+2055,5,SLF_LogMinorVersion,0
+2008,2,SLF_ComputerName,aaa
+2189,2,SLF_LogGenUTCDatetime,2012-06-27 03:14:03
+2190,2,SLF_LogGenLocalDatetime,2012-06-27 11:14:03
+2191,4,SLF_TimeZoneInMins,-480
+2192,4,SLF_DaylightSavingInMins,0
+2151,2,SLF_ClientGUID,aaa
+2204,2,SLF_SourceIP,aaa
+2205,2,SLF_SourceMAC,aaa
+2206,5,SLF_SourcePort,0
+2232,2,SLF_DestinationIP,aaa
+2509,2,SLF_DestinationMAC,aaa
+2231,5,SLF_DestinationPort,0
+2381,2,SLF_InterestedIP,aaa
+2479,2,SLF_InterestedMAC,aaa
+2382,2,SLF_PeerIP,aaa
+2522,4,SLF_IsDetectionOnly,0
+1062,4,SLF_Action,0
+2233,4,SLF_Direction,0
+2510,7,SLF_Rank,0
+2058,7,SLF_SeverityCode,0
+2511,7,SLF_AssetValue,0
+2512,7,SLF_FilterSeverityValue,0
+2127,5,SLF_Protocol,0
+2513,7,SLF_ConnectionTypeID,0
+2514,2,SLF_ConnectionType,aaa
+2199,6,SLF_RuleID,0
+2355,2,SLF_RuleContent,Firewall - Microsoft ISA Server
+2515,2,SLF_FilterStatus,filter_stat
+2516,2,SLF_Note,ISA Server detected generic port scan attack
+2377,6,SLF_Is_CCCA_Detection,0
+2378,6,SLF_CCCA_DetectionSource,0
+2379,6,SLF_CCCA_RiskLevel,0

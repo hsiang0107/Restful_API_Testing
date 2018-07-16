@@ -1,0 +1,27 @@
+[
+  {
+         "ScanAction": 2,
+         "SLF_Type" : 0,
+         "SLF_Data": "10.0.0.1"
+  },
+  {
+         "ScanAction": 1,
+         "SLF_Type" : 0,
+         "SLF_Data": "10.0.0.2"
+  },
+  {
+         "ScanAction": 1,
+         "SLF_Type" : 0,
+         "SLF_Data": "10.0.0.3"
+  },
+  {
+         "ScanAction": 1,
+         "SLF_Type" : 0,
+         "SLF_Data": "10.0.0.4"
+  },
+  {
+         "ScanAction": 1,
+         "SLF_Type" : 1,
+         "SLF_Data": "htts://test.com"
+  }  
+]

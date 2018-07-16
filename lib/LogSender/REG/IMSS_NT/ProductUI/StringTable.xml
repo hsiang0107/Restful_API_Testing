@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<StringTables>
+	<Language Type="en_US">
+		<Category Type="SLF_PRODUCT_TVCS">
+			<StringTable Name="CommandID">
+				<String ID="EN_CMD_OLD_IMSS_CONFIG_REQUEST" DisplayName="Configure InterScan Messaging Security Suite for SMTP" Comment="Configuration for InterScan Messaging Security Suite (SMTP) "/>
+			</StringTable>
+		</Category>
+	</Language>
+</StringTables>

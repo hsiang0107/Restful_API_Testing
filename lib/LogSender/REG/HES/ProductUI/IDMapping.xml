@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<IDMapping>
+	<Category Type="SLF_PRODUCT_TVCS">
+		<IDMappingTable Name="CommandID">
+			<MapItem Name="EN_CMD_SSO_HES" ID="6230200"/>
+		</IDMappingTable>		
+		<IDMappingTable Name="ProductTypeCategory" ApplyTo="ProductCategory" BitValue="false">
+			<MapItem ID="31101" Name="SLF_PRODUCT_HES" AliasName="SLF_PRODUCT_GATEWAY"/>
+		</IDMappingTable>
+		<IDMappingTable Name="ProductType" ApplyTo="CLF_ProductType" BitValue="false">
+			<MapItem ID="31101" Name="SLF_PRODUCT_HES" AliasName="SLF_PRODUCT_IWSAAS"/>
+		</IDMappingTable>
+		<IDMappingTable Name="EntityServiceID" ApplyTo="" BitValue="false">
+			<MapItem ID="6221201" Name="HES_PRODCT_SERVICE" AliasName="HES_PRODCT_SERVICE"/>
+		</IDMappingTable>		
+		<IDMappingTable Name="AgentlessProductID" BitValue="false" ApplyTo="">
+			<MapItem ID="31101" Name="SLF_PRODUCT_HES" AliasName="SLF_PRODUCT_HES"/>
+		</IDMappingTable>
+		<IDMappingTable Name="AgentlessEndpointProductID" BitValue="false" ApplyTo="">
+			<MapItem ID="31101" Name="SLF_PRODUCT_HES" AliasName="SLF_PRODUCT_HES"/>
+		</IDMappingTable>			
+	</Category>
+</IDMapping>

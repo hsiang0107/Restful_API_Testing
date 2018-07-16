@@ -1,0 +1,32 @@
+[
+  {
+         "ScanAction": 2,
+         "SLF_Type" : 0,
+         "SLF_Data": "10.0.0.0"
+  },
+  {
+         "ScanAction": 2,
+         "SLF_Type" : 0,
+         "SLF_Data": "10.0.0.1"
+  },
+  {
+         "ScanAction": 2,
+         "SLF_Type" : 0,
+         "SLF_Data": "10.0.0.2"
+  },
+  {
+         "ScanAction": 2,
+         "SLF_Type" : 0,
+         "SLF_Data": "10.0.0.9"
+  },
+  {
+         "ScanAction": 2,
+         "SLF_Type" : 0,
+         "SLF_Data": "10.0.0.10"
+  },
+  {
+         "ScanAction": 2,
+         "SLF_Type" : 0,
+         "SLF_Data": "10.0.0.11"
+  }
+]

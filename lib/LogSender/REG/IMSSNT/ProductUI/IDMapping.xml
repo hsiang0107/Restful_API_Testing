@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!-- <!DOCTYPE IDMapping SYSTEM "IDMapping.dtd"> -->
+<IDMapping>
+	<Category Type="SLF_PRODUCT_TVCS">
+		<IDMappingTable Name="CommandID">
+			<MapItem Name="EN_CMD_IMSS_NT_CONFIG_REQUEST" ID="16805"/>
+		</IDMappingTable>
+		<IDMappingTable Name="ProductTypeCategory" ApplyTo="ProductCategory" BitValue="false">
+			<MapItem ID="34" Name="SLF_PRODUCT_IMSS_NT" AliasName="SLF_PRODUCT_GATEWAY"/>
+		</IDMappingTable>
+		<IDMappingTable Name="ProductType" ApplyTo="CLF_ProductType" BitValue="false">
+			<MapItem ID="34" Name="SLF_PRODUCT_IMSS_NT" AliasName="SLF_PRODUCT_GATEWAY"/>
+		</IDMappingTable>
+		<IDMappingTable Name="EntityServiceID" ApplyTo="" BitValue="false">
+			<MapItem ID="7801" Name="IMSS_NT_SERVICE_ANTI_VIRUS" AliasName="IMSS_NT_SERVICE_ANTI_VIRUS"/>
+			<MapItem ID="7802" Name="IMSS_NT_SERVICE_ANTI_SPAM" AliasName="IMSS_NT_SERVICE_ANTI_SPAM"/>
+			<MapItem ID="7803" Name="IMSS_NT_SERVICE_IP_FILTER" AliasName="IMSS_NT_SERVICE_IP_FILTER"/>
+		</IDMappingTable>
+	</Category>
+</IDMapping>

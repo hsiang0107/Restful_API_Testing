@@ -1,0 +1,84 @@
+//Field format, in commondef.h
+#define X_STRING                    1
+#define X_WSTRING                   2
+#define X_BYTE                      3
+#define X_INT16                     4
+#define X_UINT16                    5
+#define X_INT32                     6
+#define X_UINT32                    7
+#define X_INT64                     8
+#define X_UINT64                    9
+#define X_GROUP_START               100
+#define X_GROUP_END                 101
+
+11,7,SLF_MsgType,1701
+1001,2,SLF_ProductGUID,(can't set)
+2021,7,SLF_ProductID,18
+2183,5,SLF_LogVersion,1
+2055,5,SLF_LogMinorVersion,5
+2008,2,SLF_ComputerName,tw-anne
+2189,2,SLF_LogGenUTCDatetime,2012-06-27 03:14:03
+2190,2,SLF_LogGenLocalDatetime,2012-06-27 11:14:03
+2191,4,SLF_TimeZoneInMins,-480
+2192,4,SLF_DaylightSavingInMins,0
+2036,4,SLF_Status,100
+2067,3,SLF_PrivateAttribute_CM35,1
+2401,7,SLF_UpdateAgentType,1
+3018,100,SLF_CommonInfo,(no value)
+3001,100,SLF_Info,(no value)
+2010,2,SLF_IPAddressList,10.1.1.1
+2011,2,SLF_MACAddressList,00-53-56-B7-69-3E
+3001,101,SLF_Info,(no value)
+3018,101,SLF_CommonInfo,(no value)
+3019,100,SLF_ProductInfo,(no value)
+#3001,100,SLF_Info,(no value)
+#2014,2,SLF_ProductVersion,10.6
+#2015,7,SLF_ProductBuildNumber,5162
+#2057,7,SLF_ProductLanguageCode,1701707776
+#2056,7,SLF_ProductPlatformCode,1701707776
+#2016,2,SLF_ServicePack,SP2
+#2278,7,SLF_ServicePackBuildNumber,1000
+#2279,2,SLF_Patch,3
+#2280,7,SLF_PatchBuildNumber,1000
+#3001,101,SLF_Info,(no value)
+3019,101,SLF_ProductInfo,(no value)
+3002,100,SLF_ScanPatternInfo,(no value)
+3002,101,SLF_ScanPatternInfo,(no value)
+3003,100,SLF_ScanEngineInfo,(no value)
+3003,101,SLF_ScanEngineInfo,(no value)
+3023,100,SLF_CloudScanServerInfo,(no value)
+3023,101,SLF_CloudScanServerInfo,(no value)
+3024,100,SLF_CloudScanServerSourceList,(no value)
+3024,101,SLF_CloudScanServerSourceList,(no value)
+3034,100,SLF_ActiveDirectoryInfo,(no value)
+3001,100,SLF_Info,(no value)
+2309,2,SLF_AD_DN,5
+2308,2,SLF_ObjectGuid,EE1C924D-D0C6-41C3-8DD4-2331394FE081
+3001,101,SLF_Info,(no value)
+3034,101,SLF_ActiveDirectoryInfo,(no value)
+3035,100,SLF_OSCEClientTreeInfo,(no value)
+3035,101,SLF_OSCEClientTreeInfo,(no value)
+3036,100,SLF_PolicyInfo,(no value)
+3001,100,SLF_Info,(no value)
+#3037,2,SLF_PolicyGUID,
+#2036,4,SLF_Status,
+2054,2,SLF_LastUpdateTime,2012-06-27 03:14:03
+2210,2,SLF_UserName,SERVERADMIN
+3038,2,SLF_PolicyType,15.4
+2064,2,SLF_ErrorDescription,
+3001,101,SLF_Info,(no value)
+3036,101,SLF_PolicyInfo,(no value)
+3041,100,SLF_PluginServiceInfo,(no value)
+3001,100,SLF_Info,(no value)
+3042,6,SLF_PropertyID,4
+3043,6,SLF_PluginServiceID,560
+2053,2,SLF_Version,1.0
+2036,6,SLF_Status,7
+3001,101,SLF_Info,(no value)
+3041,101,SLF_PluginServiceInfo,(no value)
+2333,2,SLF_UserGUID,
+2434,2,SLF_UserAccount,Chris
+2323,2,SLF_UserDomain,
+2402,4,SLF_SystemModel,2
+2022,2,SLF_ParentGUID,
+2403,2,SLF_UserMail,default@mail.infile

@@ -1,0 +1,31 @@
+{
+   "Data":{
+      "FilingCabinet":[
+         {
+            "FileHashID":"68D9AB8744D6728BF37AF6D84953968B4E90E11C",
+            "FileName":"File activities.ioc",
+            "FileAddedDatetime":"06/05/2018 11:22:57",
+            "UploadedFrom":2,
+            "UploadedBy":"sean_w_huang",
+            "ExtractingStatus":-1,
+            "ShortDesc":"3 short description of file Activities"
+         }
+      ],
+      "TotalIOCCount":1
+   },
+   "Meta":{
+      "Result":1,
+      "ErrorCode":0,
+      "ErrorMsg":""
+   },
+   "PermissionCtrl":{
+      "permission":"255",
+      "elements":"None"
+   },
+   "FeatureCtrl":{
+      "mode":"0"
+   },
+   "SystemCtrl":{
+      "TmcmSoDist_Role":"none"
+   }
+}

@@ -1,0 +1,23 @@
+{
+   "Data":{
+      "FilingCabinet":[
+
+      ],
+      "TotalIOCCount":0
+   },
+   "Meta":{
+      "Result":1,
+      "ErrorCode":0,
+      "ErrorMsg":""
+   },
+   "PermissionCtrl":{
+      "permission":"255",
+      "elements":"None"
+   },
+   "FeatureCtrl":{
+      "mode":"0"
+   },
+   "SystemCtrl":{
+      "TmcmSoDist_Role":"none"
+   }
+}

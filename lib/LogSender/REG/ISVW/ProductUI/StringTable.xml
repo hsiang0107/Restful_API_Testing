@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- <!DOCTYPE StringTables SYSTEM "StringTable.dtd"> -->
+<StringTables>
+	<Language Type="en_US">
+		<Category Type="SLF_PRODUCT_TVCS">
+			<StringTable Name="ProductID">
+				<String ID="SLF_PRODUCT_ISVW" DisplayName="InterScan VirusWall 6"/>
+			</StringTable>
+			<StringTable Name="CommandID">
+				<String ID="EN_CMD_SSO_ISVW" DisplayName="InterScan VirusWall 6 Single Sign On"/>
+			</StringTable>
+		</Category>
+	</Language>
+</StringTables>

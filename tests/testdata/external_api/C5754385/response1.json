@@ -1,0 +1,67 @@
+{
+   "Data":{
+      "FilingCabinet":[
+         {
+            "FileHashID":"75316315FB66A22C967C9E1C51858900CC6AA8A6",
+            "FileName":"STIX_FileHash_Watchlist.xml",
+            "FileAddedDatetime":"06/05/2018 22:22:40",
+            "UploadedFrom":2,
+            "UploadedBy":"sean_w_huang",
+            "ExtractingStatus":-1,
+            "Title":"3 Title of STIX_FileHash_Watchlist"
+         },
+         {
+            "FileHashID":"EE857305F4EF1E8A918CC12F1BCA7ED54D243709",
+            "FileName":"STIX_IP_Watchlist.xml",
+            "FileAddedDatetime":"06/03/2018 22:22:40",
+            "UploadedFrom":2,
+            "UploadedBy":"kevin lin",
+            "ExtractingStatus":1,
+            "Title":"B Title of STIX_IP_Watchlist.xml"
+         },
+         {
+            "FileHashID":"017D896BE4991423EB6653077B93ADA1DCC7FFB2",
+            "FileName":"STIX_Domain_Watchlist.xml",
+            "FileAddedDatetime":"06/07/2018 22:22:40",
+            "UploadedFrom":1,
+            "UploadedBy":"test app 1",
+            "ExtractingStatus":1,
+            "Title":"Title line 1 test app 1"
+         },
+         {
+            "FileHashID":"A2ACEB3BC817922BF2077B083F0EF25894C638E6",
+            "FileName":"STIX_Indicator_Snort.xml",
+            "FileAddedDatetime":"06/04/2018 22:22:40",
+            "UploadedFrom":2,
+            "UploadedBy":"sean_c_chen",
+            "ExtractingStatus":999,
+            "Title":"A Title of STIX_IP_Watchlist.xml"
+         },
+         {
+            "FileHashID":"96EA602EDB62CD84D79AFAE3160151A164D07E7C",
+            "FileName":"STIX_Email_wLink.xml",
+            "FileAddedDatetime":"06/06/2018 22:22:40",
+            "UploadedFrom":1,
+            "UploadedBy":"test app 2",
+            "ExtractingStatus":999,
+            "Title":"2 Title line 2"
+         }
+      ],
+      "TotalIOCCount":5
+   },
+   "Meta":{
+      "Result":1,
+      "ErrorCode":0,
+      "ErrorMsg":""
+   },
+   "PermissionCtrl":{
+      "permission":"255",
+      "elements":"None"
+   },
+   "FeatureCtrl":{
+      "mode":"0"
+   },
+   "SystemCtrl":{
+      "TmcmSoDist_Role":"none"
+   }
+}

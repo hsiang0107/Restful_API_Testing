@@ -1,0 +1,29 @@
+{
+   "TotalCount": "1",
+   "List": [
+      {
+         "ID": "C5752115",
+         "SuspiciousObject": "1.1.1.1",
+         "Type": "2",
+         "TypeDesc": "File SHA-1",
+         "ScanAction": "1",
+         "ScanActionDesc": "Log",
+         "AddedDate": "06/13/2018 00:00:00",
+         "Notes": "",
+         "IsWildcardException": "",
+         "IsExceptionDueToWildcard": "",
+         "AtRiskEndpoints": "0",
+         "AtRiskRecipients": "0",
+         "SourceInfo": [
+            {
+               "FileHashID": "C5752115C5752115C5752115C5752115C5752115",
+               "Source": 4,
+               "SourceContext": "aaa",
+               "FileName": "C5752115",
+               "Deleted": false
+            }
+         ]
+      }
+   ],
+   "ExportTotalCount": "1"
+}

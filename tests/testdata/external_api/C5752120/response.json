@@ -1,0 +1,8 @@
+{
+   "Data":"None",
+   "Meta":{
+      "Result":0,
+      "ErrorCode":15,
+      "ErrorMsg":"Authentication Failure Malformed Token"
+   }
+}

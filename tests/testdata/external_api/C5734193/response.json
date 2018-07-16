@@ -1,0 +1,40 @@
+{
+   "Data":{
+      "FilingCabinet":[
+         {
+            "FileHashID":"8E0D8ED2FE5A4905E272DF1DB0CFF1359760A3F4",
+            "FileName":"BlackEnergy.ioc",
+            "FileAddedDatetime":"06/20/2018 11:27:18",
+            "UploadedFrom":1,
+            "UploadedBy":"test app 1",
+            "ExtractingStatus":1,
+            "ShortDesc":"description line 1"
+         },
+         {
+            "FileHashID":"78F27F34A4EE8E93A8FD5D6F0CA88FD7490FDC7B",
+            "FileName":"DNS activities.ioc",
+            "FileAddedDatetime":"06/19/2018 11:27:18",
+            "UploadedFrom":1,
+            "UploadedBy":"test app 2",
+            "ExtractingStatus":999,
+            "ShortDesc":"2 short description line 2"
+         }
+      ],
+      "TotalIOCCount":4
+   },
+   "Meta":{
+      "Result":1,
+      "ErrorCode":0,
+      "ErrorMsg":""
+   },
+   "PermissionCtrl":{
+      "permission":"255",
+      "elements":"None"
+   },
+   "FeatureCtrl":{
+      "mode":"0"
+   },
+   "SystemCtrl":{
+      "TmcmSoDist_Role":"none"
+   }
+}

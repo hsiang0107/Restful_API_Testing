@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<ProductInfos>
+	<ProductInfo Category="ANTI-VIRUS" Type="SLF_PRODUCT_HES">
+		<ProductVersionInfo TargetVersion="2.0" MenuVersion="1.0" Language="en_US">
+			<LogFormat Type="VirusLog">
+			</LogFormat>
+			<LogFormat Type="StatusLog">
+			</LogFormat>
+			<LogFormat Type="EventLog">
+			</LogFormat>
+			<EventLogInfo/>
+			<CommandInfo>
+				<CommandItem Category="configure" Command="EN_CMD_SSO_HES" Page="" UIModule="SSO_PKI" GroupSetting="false" CommandLevel="OP_ENTITY_ONLY"/>
+			</CommandInfo>						
+			<ConfigurationIDInfo>
+			</ConfigurationIDInfo>
+			<ActiveUpdateInfo>				
+			</ActiveUpdateInfo>
+			<LicenseInfo>
+				<PR_Slot SlotID="6221401">
+					<ProductProfile>
+						<ProfileItem ProductCode="HM" ApplicationCode="DZ" OSVersion="MM"/>
+					</ProductProfile>
+				</PR_Slot>
+			</LicenseInfo>
+		</ProductVersionInfo>
+	</ProductInfo>
+</ProductInfos>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- <!DOCTYPE IDMapping SYSTEM "IDMapping.dtd"> -->
+<IDMapping>
+  <Category Type="SLF_PRODUCT_TVCS">
+    <IDMappingTable Name="CommandID">
+      <MapItem Name="EN_CMD_IMSVA_CONFIG_REQUEST" ID="19400" />
+	  <!--                    <MapItem Name="EN_CMD_TEST_UI_HANDLER_CONFIG_REQUEST" ID="123456"/>-->
+    </IDMappingTable>
+	<IDMappingTable Name="ProductTypeCategory" ApplyTo="ProductCategory" BitValue="false">
+      <MapItem ID="47" Name="SLF_PRODUCT_IMSVA" AliasName="SLF_PRODUCT_GATEWAY" />
+    </IDMappingTable>
+    <IDMappingTable Name="ProductType" ApplyTo="CLF_ProductType" BitValue="false">
+      <MapItem ID="47" Name="SLF_PRODUCT_IMSVA" AliasName="SLF_PRODUCT_IMSVA" />
+	</IDMappingTable>
+		<IDMappingTable Name="EntityServiceID" ApplyTo="" BitValue="false">
+			<MapItem ID="10401" Name="IMSVA_PRODUCT_SERVICE_TC" AliasName="IMSVA_PRODUCT_SERVICE_TC"/>
+			<MapItem ID="10402" Name="IMSVA_PRODUCT_SERVICE_SPS" AliasName="IMSVA_PRODUCT_SERVICE_SPS"/>
+			<MapItem ID="10403" Name="IMSVA_PRODUCT_SERVICE_ERS" AliasName="IMSVA_PRODUCT_SERVICE_ERS"/>
+			<MapItem ID="10404" Name="IMSVA_PRODUCT_SERVICE_PF" AliasName="IMSVA_PRODUCT_SERVICE_PF"/>
+			<MapItem ID="10405" Name="IMSVA_PRODUCT_SERVICE_IBE" AliasName="IMSVA_PRODUCT_SERVICE_IBE"/>
+			<MapItem ID="10406" Name="IMSVA_PRODUCT_SERVICE_DLP" AliasName="IMSVA_PRODUCT_SERVICE_DLP"/>
+		</IDMappingTable>      
+  </Category>
+</IDMapping>

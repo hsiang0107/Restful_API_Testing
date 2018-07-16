@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- <!DOCTYPE IDMapping SYSTEM "IDMapping.dtd"> -->
+<IDMapping>
+	<Category Type="SLF_PRODUCT_TVCS">
+		<IDMappingTable Name="CommandID">
+			<MapItem Name="EN_CMD_SSO_OFFICESCAN_CE" ID="13000"/>
+		</IDMappingTable>
+		<IDMappingTable Name="ProductTypeCategory" ApplyTo="ProductCategory" BitValue="false">
+			<MapItem ID="15" Name="SLF_PRODUCT_OFFICESCAN_CE" AliasName="SLF_PRODUCT_DESKTOP"/>
+		</IDMappingTable>
+		<IDMappingTable Name="ProductType" ApplyTo="CLF_ProductType" BitValue="false">
+			<MapItem ID="15" Name="SLF_PRODUCT_OFFICESCAN_CE" AliasName="SLF_PRODUCT_DESKTOP"/>
+		</IDMappingTable>
+		<IDMappingTable Name="EntityServiceID" ApplyTo="" BitValue="false">
+			<MapItem ID="4001" Name="OSCE_SERVICE_ANTI_VIRUS_DESKTOP" AliasName="OSCE_SERVICE_ANTI_VIRUS_DESKTOP"/>
+			<MapItem ID="4002" Name="OSCE_SERVICE_ANTI_VIRUS_SERVER" AliasName="OSCE_SERVICE_ANTI_VIRUS_SERVER"/>
+			<MapItem ID="4003" Name="OSCE_SERVICE_WEB_THREAT_PROTECT_DESKTOP" AliasName="OSCE_SERVICE_WEB_THREAT_PROTECT_DESKTOP"/>
+			<MapItem ID="4004" Name="OSCE_SERVICE_WEB_THREAT_PROTECT_SERVER" AliasName="OSCE_SERVICE_WEB_THREAT_PROTECT_SERVER"/>
+			<MapItem ID="4005" Name="OSCE_SERVICE_DCS" AliasName="OSCE_SERVICE_DCS"/>
+		</IDMappingTable>
+	</Category>
+</IDMapping>

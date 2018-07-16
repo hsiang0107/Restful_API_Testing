@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<StringTables>
+	<Language Type="en_US">
+		<Category Type="SLF_PRODUCT_TVCS">
+			<StringTable Name="ProductID">
+				<String ID="SLF_PRODUCT_DDAN" DisplayName="Deep Discovery Analyzer"/>
+			</StringTable>
+			<StringTable Name="EntityServiceID">
+				<String ID="DDAN_PRODCT_SERVICE" DisplayName="Deep Discovery Analyzer"/>
+			</StringTable>		
+		</Category>
+	</Language>
+</StringTables>

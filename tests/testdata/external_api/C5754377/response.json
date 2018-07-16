@@ -1,0 +1,40 @@
+{
+   "Data":{
+      "FilingCabinet":[
+         {
+            "FileHashID":"A2ACEB3BC817922BF2077B083F0EF25894C638E6",
+            "FileName":"STIX_Indicator_Snort.xml",
+            "FileAddedDatetime":"06/04/2018 21:21:46",
+            "UploadedFrom":2,
+            "UploadedBy":"sean_c_chen",
+            "ExtractingStatus":999,
+            "Title":"A Title of STIX_IP_Watchlist.xml"
+         },
+         {
+            "FileHashID":"EE857305F4EF1E8A918CC12F1BCA7ED54D243709",
+            "FileName":"STIX_IP_Watchlist.xml",
+            "FileAddedDatetime":"06/03/2018 21:21:46",
+            "UploadedFrom":2,
+            "UploadedBy":"kevin lin",
+            "ExtractingStatus":1,
+            "Title":"B Title of STIX_IP_Watchlist.xml"
+         }
+      ],
+      "TotalIOCCount":5
+   },
+   "Meta":{
+      "Result":1,
+      "ErrorCode":0,
+      "ErrorMsg":""
+   },
+   "PermissionCtrl":{
+      "permission":"255",
+      "elements":"None"
+   },
+   "FeatureCtrl":{
+      "mode":"0"
+   },
+   "SystemCtrl":{
+      "TmcmSoDist_Role":"none"
+   }
+}

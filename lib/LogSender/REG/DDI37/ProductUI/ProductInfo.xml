@@ -1,0 +1,187 @@
+﻿<?xml version="1.0"?>
+<!--
+<!DOCTYPE ProductInfos SYSTEM "ProductInfo.dtd">
+-->
+<ProductInfos>
+	<!-- 
+		ProdutInfo Show how tag can be used to form a product class info 
+	-->
+	<ProductInfo Category="ANTI-VIRUS" Type="SLF_PRODUCT_DEEP_DISCOVERY">
+		<ProductVersionInfo TargetVersion="3.7" MenuVersion="1.0" Language="en_US">
+			<LogFormat Type="VirusLog">
+				<!-- Type="CommonLogFormat" -->
+				<!-- This represents "Recipient" in SMEX -->
+			</LogFormat>
+			<LogFormat Type="StatusLog">
+				<!-- Type="CommonLogFormat" -->
+			</LogFormat>
+			<LogFormat Type="EventLog">
+				<!-- Type="EventLogFormat" -->
+				<!-- This can be "MN_ManualScan", "MN_RealtimeScan" or "MN_ScheduledScan" -->
+			</LogFormat>
+			<!--
+				DeploymentComponentInfo states what kind of the components product use.
+				This tells TVCS what kind of deployment notification will be sent to product entity.
+			-->
+			<!--
+				NotificationInfo defines what kind of notification the product generates (ID).
+				TVCS server will watch for the specific event/status/log 
+				in the pre-defined rule of notification configuration 
+			-->
+			<EventLogInfo/>
+			<!-- 
+				<CommandInfo> shows what kind of commands the product (entity) are able to apply (receive and process)
+			-->
+			<CommandInfo>
+				<!--
+					Note:
+					1. "UseCCGI" indicates that attribute "URL" is refering to a CCGI module
+					   For new product that supports CCGI, this attribute is always "true"
+					   For old product, this attribute is always "false"
+					   
+					   TVCS server uses this attribute to determine whether "Relay Module" needs to 
+					   participate in the scenerio or not.
+					
+					2. "GroupSetting" indicates that whether such configuration supports "group setting" or not.
+					   Any product that uses CCGI module to configure its settings implies that it supports
+					   group settings. For newly developed product, this attribute is only a place-holder
+					   For old products, it is a indicator whether such product supports group settings.
+
+					   For new product, this attribute is always "true"
+					   For old product, this attribute depends on the supported feature.
+
+					3. "URL" is a relative path describing how TVCS can refer to the correct pages
+					   either it be "Common CGI module" or "Relay Module"
+
+					   TVCS maintenance program will translate the URL into a fully functional URL
+					   according to the "product type" and "version". 
+					   For example:
+						
+					   URL="/Config/xml/ServerConfig.xml"
+					   into
+					   URL="/commoncgi/servlet/com.trend.commancgi.CommonCGIServerlt?ApHost=Interscan_NT&amp;Page=/Interscan/3.0/Config/xml/ServerConfig.xml"
+				-->
+				<!--
+					Every anti-virus product supports status summary query
+				-->
+				<CommandItem Command="SC_CMD_QUERY_ENTITY_STATUS_REQUEST"/>
+				<CommandItem Command="SC_CMD_QUERY_STATUS_SUMMARY_REQUEST"/>
+				<!--
+					Every anti-virus product supports virus log query
+				-->
+				<CommandItem Command="SC_CMD_QUERY_AV_LOGS_REQUEST"/>
+				<!--
+					Every product supports component deployment 
+				-->
+				<!-- Commented out by Gary. This command item is no longer valid.
+				<CommandItem Command="MU_CMD_DEPLOY_NOW_REQUEST"/>
+				-->
+				<CommandItem Command="MU_CMD_DEPLOY_AV_PATTERN_REQUEST"/>
+				<CommandItem Command="MU_CMD_DEPLOY_AV_ENGINE_REQUEST"/>
+				<CommandItem Command="MU_CMD_DEPLOY_PROGRAM_REQUEST"/>
+				
+				<CommandItem Category="configure" Command="EN_CMD_MINORITY_REPORT_APPLIANCE_SSO_REQUEST" Page="/cgi-bin/logon.cgi" UIModule="SSO_PKI" GroupSetting="false" CommandLevel="OP_ENTITY_ONLY"/>
+				<CommandItem Category="nonui" Command="EN_CMD_SUSPICIOUS_FILE_REQUEST"/>
+				<!--
+					This product supports "ScanNow"(manual scan) command from TVCS server 
+				-->
+				<!--[YSL][MR][20060627]
+				<CommandItem Command="EN_CMD_SCAN_NOW_REQUEST"/>
+				-->
+				<!--
+					Not yet supported!
+				<CommandItem Category="configure" Command="EN_CMD_CONFIGURATION_REQUEST" Page="Page=file:xmls/Configuration/TopOfSelection.xml" UIModule="CCGI" GroupSetting="true"/>
+				<CommandItem Category="execute" Command="EN_CMD_PRODUCT_SERVICE_REQUEST" Page="Page=file:xmls/Command/ProductService.xml" UIModule="CCGI" GroupSetting="false"/>
+				-->
+				<!--
+				<CommandItem Category="configure" Command="EN_CMD_OLD_EMANAGER_CONFIG_REQUEST" Page="Page=[ORIGINAL_CONFIG_URL][NO_RELAY_URL]" UIModule="RELAY" GroupSetting="false" CommandLevel="OP_ENTITY_ONLY"/>
+				<CommandItem Category="configure" Command="EN_CMD_CONFIGURATION_REPLICATION" Page="Page=file:xmls/ConfigurationReplication/ConfigurationReplication.xhtml" UIModule="CCGI" GroupSetting="true" CommandLevel="OP_ENTITY_ONLY"/>
+				-->
+				<!--[YSL][MR][20060627]
+				<CommandItem Command="EN_CMD_START_SCAN_NOW_REQUEST"/>
+				<CommandItem Command="EN_CMD_START_REALTIME_SCAN_REQUEST"/>
+				<CommandItem Command="SC_CMD_UI_TVCS_CONFIGURATION_REPLICATION"/>
+				<CommandItem Command="SC_CMD_UI_TVCS_CONFIGURATION_REPLICATION_TO_FOLDER"/>
+				-->
+<!--
+				<CommandItem Command="MU_CMD_PR_RENEW_REQUEST"/>
+
+				<CommandItem Category="configure" Command="EN_CMD_MINORITY_REPORT_APPLIANCE_SSO_REQUEST" Page="/cgi-bin/logon.cgi" UIModule="SSO_PKI" GroupSetting="false" CommandLevel="OP_ENTITY_ONLY"/>
+-->
+				<!--[YSL][MR][20060627]
+				<CommandItem Category="configure" Command="EN_CMD_TEST_UI_HANDLER_CONFIG_REQUEST" Page="Page=FirstPage" UIModule="CGIDISPATCHER" GroupSetting="false" CommandLevel="OP_ENTITY_ONLY"/>
+				-->
+				<!--
+				<CommandItem Command="SC_CMD_UI_TVCS_CONFIGURATION_REPLICATION"/>
+				<CommandItem Category="configure" Command="EN_CMD_DEMO_BLOB_DATA" Page="Page=EntityDemoFirstPage" UIModule="CGIDISPATCHER"/>
+				<CommandItem Category="execute" Command="EN_CMD_DEMO_TASK_ENFORCE" Page="Page=EntityDemoFirstPage" UIModule="CGIDISPATCHER"/>
+				-->
+				<!--
+Use Category "nonui" to deicide to accept which command in product library, not have menu item in CM server
+[[[[[NOTE]]]]]: If the below item doens't exist, that means the product library won't receive such command at all.
+-->
+				<!--[YSL][MR][20060627]
+				<CommandItem Category="nonui" Command="EN_CMD_GENERIC_COMMAND_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_DEPLOY_PROGRAM_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_GET_PRODUCT_PROFILE_REQUEST"/>
+				<CommandItem Category="nonui" Command="SC_UPLOAD_FILE_PRODUCT_UI_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_START_BLOCKING_NOW_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_GET_DATA_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_SET_DATA_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_DEPLOY_AV_ENGINE_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_DEPLOY_AV_PATTERN_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_STOP_SCAN_NOW_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_REALTIME_SCAN_CONFIGURATION_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_SCAN_NOW_CONFIGURATION_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_STOP_REALTIME_SCAN_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_START_RED_ALERT_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_STOP_RED_ALERT_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_START_BLOCKING_NOW_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_REALTIME_SCAN_CONFIGURATION_REQUEST"/>
+				-->
+			</CommandInfo>
+			<!--
+				ConfigurationIDInfo is used for TVCS to monitor what will be the 
+				final "apply" ID that will take effective when user clicks the 
+				summit button in the UI pages.
+			-->
+			<ConfigurationIDInfo>
+				<!-- 
+				<ConfigurationItem	TagName="Action" ID="ID_Set_Realtime_Scan_Test1"/>
+				<ConfigurationItem	TagName="Action" ID="ID_Proxy_Setting_Test2"/>
+				-->
+			</ConfigurationIDInfo>
+			<ActiveUpdateInfo>
+				<!-- PLATFORM_WIN32 (0x101) -->
+				<!-- LANGUAGE_ENU (0x0001) -->
+                <!-- TM_AU_PRODUCT_TOTAL_DISCOVERY_APPLIANCE (174) -->
+				<!-- TM_AU_ENGINE_VSAPI_PLUS (0x21020000) -->
+                <!-- TM_AU_ENGINE_NCIE2 (0x24000020) -->
+				<!-- TM_AU_ENGINE_NCIE2_X64 (0x48000120) -->
+				<!-- TM_AU_PATTERN_VSAPI (0x00000004) -->
+				<!-- TM_AU_PATTERN_TMA_SSA(0x20000400) -->
+				<!-- TM_AU_PATTERN_INTELLITRAP_WHITE (0x20000020) -->
+				<!-- TM_AU_PATTERN_INTELLITRAP_BLACK (0x20000040) -->
+                <!-- TM_AU_PATTERN_NCCP2 (0x42000000) -->
+				<!-- TM_AU_PATTERN_NCIE2 (0x44000000) -->
+				<ActiveUpdateItem ProductID="571" Language="0x0001" Platform="0x101" NonCtxEngine="0x48000136" NonCtxPattern="" ScanEngine="" VirusPattern=""/>
+				<ActiveUpdateItem ProductID="571" Language="0x0001" Platform="0x101" NonCtxEngine="0x48000145" NonCtxPattern="" ScanEngine="" VirusPattern=""/>
+				<ActiveUpdateItem ProductID="571" Language="0x0001" Platform="0x101" NonCtxEngine="0x48000140" NonCtxPattern="" ScanEngine="" VirusPattern=""/>
+				<ActiveUpdateItem ProductID="571" Language="0x0001" Platform="0x101" NonCtxEngine="" NonCtxPattern="0x48040116" ScanEngine="" VirusPattern=""/>
+				<ActiveUpdateItem ProductID="571" Language="0x0001" Platform="0x101" NonCtxEngine="" NonCtxPattern="0x20000400" ScanEngine="" VirusPattern=""/>
+				<ActiveUpdateItem ProductID="571" Language="0x0001" Platform="0x101" NonCtxEngine="" NonCtxPattern="0x20000020" ScanEngine="" VirusPattern=""/>
+				<ActiveUpdateItem ProductID="571" Language="0x0001" Platform="0x101" NonCtxEngine="" NonCtxPattern="0x20000040" ScanEngine="" VirusPattern=""/>
+				<ActiveUpdateItem ProductID="571" Language="0x0001" Platform="0x101" NonCtxEngine="" NonCtxPattern="0x42000000" ScanEngine="" VirusPattern=""/>
+				<ActiveUpdateItem ProductID="571" Language="0x0001" Platform="0x101" NonCtxEngine="" NonCtxPattern="0x44000000" ScanEngine="" VirusPattern=""/>
+				<!-- TM_AU_PATTERN_THREAT_CORRELATION -->
+				<ActiveUpdateItem ProductID="571" Language="0x0001" Platform="0x101" NonCtxEngine="" NonCtxPattern="0x48040076" ScanEngine="" VirusPattern=""/>
+				<!-- TM_AU_PATTERN_THREAT_KNOWLEDGEBASE_EN -->
+				<ActiveUpdateItem ProductID="571" Language="0x0001" Platform="0x101" NonCtxEngine="" NonCtxPattern="0x48040077" ScanEngine="" VirusPattern=""/>
+				<ActiveUpdateItem ProductID="571" Language="0x0001" Platform="0x101" NonCtxEngine="" NonCtxPattern="0x48040078" ScanEngine="" VirusPattern=""/>
+				<ActiveUpdateItem ProductID="571" Language="0x0001" Platform="0x101" NonCtxEngine="" NonCtxPattern="0x48040079" ScanEngine="" VirusPattern=""/>
+				<ActiveUpdateItem ProductID="571" Language="0x0001" Platform="0x101" NonCtxEngine="" NonCtxPattern="0x48040080" ScanEngine="" VirusPattern=""/>
+				<ActiveUpdateItem ProductID="571" Language="0x0001" Platform="0x101" NonCtxEngine="" NonCtxPattern="0x48040081" ScanEngine="" VirusPattern=""/>
+			</ActiveUpdateInfo>
+		</ProductVersionInfo>
+	</ProductInfo>
+</ProductInfos>

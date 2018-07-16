@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- <!DOCTYPE IDMapping SYSTEM "IDMapping.dtd"> -->
+<IDMapping>
+	<Category Type="SLF_PRODUCT_TVCS">
+		<IDMappingTable Name="CommandID">
+			<!-- NVW 2500 1.x ID start from 23600 -->
+			<!-- NVW 2500 2.x ID start from 23800 -->
+			<MapItem Name="EN_CMD_SSO_NETWORK_VIRUSWALL2500_LINUX" ID="23800"/>
+		</IDMappingTable>
+	</Category>
+</IDMapping>

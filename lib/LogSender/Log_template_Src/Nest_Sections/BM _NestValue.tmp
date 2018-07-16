@@ -1,0 +1,14 @@
+3025,100,SLF_BM,(no value)
+3001,100,SLF_Info,(no value)
+2190,2,SLF_LogGenLocalDatetime,2003/12/18 17:31:50
+1062,4,SLF_Action,1
+3026,4,SLF_TranslatedAction,2
+2063,6,SLF_EventType,1
+2225,6,SLF_RiskLevel,1
+3027,6,SLF_PolicyID,1
+3028,2,SLF_AegisSubject,aeg-sub
+3029,4,SLF_AegisOperation,2
+3030,4,SLF_TranslatedAegisOperation,3
+3031,2,SLF_AegisObject,aeg-obj
+3001,101,SLF_Info,(no value)
+3025,101,SLF_BM,(no value)

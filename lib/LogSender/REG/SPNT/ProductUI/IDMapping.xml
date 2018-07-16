@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- <!DOCTYPE IDMapping SYSTEM "IDMapping.dtd"> -->
+<IDMapping>
+	<Category Type="SLF_PRODUCT_SERVERPROTECT_WINNT">
+		<IDMappingTable Name="CommandID">
+			<MapItem Name="EN_CMD_DEMO_BLOB_DATA" ID="6201"/>
+			<MapItem Name="EN_CMD_DEMO_TASK_ENFORCE" ID="6202"/>
+			<!--
+			<MapItem Name="EN_CMD_CONFIGURATION_REPLICATION" ID="6202"/>
+			-->
+		</IDMappingTable>
+	</Category>
+</IDMapping>

@@ -1,0 +1,29 @@
+{
+   "Data":{
+      "FilingCabinet":[
+         {
+            "FileHashID":"71EAB2143940EF63899DBD8C99994FD374174EAB",
+            "FileName":"APT_Gholee.yara",
+            "FileAddedDatetime":"06/20/2018 12:28:57",
+            "UploadedFrom":1,
+            "UploadedBy":"test app 1"
+         }
+      ],
+      "TotalIOCCount":2
+   },
+   "Meta":{
+      "Result":1,
+      "ErrorCode":0,
+      "ErrorMsg":""
+   },
+   "PermissionCtrl":{
+      "permission":"255",
+      "elements":"None"
+   },
+   "FeatureCtrl":{
+      "mode":"0"
+   },
+   "SystemCtrl":{
+      "TmcmSoDist_Role":"none"
+   }
+}

@@ -1,0 +1,66 @@
+//Log Type(SLF_MsgType), in IDMapping.h
+#define SC_LOG_EVENT_REQUEST							1501
+#define SC_LOG_STATUS_REQUEST							1701
+#define SC_LOG_VIRUS_REQUEST							1703
+#define SC_LOG_SECURITY_REQUEST							1705
+#define SC_LOG_WEB_SECURITY_REQUEST						1707
+#define SC_LOG_URLUSAGELOG_REQUEST						1709
+#define SC_LOG_PERFORMANCEMETRIC_REQUEST					1711
+#define SC_LOG_NEjpORK_PACKET_REQUEST					1713
+#define SC_LOG_VULNERABILITY_FOUND_REQUEST				1715
+#define SC_LOG_ENDPOINT_SECURITY_VIOLATIONS_REQUEST     		1717
+#define SC_LOG_ENDPOINT_SECURITY_COMPLIANCE_REQUEST     		1719
+#define SC_LOG_SERVICE_VIOLATION_STATISTICS_REQUEST     		1721
+#define SC_LOG_CVW_REQUEST						1703	//The same with SC_LOG_VIRUS_REQUEST
+
+//Field format, in commondef.h
+#define X_STRING				1
+#define X_WSTRING				2
+#define X_BYTE					3
+#define X_INT16					4
+#define X_UINT16				5
+#define X_INT32					6
+#define X_UINT32				7
+#define X_INT64					8
+#define X_UINT64				9
+#define X_GROUP_START				100
+#define X_GROUP_END				101
+
+//Field ID(in SLF_UniqueID.h), Field format, Description, Value
+11,7,SLF_MsgType,1705
+1001,2,SLF_ProductGUID,(can't set)
+2021,4,SLF_ProductID,<PRODUCT_ID>
+2183,5,SLF_LogVersion,1
+2055,5,SLF_LogMinorVersion,1
+2008,2,SLF_ComputerName,<COMP_NAME>
+2014,2,SLF_ProductVersion,10.5
+2056,4,SLF_ProductPlatformCode,8
+2057,7,SLF_ProductLanguageCode,1701708616
+2058,4,SLF_SeverityCode,2
+2059,4,SLF_ComponentCode,9
+2001,2,SLF_LogGenerationTime,2007-5-23 10:31:50
+2002,4,SLF_LogGenerationTimeZone,-480
+2060,4,SLF_IsDayLightSaving,0
+2061,2,SLF_ReasonCode,access violation
+2062,4,SLF_ReasonCodeSource,20
+2091,4,SLF_FilterAction,2
+2092,4,SLF_FilterActionResult,21
+2093,4,SLF_MessageAction,1
+1066,2,SLF_Filename,<FILENAME>
+2094,2,SLF_Sender,<SENDER>
+2095,2,SLF_Recipient,<RECIPIENT>
+2096,2,SLF_Subject,<SUBJECT>
+2097,2,SLF_Q_Area_PathName,Q area path
+2098,2,SLF_Q_Area_EntityName,Q area entity
+2099,2,SLF_PolicyName,<POLICY_NAME>
+2100,2,SLF_PolicyContent,This is policy content
+2101,4,SLF_FilterType,2
+2102,2,SLF_FilterName,<FILTER_NAME>
+2103,2,SLF_FilterContent,This is filter content
+2104,2,SLF_ViolationDescription,This is violation description
+2086,2,SLF_ProtocolName,
+2105,4,SLF_DeliveryTimeInElapsedSeconds,20
+2106,2,SLF_MailID,102
+2107,2,SLF_QuarantineAreaName,<QAREA_NAME>
+2067,3,SLF_PrivateAttribute_CM35,12345
+2236,7,SLF_AggreCount,1

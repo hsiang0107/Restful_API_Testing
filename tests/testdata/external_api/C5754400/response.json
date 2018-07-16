@@ -1,0 +1,43 @@
+{
+   "Data":{
+      "FilingCabinet":[
+         {
+            "FileHashID":"71EAB2143940EF63899DBD8C99994FD374174EAB",
+            "FileName":"APT_Gholee.yara",
+            "FileAddedDatetime":"06/12/2018 13:43:57",
+            "UploadedFrom":1,
+            "UploadedBy":"test app 1"
+         },
+         {
+            "FileHashID":"A9576178D944E09616C3578322AB6EF8FD69C54E",
+            "FileName":"BKDR_KULUOZ.SM04.yara",
+            "FileAddedDatetime":"06/11/2018 13:43:57",
+            "UploadedFrom":1,
+            "UploadedBy":"test app 2"
+         },
+         {
+            "FileHashID":"371662C4F14F907775D5EE53128C9F6B313B1B62",
+            "FileName":"Casper_Backdoor_x86.yara",
+            "FileAddedDatetime":"06/10/2018 13:43:57",
+            "UploadedFrom":2,
+            "UploadedBy":"sean_w_huang"
+         }
+      ],
+      "TotalIOCCount":5
+   },
+   "Meta":{
+      "Result":1,
+      "ErrorCode":0,
+      "ErrorMsg":""
+   },
+   "PermissionCtrl":{
+      "permission":"255",
+      "elements":"None"
+   },
+   "FeatureCtrl":{
+      "mode":"0"
+   },
+   "SystemCtrl":{
+      "TmcmSoDist_Role":"none"
+   }
+}

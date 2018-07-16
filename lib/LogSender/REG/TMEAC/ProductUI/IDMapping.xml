@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!-- <!DOCTYPE IDMapping SYSTEM "IDMapping.dtd"> -->
+<IDMapping>
+    <Category Type="SLF_PRODUCT_TVCS">
+        <IDMappingTable Name="CommandID">
+            <MapItem Name="EN_CMD_SSO_TMEAC" ID="6210600"/>
+        </IDMappingTable>
+        <IDMappingTable Name="ProductTypeCategory" ApplyTo="ProductCategory" BitValue="false">
+            <MapItem ID="31003" Name="SLF_PRODUCT_TMEAC" AliasName="SLF_PRODUCT_DESKTOP"/>
+        </IDMappingTable>
+        <IDMappingTable Name="ProductType" ApplyTo="CLF_ProductType" BitValue="false">
+            <MapItem ID="31003" Name="SLF_PRODUCT_TMEAC" AliasName="SLF_PRODUCT_TMEAC"/>
+        </IDMappingTable>
+        <IDMappingTable Name="UserCentralInstalledProduct" ApplyTo="" BitValue="false">
+            <MapItem ID="310034" Name="31003.4" />
+        </IDMappingTable>
+        <IDMappingTable Name="EntityServiceID" ApplyTo="" BitValue="false">
+            <MapItem ID="6201600" Name="TMEAC_PRODUCT_SERVICE" AliasName="TMEAC_PRODUCT_SERVICE"/>
+        </IDMappingTable>
+        <IDMappingTable Name="AgentlessProductID" ApplyTo="" BitValue="false">
+            <MapItem ID="31003" Name="SLF_PRODUCT_TMEAC" AliasName="SLF_PRODUCT_TMEAC"/>
+        </IDMappingTable>
+        <IDMappingTable Name="AgentlessEndpointProductID" ApplyTo="" BitValue="false">
+            <MapItem ID="31003" Name="SLF_PRODUCT_TMEAC" AliasName="SLF_PRODUCT_TMEAC"/>
+        </IDMappingTable>
+    </Category>
+</IDMapping>

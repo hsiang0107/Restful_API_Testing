@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<ProductInfos>
+	<!-- 
+		ProdutInfo Show how tag can be used to form a product class info 
+	-->
+	<ProductInfo Category="ANTI-VIRUS" Type="SLF_PRODUCT_IMSS_NT">
+		<ProductVersionInfo TargetVersion="5.0" MenuVersion="1.0" Language="en_US">
+			<LogFormat Type="VirusLog">
+				<LogItem ID="CLF_ProductVersion"/>
+				<LogItem ID="CLF_LogGenerationTime"/>
+				<LogItem ID="VLF_VirusName"/>
+				<LogItem ID="VLF_FirstAction"/>
+				<LogItem ID="VLF_FirstActionResult"/>
+				<LogItem ID="VLF_FileName"/>
+				<LogItem ID="VLF_InfectionSource"/>
+				<LogItem ID="VLF_InfectionDestination"/>
+				<LogItem ID="VLF_PatternVersion"/>
+				<LogItem ID="VLF_EngineVersion"/>
+				<LogItem ID="VLF_EngineType"/>
+				<LogItem ID="VLF_Remark"/>
+			</LogFormat>
+			<LogFormat Type="StatusLog">
+				<!-- Type="CommonLogFormat" -->
+				<LogItem ID="CLF_ProductVersion"/>
+				<LogItem ID="CLF_ProductCountryCode"/>
+				<LogItem ID="CLF_LogGenerationTime"/>
+				<LogItem ID="CLF_LogGenerationTimeZone"/>
+				<LogItem ID="CLF_ModuleName"/>
+				<!-- This can be "MN_ManualScan", "MN_RealtimeScan" or "MN_ScheduledScan" -->
+				<!-- Type="StatusLogFormat" -->
+				<LogItem ID="SLF_RealtimeScan"/>
+				<LogItem ID="SLF_PatternVersion"/>
+				<LogItem ID="SLF_EngineVersion"/>
+				<LogItem ID="SLF_ProductVersion"/>
+			</LogFormat>
+			<LogFormat Type="EventLog">
+				<!-- Type="EventLogFormat" -->
+				<LogItem ID="CLF_ProductVersion"/>
+				<LogItem ID="CLF_ProductCountryCode"/>
+				<LogItem ID="CLF_LogGenerationTime"/>
+				<LogItem ID="CLF_LogGenerationTimeZone"/>
+				<LogItem ID="CLF_ModuleName"/>
+				<!-- This can be "MN_ManualScan", "MN_RealtimeScan" or "MN_ScheduledScan" -->
+			</LogFormat>
+			<!--
+				DeploymentComponentInfo states what kind of the components product use.
+				This tells TVCS what kind of deployment notification will be sent to product entity.
+			-->
+			<DeploymentComponentInfo>
+				<DeploymentComponentItem ID="DCI_Virus_Pattern"/>
+				<DeploymentComponentItem ID="DCI_Virus_Scan_Engine">
+					<DCI_Item ID="ET_VSAPI32_NT_I386"/>
+				</DeploymentComponentItem>
+				<!--<DeploymentComponentItem ID="DCI_Program"/>-->
+			</DeploymentComponentInfo>
+			<EventLogInfo>
+				<EventLogItem ID="SC_EVENT_UNKNOWN_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_VIRUS_FOUND_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_PATTERN_UPDATE_SUCCESS_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_PATTERN_UPDATE_FAIL_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_ENGINE_UPDATE_SUCCESS_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_ENGINE_UPDATE_FAIL_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_PROGRAM_UPDATE_SUCCESS_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_PROGRAM_UPDATE_FAIL_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_START_REALTIME_SCAN_SUCCESS_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_START_REALTIME_SCAN_FAIL_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_STOP_REALTIME_SCAN_SUCCESS_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_STOP_REALTIME_SCAN_FAIL_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_START_MANUAL_SCAN_SUCCESS_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_START_MANUAL_SCAN_FAIL_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_STOP_MANUAL_SCAN_SUCCESS_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_STOP_MANUAL_SCAN_FAIL_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_START_SCHEDULE_SCAN_SUCCESS_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_START_SCHEDULE_SCAN_FAIL_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_STOP_SCHEDULE_SCAN_SUCCESS_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_STOP_SCHEDULE_SCAN_FAIL_REQUEST"/>
+			</EventLogInfo>
+			<CommandInfo>
+				<CommandItem Category="execute" Command="MU_CMD_DEPLOY_AV_ENGINE_REQUEST"/>
+				<CommandItem Category="execute" Command="MU_CMD_DEPLOY_AV_PATTERN_REQUEST"/>
+				<CommandItem Category="view" Command="SC_CMD_QUERY_ENTITY_STATUS_REQUEST"/>
+				<CommandItem Category="view" Command="SC_CMD_QUERY_AV_LOGS_REQUEST"/>
+				<CommandItem Category="view" Command="SC_CMD_QUERY_STATUS_SUMMARY_REQUEST"/>
+				<CommandItem Category="configure" Command="EN_CMD_OLD_IMSS_CONFIG_REQUEST" Page="Page=[ORIGINAL_CONFIG_URL][NO_RELAY_URL]" UIModule="RELAY" GroupSetting="false" CommandLevel="OP_ENTITY_ONLY"/>
+				<CommandItem Category="nonui" Command="EN_CMD_GET_PRODUCT_PROFILE_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_START_BLOCKING_NOW_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_REALTIME_SCAN_CONFIGURATION_REQUEST"/>
+			</CommandInfo>
+			<ActiveUpdateInfo>
+				<ActiveUpdateItem ProductID="53" Language="0x0001" Platform="0x01" ScanEngine="0x0004" VirusPattern="0x74"/>
+				<!-- PRODUCT_ISNT3 (13) -->
+				<!-- LANGUAGE_ENU (0x0001) -->
+				<!-- PLATFORM_WIN32 (0x01) -->
+				<!-- 0 for "not using scan egine" or bitwise value for needed components (ENGINE_VSAPI32_NT_I386 == 0x04)-->
+				<!-- 0 for "not using virus pattern" or bitwise value for needed components (PATTERN_VSAPI == 0x04)-->
+			</ActiveUpdateInfo>
+		</ProductVersionInfo>
+	</ProductInfo>
+</ProductInfos>

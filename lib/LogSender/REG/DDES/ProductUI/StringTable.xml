@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<StringTables>
+	<Language Type="en_US">
+		<Category Type="SLF_PRODUCT_TVCS">
+			<StringTable Name="ProductID">
+				<String ID="SLF_PRODUCT_DDES" DisplayName="Deep Discovery Endpoint Sensor"/>
+			</StringTable>	
+		</Category>
+	</Language>
+</StringTables>

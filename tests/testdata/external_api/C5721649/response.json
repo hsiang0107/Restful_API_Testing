@@ -1,0 +1,13 @@
+{
+   "result_code":1,
+   "result_description":"Operation successful",
+   "result_content":[
+      {
+         "entity_id":"492E85840114-694DBF9D-44CC-8032-0001",
+         "product":"SLF_PRODUCT_OFFICESCAN_CE",
+         "ad_domain":"",
+         "ip_address_list":"192.168.18.1",
+         "host_name":"OSCE1"
+      }
+   ]
+}

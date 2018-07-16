@@ -1,0 +1,15 @@
+{
+   "Data":{
+      "Detections":{
+         "total":0,
+         "stopped":0,
+         "action":0,
+         "user":0
+      }
+   },
+   "Meta":{
+      "Result":"1",
+      "ErrorCode":"0",
+      "ErrorMsg":"Action successful."
+   }
+}

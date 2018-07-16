@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- <!DOCTYPE IDMapping SYSTEM "IDMapping.dtd"> -->
+<IDMapping>
+	<Category Type="SLF_PRODUCT_TVCS">
+		<IDMappingTable Name="CommandID">
+			<MapItem Name="EN_CMD_SSO_SCANMAIL_EX" ID="10609"/>
+		</IDMappingTable>
+		<IDMappingTable Name="ProductTypeCategory" ApplyTo="ProductCategory" BitValue="false">
+			<MapItem ID="3" Name="SLF_PRODUCT_SCANMAIL_EX" AliasName="SLF_PRODUCT_MAIL"/>
+		</IDMappingTable>
+		<IDMappingTable Name="ProductType" ApplyTo="CLF_ProductType" BitValue="false">
+			<MapItem ID="3" Name="SLF_PRODUCT_SCANMAIL_EX" AliasName="SLF_PRODUCT_MAIL"/>
+		</IDMappingTable>
+		<IDMappingTable Name="EntityServiceID" ApplyTo="" BitValue="false">
+			<MapItem ID="1601" Name="SMEX_PRODUCT_SERVICE" AliasName="SMEX_PRODUCT_SERVICE"/>
+		</IDMappingTable>
+	</Category>
+</IDMapping>

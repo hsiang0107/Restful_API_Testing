@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Job
+        start := 1 | 0  //1: enable, 0: disable
+
+    JobStep
+        type := 1 | 2             //1: class step, 2: stored procedure step
+        on_fail_action := 1 | 2 |3          //1: Next step, 2: Quit and return success, 3: Quit and return failure
+        on_success_action := 1 | 2 |3          //1: Next step, 2: Quit and return success, 3: Quit and return failure
+        InnerText := jobstep command
+                                 //Class Function  : <Namespace>::<ClassName>.<FunctionName>
+                                 //Stored Procedure: <Stored Procedure Name>
+
+  Schedule
+      interval := <numbers>      //schedule interval in seconds
+
+    <Job id='1' name='1' description='detail information' start='1'><Schedule interval='5'/><JobStep id='4' name='step1' type='1' on_fail_action='1' on_success_action='1'>TrendMicro.TMCM.LogProcessor::TestClass.TestTrue</JobStep><JobStep id='5' name='step2' type='1' on_fail_action='2' on_success_action='2'>TrendMicro.TMCM.LogProcessor::TestClass.TestTrue</JobStep><JobStep id='6' name='step3' type='1' on_fail_action='3' on_success_action='3'>TrendMicro.TMCM.LogProcessor::TestClass.TestFalse</JobStep><JobStep id='1' name='step4' type='2' on_fail_action='1' on_success_action='1'>sp_Commands</JobStep><JobStep id='2' name='step5' type='2' on_fail_action='1' on_success_action='1'>sp_Commands</JobStep><JobStep id='3' name='step6' type='2' on_fail_action='1' on_success_action='1'>sp_Commands</JobStep></Job><Job id='2' name='sp' description='detail information' start='1'><Schedule interval='10'/><JobStep id='4' name='step1' type='1' on_fail_action='1' on_success_action='1'>TrendMicro.TMCM.LogProcessor::TestClass.TestTrue</JobStep><JobStep id='5' name='step2' type='1' on_fail_action='2' on_success_action='2'>TrendMicro.TMCM.LogProcessor::TestClass.TestTrue</JobStep><JobStep id='6' name='step3' type='1' on_fail_action='3' on_success_action='3'>TrendMicro.TMCM.LogProcessor::TestClass.TestFalse</JobStep><JobStep id='1' name='step4' type='2' on_fail_action='1' on_success_action='1'>sp_Commands</JobStep><JobStep id='2' name='step5' type='2' on_fail_action='1' on_success_action='1'>sp_Commands</JobStep><JobStep id='3' name='step6' type='2' on_fail_action='1' on_success_action='1'>sp_Commands</JobStep></Job>
+-->
+<ScheduleJobSetting>
+    <Job id="1" name="1st Job. Must run in a short time and can't delay.  Sync statusLog" description="" start="1">
+        <Schedule interval="3"/>
+        <JobStep id="1" name="Batch register" type="2" on_fail_action="1" on_success_action="1">sp_BatchRegisterController</JobStep>
+        <JobStep id="2" name="EntityInfo_PrepareData" type="2" on_fail_action="1" on_success_action="1">sp_UpdateUrgentStatusLog_EntityInfo_PrepareData</JobStep>
+        <JobStep id="3" name="EntityInfo_Ctrl" type="2" on_fail_action="1" on_success_action="1">sp_UpdateUrgentStatusLog_EntityInfo_Ctrl</JobStep>
+        <JobStep id="4" name="EntityInfo_UpdateToDest_Ctrl" type="2" on_fail_action="1" on_success_action="1">sp_UpdateUrgentStatusLog_EntityInfo_UpdateToDest_Ctrl</JobStep>
+        <JobStep id="5" name="Policy_Ctrl" type="2" on_fail_action="1" on_success_action="1">sp_UpdateUrgentStatusLog_Policy_Ctrl</JobStep>
+        <JobStep id="6" name="Pls_Ctrl" type="2" on_fail_action="1" on_success_action="1">sp_UpdateUrgentStatusLog_Pls_Ctrl</JobStep>
+        <JobStep id="7" name="UserInfoExt_Ctrl" type="2" on_fail_action="1" on_success_action="1">sp_UpdateUrgentStatusLog_UserInfoExt_Ctrl</JobStep>
+        <JobStep id="8" name="MachineIdRecognition_Ctrl" type="2" on_fail_action="1" on_success_action="1">sp_UpdateUrgentStatusLog_MachineIdRecognition_Ctrl</JobStep>
+        <JobStep id="9" name="ReplicateEntityInfoToMachine_Ctrl" type="2" on_fail_action="1" on_success_action="1">sp_UpdateUrgentStatusLog_ReplicateEntityInfoToMachine_Ctrl</JobStep>
+        <!--JobStep id="10" name="Try to recovery abnormal entity" type="2" on_fail_action="1" on_success_action="1">sp_RecoveryEntity</JobStep-->
+    </Job>
+    <Job id="2" name="2nd Job. For non-urgent, but needed update" description="" start="1">
+        <Schedule interval="3"/>
+        <JobStep id="1" name="EntityInfo_PrepareData" type="2" on_fail_action="1" on_success_action="1">sp_UpdateNonUrgentStatusLog_EntityInfo_PrepareData</JobStep>
+        <JobStep id="2" name="EntityInfo_ProductInfo_Ctrl" type="2" on_fail_action="1" on_success_action="1">sp_UpdateNonUrgentStatusLog_EntityInfo_ProductInfo_Ctrl</JobStep>
+        <JobStep id="3" name="EntityInfo_OsceSettings_Ctrl" type="2" on_fail_action="1" on_success_action="1">sp_UpdateNonUrgentStatusLog_EntityInfo_OsceSettings_Ctrl</JobStep>
+        <JobStep id="4" name="EntityInfo_UpdateToDest_Ctrl" type="2" on_fail_action="1" on_success_action="1">sp_UpdateNonUrgentStatusLog_EntityInfo_UpdateToDest_Ctrl</JobStep>
+        <JobStep id="5" name="PR_Ctrl" type="2" on_fail_action="1" on_success_action="1">sp_UpdateNonUrgentStatusLog_PR_Ctrl</JobStep>
+        <JobStep id="6" name="ServiceLicense_Ctrl" type="2" on_fail_action="1" on_success_action="1">sp_UpdateNonUrgentStatusLog_ServiceLicense_Ctrl</JobStep>
+        <JobStep id="7" name="Engine_Ctrl" type="2" on_fail_action="1" on_success_action="1">sp_UpdateNonUrgentStatusLog_Engine_Ctrl</JobStep>
+        <JobStep id="8" name="Pattern_Ctrl" type="2" on_fail_action="1" on_success_action="1">sp_UpdateNonUrgentStatusLog_Pattern_Ctrl</JobStep>
+    </Job>
+    <Job id="3" name="Regular check job.  Real trigger timeinterval needs to check the SP/process" description="" start="1">
+        <Schedule interval="10"/>
+        <JobStep id="1" name="Generate inventory cache" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Inventory_CacheBuildup</JobStep>
+    </Job>
+    <Job id="4" name="Summarize all logs and sync for DLP log" description="" start="1">
+        <Schedule interval="60"/>
+        <JobStep id="1" name="CanGoOnOfflineBatch?" type="1" on_fail_action="2" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::Throttle.CanGoOnOfflineBatch</JobStep>
+        <JobStep id="2" name="summarize dcs" type="2" on_fail_action="1" on_success_action="1">sp_SummarizeDCSCount</JobStep>
+        <JobStep id="3" name="summarize svs" type="2" on_fail_action="1" on_success_action="1">sp_SummarizeTotalSVSCount</JobStep>
+        <JobStep id="4" name="summarize packetsviruslog" type="2" on_fail_action="1" on_success_action="1">sp_SummarizePacketsVirusLog</JobStep>
+        <JobStep id="5" name="summarize SC_LOG_SERVICE_VIOLATION_STATISTICS_REQUEST" type="2" on_fail_action="1" on_success_action="1">sp_SummarizeSecurityViolationPolicy</JobStep>
+        <JobStep id="6" name="virus log to tb_totalspywarecount" type="2" on_fail_action="1" on_success_action="1">sp_SpywareSummaryByFact</JobStep>
+        <JobStep id="7" name="virus log to tb_totalviruscount" type="2" on_fail_action="1" on_success_action="1">sp_VirusSummaryByFact</JobStep>
+        <JobStep id="8" name="virus log to tb_virus_spyware_summary" type="2" on_fail_action="1" on_success_action="1">sp_SummarizeSpywareCount</JobStep>
+        <JobStep id="9" name="virus log to tb_mail_sender_summary" type="2" on_fail_action="1" on_success_action="1">sp_SummarizeMailSenderFromVirusLog</JobStep>
+        <JobStep id="10" name="securityLog to tb_totalsecuritycount" type="2" on_fail_action="1" on_success_action="1">sp_SummarizeSecurityLog</JobStep>
+        <JobStep id="11" name="webSecurityLog to tb_totalwebSecuritycount" type="2" on_fail_action="1" on_success_action="1">sp_SummarizeWebSecurityLog</JobStep>
+        <JobStep id="12" name="virus log to tb_opssummary" type="2" on_fail_action="1" on_success_action="1">sp_Summarize_OPS_FromVirusLog</JobStep>
+        <JobStep id="13" name="summary spyware log action result" type="2" on_fail_action="1" on_success_action="1">sp_summarizeSpywareActionResult</JobStep>
+        <JobStep id="14" name="summary spyware log to tb_totalSpywareCount" type="2" on_fail_action="1" on_success_action="1">sp_SummarizeSpywareLogToTotalSpywareCount</JobStep>
+        <JobStep id="15" name="summary spyware log to tb_virus_spyware_summary" type="2" on_fail_action="1" on_success_action="1">sp_SummarizeSpywareLogToVirusSpywareSummary</JobStep>
+        <JobStep id="16" name="summarize Personal Firewall log to tb_TotalPersonalFirewallCount" type="2" on_fail_action="1" on_success_action="1">sp_SummarizePFWCount</JobStep>
+        <JobStep id="17" name="sync data discovery log from journal to real table" type="2" on_fail_action="1" on_success_action="1">sp_BatchUpdateDataDiscoveryLog</JobStep>
+        <JobStep id="18" name="Batch Update policyID to DLP Log" type="2" on_fail_action="1" on_success_action="1">sp_Policy_SyncForDLPLog</JobStep>
+        <JobStep id="19" name="Sync black list log journal into blacklist table" type="2" on_fail_action="1" on_success_action="1"></JobStep>
+        <JobStep id="20" name="Sync black list log journal into blacklist table (for TMCM with the hub/edge function)" type="2" on_fail_action="1" on_success_action="1"></JobStep>
+        <JobStep id="21" name="Sync security log into tb_TotalSecurityLogBySeverityLevel table" type="2" on_fail_action="1" on_success_action="1">sp_SummaryTotalSecurityLogBySeverityLevel</JobStep>
+        <JobStep id="22" name="Sync security log into tb_TotalSecurityLogByRecipient table" type="2" on_fail_action="1" on_success_action="1">sp_SummaryTotalSecurityLogByRecipient</JobStep>
+        <JobStep id="23" name="Sync security log into tb_TotalSecurityLogBySourceIP table" type="2" on_fail_action="1" on_success_action="1">sp_SummaryTotalSecurityLogBySourceIP</JobStep>
+        <JobStep id="24" name="Sync security log into tb_TotalSecurityLogByThreatType table" type="2" on_fail_action="1" on_success_action="1">sp_SummaryTotalSecurityLogByThreatType</JobStep>
+        <JobStep id="25" name="Sync security log into tb_TotalSecurityLogBySubject table" type="2" on_fail_action="1" on_success_action="1">sp_SummaryTotalSecurityLogBySubject</JobStep>
+        <JobStep id="26" name="Sync security log into tb_TotalSecurityLogByAttachmentName table" type="2" on_fail_action="1" on_success_action="1">sp_SummaryTotalSecurityLogByAttachmentName</JobStep>
+        <JobStep id="27" name="Sync security log into tb_TotalSecurityLogByAttachmentType table" type="2" on_fail_action="1" on_success_action="1">sp_SummaryTotalSecurityLogByAttachmentType</JobStep>
+        <JobStep id="28" name="Sync FileHash Detection into tb_FileHashDetectionByMachine table" type="2" on_fail_action="1" on_success_action="1"></JobStep>
+        <JobStep id="29" name="Sync Security Log into tb_MessageDetectionByUser table" type="2" on_fail_action="1" on_success_action="1"></JobStep>
+        <JobStep id="30" name="Sync FileHash Detection into tb_FileHashDetectionByUser table" type="2" on_fail_action="1" on_success_action="1"></JobStep>
+    </Job>
+    <Job id="5" name="Notification processing" description="" start="1">
+        <Schedule interval="180"/>
+        <JobStep id="1" name="CanGoOnOfflineBatch?" type="1" on_fail_action="2" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::Throttle.CanGoOnOfflineBatch</JobStep>
+        <JobStep id="2" name="virus outbreak alert" type="2" on_fail_action="1" on_success_action="1">sp_VirusOutbreakAlertProcessing</JobStep>
+        <JobStep id="3" name="special virus alert" type="2" on_fail_action="1" on_success_action="1">sp_SpecialVirusAlertProcessing</JobStep>
+        <JobStep id="4" name="Virus found - 1st action failure" type="2" on_fail_action="1" on_success_action="1">sp_VirusAlert_1stFailure</JobStep>
+        <JobStep id="5" name="Virus found - 2nd action failure" type="2" on_fail_action="1" on_success_action="1">sp_VirusAlert_2ndFailure</JobStep>
+        <JobStep id="6" name="Virus found - 1st action success" type="2" on_fail_action="1" on_success_action="1">sp_VirusAlert_1stSuccess</JobStep>
+        <JobStep id="7" name="Virus found - 2nd action success" type="2" on_fail_action="1" on_success_action="1">sp_VirusAlert_2ndSuccess</JobStep>
+        <JobStep id="8" name="network virus alert" type="2" on_fail_action="1" on_success_action="1">sp_NetworkVirusAlertProcessing</JobStep>
+        <JobStep id="9" name="special spyware alert" type="2" on_fail_action="1" on_success_action="1">sp_SpecialSpywareAlertProcessing</JobStep>
+        <JobStep id="10" name="spyware further action required notification" type="2" on_fail_action="1" on_success_action="1">sp_SpywareFurtherActionNotification</JobStep>
+        <JobStep id="11" name="violation statistics arrival" type="2" on_fail_action="1" on_success_action="1">sp_SecurityStatisticsNotification</JobStep>
+        <JobStep id="12" name="SecurityLog notification" type="2" on_fail_action="1" on_success_action="1">sp_SecurityLogNotification</JobStep>
+        <JobStep id="13" name="WebSecurityLog notification" type="2" on_fail_action="1" on_success_action="1">sp_WebSecurityNotification</JobStep>
+        <JobStep id="14" name="DLP violation notification" type="2" on_fail_action="1" on_success_action="1">sp_DLP_EventViolationNum</JobStep>
+        <JobStep id="15" name="DLP template violation notification" type="2" on_fail_action="1" on_success_action="1">sp_DLP_EventViolationTemplate</JobStep>
+        <JobStep id="16" name="DLP user violation notification" type="2" on_fail_action="1" on_success_action="1">sp_DLP_EventViolationUser</JobStep>
+        <JobStep id="17" name="DLP sender violation notification" type="2" on_fail_action="1" on_success_action="1">sp_DLP_EventViolationSender</JobStep>
+        <JobStep id="18" name="DLP channel violation notification" type="2" on_fail_action="1" on_success_action="1">sp_DLP_EventViolationChannel</JobStep>
+        <JobStep id="19" name="CnC callback alert notification" type="2" on_fail_action="1" on_success_action="1">sp_CnC_ContactAlertNotification</JobStep>
+        <JobStep id="20" name="CnC callback outbreak alert notification" type="2" on_fail_action="1" on_success_action="1">sp_CnC_ContactOutbreakAlertNotification</JobStep>
+        <JobStep id="21" name="Managed product unreachable notification" type="2" on_fail_action="1" on_success_action="1">sp_ProductUnreachableNotification</JobStep>
+        <JobStep id="22" name="Suspicious Threat Virtual Analysis Detection" type="1" on_fail_action="1" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::DDINotification.VADNotification</JobStep>
+        <JobStep id="23" name="Suspicious Threat High Risk Detection" type="1" on_fail_action="1" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::DDINotification.HighRiskDetectionNotification</JobStep>
+        <JobStep id="24" name="Suspicious Threat SHA1 Deny Detection" type="1" on_fail_action="1" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::DDINotification.SHA1DenyDetectionNotification</JobStep>
+        <JobStep id="25" name="Suspicious Threat Known Attack Detection" type="1" on_fail_action="1" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::DDINotification.KnownAttackDetectionNotification</JobStep>
+        <JobStep id="26" name="Suspicious Threat Potential Exploit Found" type="1" on_fail_action="1" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::DDINotification.PotentialExploitFoundNotification</JobStep>
+        <JobStep id="27" name="Suspicious Threat Stealth Programs Found" type="1" on_fail_action="1" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::DDINotification.StealthProgramsFoundNotification</JobStep>
+        <JobStep id="28" name="Suspicious Threat Worms Virus Propagation Found" type="1" on_fail_action="1" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::DDINotification.WormsVirusPropagationFoundNotification</JobStep>
+        <JobStep id="29" name="Suspicious Threat Correlated Incidents" type="1" on_fail_action="1" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::DDINotification.CorrelatedIncidentsNotification</JobStep>
+        <JobStep id="30" name="Generate CSV for DLP notification" type="1" on_fail_action="3" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::DLPNotification.ScheduleTask</JobStep>
+        <JobStep id="31" name="TriggerNotification" type="1" on_fail_action="3" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::NotificationEvent.TriggerAll</JobStep>
+        <JobStep id="32" name="Email Messages With Threats" type="1" on_fail_action="1" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::DDEINotification.ThreatEmailMessage</JobStep>
+        <JobStep id="33" name="Threat Send To Watchlist" type="1" on_fail_action="1" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::DDEINotification.ThreatSentToWatchList</JobStep>
+    </Job>
+    <Job id="6" name="CascadingLog processing" description="" start="1">
+        <Schedule interval="10"/>
+        <JobStep id="1" name="CanGoOnOfflineBatch?" type="1" on_fail_action="2" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::Throttle.CanGoOnOfflineBatch</JobStep>
+        <JobStep id="2" name="Batch Update Cas Log" type="2" on_fail_action="1" on_success_action="1">sp_BatchUpdateCasEntityData</JobStep>
+        <JobStep id="3" name="Batch Update BM Log" type="2" on_fail_action="1" on_success_action="1">sp_sync_bm_logs</JobStep>
+    </Job>
+    <Job id="7" name="PR AC processing." description="" start="1">
+        <Schedule interval="180"/>
+        <JobStep id="1" name="Process?" type="1" on_fail_action="2" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::ParseACInfo.Process</JobStep>
+    </Job>
+    <Job id="8" name="Build widget cache and synchronize some information, includes entity IP, migrated logs." description="" start="1">
+        <Schedule interval="3600"/>
+        <JobStep id="1" name="CanGoOnOfflineBatch?" type="1" on_fail_action="2" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::Throttle.CanGoOnOfflineBatch</JobStep>
+        <JobStep id="2" name="Widget cache - sp_ProcessWFApplicationStatus" type="2" on_fail_action="1" on_success_action="1">sp_ProcessWFApplicationStatus</JobStep>
+        <JobStep id="7" name="Entity - Synchronize Entity IP Address" type="2" on_fail_action="1" on_success_action="1">sp_SyncEntityIPAddress</JobStep>
+        <JobStep id="8" name="Log - Batch Update Migrated Logs" type="2" on_fail_action="1" on_success_action="1">sp_UpdateMigratedLogs</JobStep>
+    </Job>
+    <Job id="9" name="Data Synchronize with AD/OfficeScan/DSM Server/User" description="" start="1">
+        <Schedule interval="120"/>
+        <JobStep id='1' name='PureADSyncAgentTool' type='1' on_fail_action='3' on_success_action='1'>TrendMicro.TMCM.LogProcessor.OfflineBatch::PurgeHelper.PurgeADSyncAgentTool</JobStep>
+        <JobStep id="2" name="sp_AD_ClearUserInfo" type="2" on_fail_action="3" on_success_action="1">sp_AD_ClearUserInfo</JobStep>
+        <JobStep id="3" name="AD OU and Computer Sync" type="1" on_fail_action="2" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::ADSyncScheduler.ScheduleDataSyncMain</JobStep>
+        <JobStep id="4" name="sp_AD_SyncScheduleGroupList" type="2" on_fail_action="3" on_success_action="1">sp_AD_SyncScheduleGroupList</JobStep>
+        <JobStep id="5" name="sp_AD_SyncGroupMember" type="2" on_fail_action="3" on_success_action="1">sp_AD_SyncGroupMember</JobStep>
+        <JobStep id="6" name="sp_AD_UserSync" type="2" on_fail_action="3" on_success_action="1">sp_AD_UserSync</JobStep>
+        <JobStep id="7" name="sp_AD_SyncUserLocalInfo" type="2" on_fail_action="3" on_success_action="1">sp_AD_SyncUserLocalInfo</JobStep>
+        <JobStep id="8" name="sp_AD_BuildUserTree" type="2" on_fail_action="3" on_success_action="1" timeout="14400">sp_AD_BuildUserTree</JobStep>
+        <JobStep id="9" name="sp_AD_InsertStaffTree" type="2" on_fail_action="3" on_success_action="1">sp_AD_InsertStaffTree</JobStep>
+        <JobStep id="10" name="sp_AD_SwitchView" type="2" on_fail_action="3" on_success_action="1">sp_AD_SwitchView</JobStep>
+        <JobStep id="11" name="sp_ReplaceDuplicateUserGuid" type="2" on_fail_action="3" on_success_action="1">sp_ReplaceDuplicateUserGuid</JobStep>
+        <JobStep id="12" name="sp_AD_UpdateUserInfo" type="2" on_fail_action="3" on_success_action="1">sp_AD_UpdateUserInfo</JobStep>
+        <JobStep id="13" name="Replicate AD additional info to distinct table" type="2" on_fail_action="3" on_success_action="1">sp_AD_AdditionalInfoSync</JobStep>
+        <JobStep id="14" name="Find AD Circle" type="1" on_fail_action="3" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::ADCircleFinder.FindCircles</JobStep>
+        <JobStep id="15" name="Sync default important custom filters and labels" type="1" on_fail_action="3" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::DefaultImportantFilterLabels.ScheduleDataSync</JobStep>
+    </Job>
+    <Job id="10" name="Status Log purge" description="" start="1">
+        <Schedule interval="600"/>
+        <!-- 10min -->
+        <JobStep id="1" name="CanGoOnOfflineBatch?" type="1" on_fail_action="2" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::Throttle.CanGoOnOfflineBatch</JobStep>
+        <JobStep id="2" name="sp_Purge_StatusLogJournal_A" type="2" on_fail_action="1" on_success_action="1">sp_Purge_StatusLogJournal_A</JobStep>
+        <JobStep id="3" name="sp_Purge_StatusLogJournal_B" type="2" on_fail_action="1" on_success_action="1">sp_Purge_StatusLogJournal_B</JobStep>
+    </Job>
+    <Job id="11" name="Log purge" description="" start="1">
+        <Schedule interval="3600"/>
+        <!-- 1hr -->
+        <JobStep id="1" name="CanGoOnOfflineBatch?" type="1" on_fail_action="2" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::Throttle.CanGoOnOfflineBatch</JobStep>
+        <JobStep id="2" name="sp_Purge_tb_AVVirusLog" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_AVVirusLog</JobStep>
+        <!-- timeout: 20min -->
+        <JobStep id="3" name="sp_Purge_tb_AVEventLog" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_AVEventLog</JobStep>
+        <JobStep id="4" name="sp_Purge_tb_SpywareLog" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_SpywareLog</JobStep>
+        <JobStep id="5" name="sp_Purge_tb_WebSecurity" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_WebSecurity</JobStep>
+        <JobStep id="6" name="sp_Purge_tb_Security" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_Security</JobStep>
+        <JobStep id="7" name="sp_Purge_tb_URLUsageLog" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_URLUsageLog</JobStep>
+        <JobStep id="8" name="sp_Purge_tb_LogBehaviorMonitor" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_LogBehaviorMonitor</JobStep>
+        <JobStep id="9" name="sp_Purge_tb_PacketsVirusLog" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_PacketsVirusLog</JobStep>
+        <JobStep id="10" name="sp_PurgeDataLossPreventionLog" type="2" on_fail_action="1" on_success_action="1">sp_PurgeDataLossPreventionLog</JobStep>
+        <JobStep id="11" name="sp_Policy_PurgeJournalData" type="2" on_fail_action="1" on_success_action="1">sp_Policy_PurgeJournalData</JobStep>
+        <JobStep id="12" name="sp_Purge_tb_LogThreatMitigation" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_LogThreatMitigation</JobStep>
+        <JobStep id="13" name="sp_Purge_tb_LogSuspiciousFile" type="2" on_fail_action="1" on_success_action="1" timeout="1500">sp_Purge_tb_LogSuspiciousFile</JobStep>
+        <JobStep id="14" name="sp_Purge_tb_PersonalFirewallLog" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_PersonalFirewallLog</JobStep>
+        <JobStep id="15" name="sp_Purge_tb_SecurityViolations" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_SecurityViolations</JobStep>
+        <JobStep id="16" name="sp_Purge_tb_PerformanceMetricLog" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_PerformanceMetricLog</JobStep>
+        <JobStep id="17" name="sp_Purge_tb_SecurityCompliance" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_SecurityCompliance</JobStep>
+        <JobStep id="18" name="sp_Purge_tb_SecurityStatistics" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_SecurityStatistics</JobStep>
+        <JobStep id="19" name="sp_Purge_tb_SystemEventLog" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_SystemEventLog</JobStep>
+        <JobStep id="20" name="sp_Purge_tb_UserAccessLog" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_UserAccessLog</JobStep>
+        <JobStep id="21" name="sp_Purge_tb_ProductRoleBaseAuditLog" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_ProductRoleBaseAuditLog</JobStep>
+        <JobStep id="22" name="sp_Purge_tb_NRSLog" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_NRSLog</JobStep>
+        <JobStep id="23" name="sp_Purge_tb_CVW_Log" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_CVW_Log</JobStep>
+        <JobStep id="24" name="sp_Purge_tb_InValidLog" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_InValidLog</JobStep>
+        <JobStep id="25" name="sp_Purge_OtherLog" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_OtherLog</JobStep>
+        <JobStep id="26" name="sp_Purge_tb_CnCDetection_Log" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_CnCDetection_Log</JobStep>
+        <JobStep id="27" name="sp_Purge_tb_Inventory_Security_To_User" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_Inventory_Security_To_User</JobStep>
+        <JobStep id="28" name="sp_Purge_tb_Inventory_Security_To_User_Summary" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_Inventory_Security_To_User_Summary</JobStep>
+        <JobStep id="29" name="sp_PurgeMachineAndDict" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_PurgeMachineAndDict</JobStep>
+        <JobStep id="30" name="sp_PurgeDataDiscoveryLog" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_PurgeDataDiscoveryLog</JobStep>
+        <JobStep id="31" name="sp_Purge_tb_AbnormalEntity" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_AbnormalEntity</JobStep>
+        <JobStep id="32" name="sp_Purge_tb_AD_VirtualUser" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_AD_VirtualUser</JobStep>
+        <JobStep id="33" name="sp_Purge_tb_BatchRegJournal" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_BatchRegJournal</JobStep>
+        <JobStep id="34" name="sp_Purge_tb_ApplicationControlEvent" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_ApplicationControlEvent</JobStep>
+        <JobStep id="35" name="sp_Purge_tb_SuspiciousLog" type="2" on_fail_action="1" on_success_action="1" timeout="1500">sp_Purge_tb_SuspiciousLog</JobStep>
+        <JobStep id="36" name="sp_Purge_tb_SuspiciousLogIPList" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_SuspiciousLogIPList</JobStep>
+        <!--       <JobStep id="37" name="sp_PurgeBlacklist" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_PurgeBlacklist</JobStep> -->
+        <JobStep id="38" name="sp_Purge_tb_LogCorrelation" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_LogCorrelation</JobStep>
+        <JobStep id="39" name="sp_Purge_tb_LogGeneral_AffectedHost" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_LogGeneral_AffectedHost</JobStep>
+        <JobStep id="40" name="sp_Purge_tb_FileHashDetectionLog" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_FileHashDetectionLog</JobStep>
+        <JobStep id="48" name="sp_Purge_tb_Network_Content_Inspection_Engine_Log" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_Network_Content_Inspection_Engine_Log</JobStep>
+        <JobStep id="49" name="sp_Purge_tb_DDES_Task" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_DDES_Task</JobStep>
+        <JobStep id="50" name="sp_Purge_tb_DDES_ScanResult" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_DDES_ScanResult</JobStep>
+        <JobStep id="51" name="sp_Purge_tb_MachineNote" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_MachineNote</JobStep>
+        <JobStep id="52" name="sp_Purge_tb_LogIntrusionPrevention" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_LogIntrusionPrevention</JobStep>
+        <JobStep id="53" name="sp_Purge_tb_LogIntegrityMonitor" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_LogIntegrityMonitor</JobStep>
+        <JobStep id="54" name="sp_PurgeGlobalRetroScan" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_PurgeGlobalRetroScan</JobStep>
+        <JobStep id="55" name="sp_Purge_tb_DDES_ScanResult_Inventory" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_DDES_ScanResult_Inventory</JobStep>
+        <JobStep id="56" name="sp_Purge_tb_Device_Access_Control_Log" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_Device_Access_Control_Log</JobStep>
+        <JobStep id="57" name="sp_Purge_tb_Inventory_CriticalEvent_Summary" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_Inventory_CriticalEvent_Summary</JobStep>
+        <JobStep id="58" name="sp_Purge_tb_Inventory_Security_To_User_DataMD5Map" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_Inventory_Security_To_User_DataMD5Map</JobStep>
+        <JobStep id="59" name="sp_Purge_tb_Inventory_DDESRetroScanMapping" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_Inventory_DDESRetroScanMapping</JobStep>
+        <JobStep id="60" name="sp_Purge_tb_TrashCan_StatusLog" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_TrashCan_StatusLog</JobStep>
+        <JobStep id="61" name="sp_Purge_tb_DwellTime" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_DwellTime</JobStep>
+        <JobStep id="62" name="sp_Purge_tb_EDB_DailyTrending" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_EDB_DailyTrending</JobStep>
+        <JobStep id='63' name='sp_DDM_Purge_tb_MessageDetectionLog' type='2' on_fail_action='1' on_success_action='1' timeout='1200'>sp_DDM_Purge_tb_MessageDetectionLog</JobStep>
+        <JobStep id='64' name='sp_DDM_PurgeLog' type='2' on_fail_action='1' on_success_action='1' timeout='1200'>sp_DDM_PurgeLog</JobStep>
+        <JobStep id='65' name='sp_Purge_tb_MachineLearning_Detection_Log' type='2' on_fail_action='1' on_success_action='1' timeout='1200'>sp_Purge_tb_MachineLearning_Detection_Log</JobStep>
+        <JobStep id='66' name='sp_Purge_tb_SandboxDetectionLog' type='2' on_fail_action='1' on_success_action='1' timeout='1200'>sp_Purge_tb_SandboxDetectionLog</JobStep>
+        <JobStep id='67' name='sp_Purge_tb_ADE_DetectionLog' type='2' on_fail_action='1' on_success_action='1' timeout='1200'>sp_Purge_tb_ADE_DetectionLog</JobStep>
+    </Job>
+    <Job id="12" name="Data Loss Prevention Incident Severity Sync and Current Summary" description="" start="1">
+        <Schedule interval="10"/>
+        <JobStep id="1" name="CanGoOnScheduleJob?" type="1" on_fail_action="2" on_success_action="1">TrendMicro.TMCM.LogProcessor.ScheduleJobs::PostInstallCheck.CanGoOnScheduleJob</JobStep>
+        <JobStep id="2" name="CanGoOnOfflineBatch?" type="1" on_fail_action="2" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::Throttle.CanGoOnOfflineBatch</JobStep>
+        <JobStep id="3" name="sp_SyncDataLossPreventionLogSeverity" type="2" on_fail_action="3" on_success_action="1">sp_SyncDataLossPreventionLogSeverity</JobStep>
+        <JobStep id="4" name="sp_SummarizeDataLossPreventionLog" type="2" on_fail_action="3" on_success_action="1">sp_SummarizeDataLossPreventionLog</JobStep>
+        <JobStep id="5" name="sp_SummarizeDataLossPreventionLogForAllManagedUser" type="2" on_fail_action="3" on_success_action="1">sp_SummarizeDataLossPreventionLogForAllManagedUser</JobStep>
+        <JobStep id="6" name="sp_InventorySyncPreProc" type="2" on_fail_action="1" on_success_action="1">sp_InventorySyncPreProc</JobStep>
+        <JobStep id="7" name="sp_InventorySyncDLP" type="2" on_fail_action="1" on_success_action="1">sp_InventorySyncDLP</JobStep>
+        <JobStep id="8" name="sp_InventorySyncSpyware" type="2" on_fail_action="1" on_success_action="1">sp_InventorySyncSpyware</JobStep>
+        <JobStep id="9" name="sp_InventorySyncCAV" type="2" on_fail_action="1" on_success_action="1">sp_InventorySyncCAV</JobStep>
+        <JobStep id="10" name="sp_InventorySyncPFWLog" type="2" on_fail_action="1" on_success_action="1">sp_InventorySyncPFWLog</JobStep>
+        <JobStep id="11" name="sp_InventorySyncNCIELog" type="2" on_fail_action="1" on_success_action="1">sp_InventorySyncNCIELog</JobStep>
+        <JobStep id="12" name="sp_InventorySyncVirus" type="2" on_fail_action="1" on_success_action="1">sp_InventorySyncVirus</JobStep>
+        <JobStep id="13" name="sp_InventorySyncWebSecurity" type="2" on_fail_action="1" on_success_action="1">sp_InventorySyncWebSecurity</JobStep>
+        <JobStep id="14" name="sp_InventorySyncSecurity" type="2" on_fail_action="1" on_success_action="1">sp_InventorySyncSecurity</JobStep>
+        <JobStep id="15" name="sp_InventorySyncBMLog" type="2" on_fail_action="1" on_success_action="1">sp_InventorySyncBMLog</JobStep>
+        <JobStep id="16" name="sp_InventorySyncAppCtrl" type="2" on_fail_action="1" on_success_action="1">sp_InventorySyncAppCtrl</JobStep>
+        <JobStep id="17" name="sp_InventorySyncFileHashDetection" type="2" on_fail_action="1" on_success_action="1">sp_InventorySyncFileHashDetection</JobStep>
+        <JobStep id="18" name="sp_InventorySyncIPSLog" type="2" on_fail_action="1" on_success_action="1">sp_InventorySyncIPSLog</JobStep>
+        <JobStep id="19" name="sp_InventorySyncIMLog" type="2" on_fail_action="1" on_success_action="1">sp_InventorySyncIMLog</JobStep>
+        <JobStep id="20" name="sp_InventorySyncMachineLearning" type="2" on_fail_action="1" on_success_action="1">sp_InventorySyncMachineLearning</JobStep>
+        <JobStep id="21" name="sp_InventorySyncSandboxDetectionLog" type="2" on_fail_action="1" on_success_action="1">sp_InventorySyncSandboxDetectionLog</JobStep>
+        <JobStep id="22" name="sp_DwellTimeSyncInventory" type="2" on_fail_action="1" on_success_action="1">sp_DwellTimeSyncInventory</JobStep>
+        <JobStep id="23" name="sp_InventorySyncPostProc" type="2" on_fail_action="1" on_success_action="1">sp_InventorySyncPostProc</JobStep>
+        <JobStep id="24" name="sp_SummarizeInventoryViewUserLog" type="2" on_fail_action="1" on_success_action="1">sp_SummarizeInventoryViewUserLog</JobStep>
+        <JobStep id="25" name="sp_Inventory_PreSumDaily" type="2" on_fail_action="1" on_success_action="1">sp_Inventory_PreSumDaily</JobStep>
+    </Job>
+    <Job id="13" name="Data Loss Prevention Incident Daily Summary" description="" start="1">
+        <Schedule start_time="02:00:00"/>
+        <JobStep id="1" name="CanGoOnOfflineBatch?" type="1" on_fail_action="2" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::Throttle.CanGoOnOfflineBatch</JobStep>
+        <JobStep id="2" name="sp_SummarizeDailyDataLossPreventionLog" type="2" on_fail_action="3" on_success_action="1">sp_SummarizeDailyDataLossPreventionLog</JobStep>
+    </Job>
+    <Job id="14" name="TMIA" description="" start="1">
+        <Schedule interval="30"/>
+        <JobStep id="1" name="CanGoOnOfflineBatch?" type="1" on_fail_action="2" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::Throttle.CanGoOnOfflineBatch</JobStep>
+        <JobStep id="2" name="sp_CnCSyncWebSecurityLogtoCnCDetection" type="2" on_fail_action="1" on_success_action="1"></JobStep>
+        <JobStep id="3" name="sp_CnCSyncSecurityLogtoCnCDetection" type="2" on_fail_action="1" on_success_action="1"></JobStep>
+        <!-- <JobStep id="4" name="sp_CnCSyncPFWLogtoCnCDetection" type="2" on_fail_action="1" on_success_action="1">sp_CnCSyncPFWLogtoCnCDetection</JobStep> -->
+        <JobStep id="5" name="sp_CnCSyncTDALogtoCnCDetection" type="2" on_fail_action="1" on_success_action="1"></JobStep>
+        <JobStep id="6" name="sp_CnCSyncNCIELogtoCnCDetection" type="2" on_fail_action="1" on_success_action="1"></JobStep>
+        <JobStep id="7" name="TMIA" type="1" on_fail_action="3" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::TMIARetriver.ScheduleTask</JobStep>
+        <JobStep id="8" name="sp_SummaryCnCDetectionForSO" type="2" on_fail_action="1" on_success_action="1"></JobStep>
+        <JobStep id="9" name="sp_RebuildCnCDectIndex" type="2" on_fail_action="3" on_success_action="1">sp_RebuildCnCDectIndex</JobStep>
+    </Job>
+    <Job id="15" name="Check unrefered Dict record" description="" start="1">
+        <Schedule interval="360"/>
+        <JobStep id="1" name="sp_CheckUnReferDictRecord" type="2" on_fail_action="1" on_success_action="1">sp_CheckUnReferDictRecord</JobStep>
+        <JobStep id="2" name="sp_CheckUnReferVirtualUser" type="2" on_fail_action="1" on_success_action="1">sp_CheckUnReferVirtualUser</JobStep>
+    </Job>
+    <Job id="16" name="Sync folder path" description="" start="1">
+        <Schedule interval="600"/>
+        <JobStep id="1" name="Synchronize Entity Folder Path" type="2" on_fail_action="1" on_success_action="1">sp_ProcessEntityFolderPath</JobStep>
+    </Job>
+    <Job id="17" name="Deploy suspicious object to tipping point" description="" start="1">
+        <Schedule interval="300"/>
+        <JobStep id="1" name="DeploySuspiciousObject" type="1" on_fail_action="3" on_success_action="2">TrendMicro.TMCM.LogProcessor.OfflineBatch::DeploySuspiciousObject.execute</JobStep>
+    </Job>
+    <Job id="18" name="Summarize suspicious log" description="" start="1">
+        <Schedule interval="600"/>
+        <JobStep id="1" name="CanGoOnOfflineBatch?" type="1" on_fail_action="2" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::Throttle.CanGoOnOfflineBatch</JobStep>
+        <JobStep id="2" name="sp_SummarizeCompromisedHostLog" type="2" on_fail_action="1" on_success_action="1">sp_SummarizeCompromisedHostLog</JobStep>
+        <JobStep id="3" name="sp_SummarizeLogGeneralByAffectedHost" type="2" on_fail_action="1" on_success_action="1">sp_SummarizeLogGeneralByAffectedHost</JobStep>
+    </Job>
+    <Job id="19" name="Purge/Process suspicious log" description="" start="1">
+        <Schedule start_time="00:00:00"/>
+        <JobStep id="1" name="CanGoOnOfflineBatch?" type="1" on_fail_action="2" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::Throttle.CanGoOnOfflineBatch</JobStep>
+        <JobStep id="2" name="sp_Purge_tb_SuspiciousLogSummaryHistory" type="2" on_fail_action="1" on_success_action="1">sp_Purge_tb_SuspiciousLogSummaryHistory</JobStep>
+        <JobStep id="3" name="sp_SummarizeCompromisedHostLogDaily" type="2" on_fail_action="1" on_success_action="1">sp_SummarizeCompromisedHostLogDaily</JobStep>
+        <JobStep id="4" name="sp_Purge_tb_Inventory_WISInfo" type="2" on_fail_action="1" on_success_action="1">sp_Purge_tb_Inventory_WISInfo</JobStep>
+        <JobStep id="5" name="sp_Purge_tb_Inventory_TCInfo" type="2" on_fail_action="1" on_success_action="1">sp_Purge_tb_Inventory_TCInfo</JobStep>
+        <JobStep id="6" name="Purge CSV files of suspicious log users imported" type="1" on_fail_action="1" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::PurgeHelper.PurgeSODataCSVFiles</JobStep>
+    </Job>
+    <Job id="20" name="Sync threat intelligence information" description="" start="1">
+        <Schedule interval="60"/>
+        <JobStep id="1" name="import raw threat intelligence data to database" type="1" on_fail_action="1" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::ThreatIntelligenceInfo.Import</JobStep>
+        <JobStep id="2" name="sp_ThreatIntelligence_SyncInfo" type="2" on_fail_action="1" on_success_action="1">sp_ThreatIntelligence_SyncInfo</JobStep>
+        <JobStep id="3" name="sp_ThreatIntelligence_GenerateDynamicInfo" type="2" on_fail_action="1" on_success_action="1">sp_ThreatIntelligence_GenerateDynamicInfo</JobStep>
+    </Job>
+    <Job id="21" name="Collect BIF Log Daily Data and archive RegLog DB" description="" start="1">
+        <Schedule start_time="02:00:00"/>
+        <JobStep id="1" name="sp_CollectBifDailyLog" type="2" on_fail_action="1" on_success_action="1">sp_CollectBifDailyLog</JobStep>
+        <JobStep id="2" name="RegLogMgr" type="1" on_fail_action="1" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::RegLogMgr.Archive</JobStep>
+        <JobStep id="3" name="RegLogMgr" type="1" on_fail_action="1" on_success_action="1">TrendMicro.TMCM.LogProcessor.OfflineBatch::RegLogMgr.DeleteOutDatedZipfile</JobStep>
+    </Job>
+    <Job id='22' name='Query 3rd party service for DDI and DDEI logs' description='' start='1'>
+        <Schedule interval='60'/>
+        <JobStep id='1' name='Tag3rdPartyInformation' type='1' on_fail_action='3' on_success_action='1'>TrendMicro.TMCM.LogProcessor.OfflineBatch::Tag3rdPartyInformation.execute</JobStep>
+        <JobStep id='2' name='sp_DDM_ApplyIgnoreRule' type='2' on_fail_action='1' on_success_action='1'>sp_DDM_ApplyIgnoreRule</JobStep>
+    </Job>
+    <Job id='23' name='SO Log purge' description='' start='1'>
+        <Schedule interval='30'/>
+        <JobStep id="1" name="sp_PurgeBlacklist" type="2" on_fail_action="1" on_success_action="1" timeout="1200"></JobStep>
+    </Job>
+    <Job id='24' name='PRI Related Schedule Job' description='' start='1'>
+        <Schedule interval='600'/>
+        <JobStep id="1" name="sp_PRI_SyncDataDiscovery_ForDLP" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_PRI_SyncDataDiscovery_ForDLP</JobStep>
+    </Job>
+    <Job id='25' name='PRI table purge schedule job' description='' start='1'>
+        <Schedule start_time="00:00:00"/>
+        <JobStep id="1" name="sp_Purge_tb_PRI_DLP_Summary" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_PRI_DLP_Summary</JobStep>
+    </Job>
+    <Job id='26' name='Purge/Process suspicious object for CTD report' description='' start='1'>
+        <Schedule start_time="00:00:00"/>
+        <JobStep id="1" name="sp_SnapshotBlacklistInfoDaily" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_SnapshotBlacklistInfoDaily</JobStep>
+        <JobStep id="2" name="sp_Purge_tb_SuspiciousObjectActionStatusJournal" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_SuspiciousObjectActionStatusJournal</JobStep>
+        <JobStep id="3" name="sp_Purge_tb_BlacklistInfo_DailySnapshot" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_BlacklistInfo_DailySnapshot</JobStep>
+        <JobStep id="4" name="sp_ReportSnapshot_overall_users_and_endpoints" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_ReportSnapshot_overall_users_and_endpoints</JobStep>
+        <JobStep id="5" name="sp_Purge_tb_ReportSummary_overall_users_and_endpoints" type="2" on_fail_action="1" on_success_action="1" timeout="1200">sp_Purge_tb_ReportSummary_overall_users_and_endpoints</JobStep>
+    </Job>
+	<Job id="27" name="Check Update tb " description="" start="1">
+    <Schedule interval="600"/>
+    <JobStep id="1" name="Update UTC Offset into tb_SystemConfigure Table " type="1" on_fail_action="3" on_success_action="2">TrendMicro.TMCM.LogProcessor.OfflineBatch::SystemConfigTable.UpdateUTCTimeOffsetInSystemConfigure</JobStep>
+</Job>
+</ScheduleJobSetting>

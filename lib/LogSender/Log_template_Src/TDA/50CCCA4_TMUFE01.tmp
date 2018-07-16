@@ -1,0 +1,66 @@
+// CAV Log
+// Date: 2006/10/5
+// Available Protocol Version: 3.5[2006/8/30]
+// Product: MR
+//
+// Log Type(SLF_MsgType), in IDMapping.h
+#define SC_LOG_EVENT_REQUEST                        1501
+#define SC_LOG_STATUS_REQUEST                       1701
+#define SC_LOG_VIRUS_REQUEST                        1703
+#define SC_LOG_SECURITY_REQUEST                     1705
+#define SC_LOG_WEB_SECURITY_REQUEST                 1707
+#define SC_LOG_URLUSAGELOG_REQUEST                  1709
+#define SC_LOG_PERFORMANCEMETRIC_REQUEST            1711
+#define SC_LOG_NETWORK_PACKET_REQUEST               1713
+#define SC_LOG_VULNERABILITY_FOUND_REQUEST          1715
+#define SC_LOG_ENDPOINT_SECURITY_VIOLATIONS_REQUEST 1717
+#define SC_LOG_ENDPOINT_SECURITY_COMPLIANCE_REQUEST 1719
+#define SC_LOG_SERVICE_VIOLATION_STATISTICS_REQUEST 1721
+#define SC_LOG_CVW_REQUEST                          1703 //The same with SC_LOG_VIRUS_REQUEST
+
+// Field format, in commondef.h
+#define X_STRING      1
+#define X_WSTRING     2
+#define X_BYTE        3
+#define X_INT16       4
+#define X_UINT16      5
+#define X_INT32       6
+#define X_UINT32      7
+#define X_INT64       8
+#define X_UINT64      9
+#define X_GROUP_START 100
+#define X_GROUP_END   101
+
+// Field ID(in SLF_UniqueID.h), Field format, Description, Value
+11,7,SLF_MsgType,1739
+1001,2,SLF_ProductGUID,(can't set)
+2021,7,SLF_ProductID,15
+2183,5,SLF_LogVersion,1
+2055,5,SLF_LogMinorVersion,1
+2189,2,SLF_LogGenUTCDatetime,2013-01-25 17:31:50
+2190,2,SLF_LogGenLocalDatetime,2013-01-25 17:31:50
+2191,4,SLF_TimeZoneInMins,0
+2192,4,SLF_DaylightSavingInMins,0
+2008,2,SLF_ComputerName,tw-leia
+2212,5,SLF_VLANId,0
+2213,5,SLF_DetectedBy,0
+1019,4,SLF_ScanDirection,2
+2201,5,SLF_ProtocolGroup,0
+2127,5,SLF_Protocol,0
+2111,2,SLF_Description,(N/A)
+2198,2,SLF_HostName,tw-tmcmtest
+2204,2,SLF_SourceIP,10.27.131.208
+2205,2,SLF_SourceMAC,00-04-77-E4-99-3A
+2206,5,SLF_SourcePort,8080
+2290,2,SLF_SourceGroupName,src group name
+2291,4,SLF_SourceZone,1
+2193,2,SLF_DestIP,140.128.0.2
+2194,2,SLF_DestMAC,E4-99-3A-00-04-77
+2195,5,SLF_DestPort,33333
+2292,2,SLF_DestGroupName,dest group name
+2293,4,SLF_DestZone,1
+2209,2,SLF_URL,CC21.jojo.com
+2294,6,SLF_Score,50
+2377,6,SLF_Is_CCCA_Detection,1
+2378,6,SLF_CCCA_DetectionSource,0
+2379,6,SLF_CCCA_RiskLevel,3

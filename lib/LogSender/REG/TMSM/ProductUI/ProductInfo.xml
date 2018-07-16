@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<ProductInfos>
+	<ProductInfo Category="ANTI-VIRUS" Type="SLF_PRODUCT_PLS_TMSM">
+		<ProductVersionInfo TargetVersion="2.0" MenuVersion="1.1" Language="en_US">
+			<LogFormat Type="VirusLog">
+			</LogFormat>
+			<LogFormat Type="StatusLog">
+			</LogFormat>
+			<LogFormat Type="EventLog">
+			</LogFormat>
+			<EventLogInfo/>
+			<CommandInfo>
+				<CommandItem Command="EN_CMD_START_REALTIME_SCAN_REQUEST"/>
+				<CommandItem Command="EN_CMD_START_SCAN_NOW_REQUEST"/>
+				<CommandItem Command="SC_CMD_QUERY_ENTITY_STATUS_REQUEST"/>
+				<CommandItem Command="SC_CMD_QUERY_STATUS_SUMMARY_REQUEST"/>
+				<CommandItem Command="SC_CMD_QUERY_AV_LOGS_REQUEST"/>
+				<CommandItem Command="MU_CMD_DEPLOY_AV_PATTERN_REQUEST"/>
+				<CommandItem Command="MU_CMD_DEPLOY_AV_ENGINE_REQUEST"/>
+				<CommandItem Command="SC_CMD_UI_TVCS_CONFIGURATION_REPLICATION"/>
+				<CommandItem Command="SC_CMD_UI_TVCS_CONFIGURATION_REPLICATION_TO_FOLDER"/>
+				<CommandItem Command="MU_CMD_PR_RENEW_REQUEST"/>
+				
+				<CommandItem Category="configure" Command="EN_CMD_SSO_TMAV_MAC" 
+					Page="/TMSM/tmcm_sso.cgi?id=TMCM" 
+					UIModule="SSO_PKI" 
+					GroupSetting="false" 
+					CommandLevel="OP_ENTITY_ONLY"/>
+
+				<CommandItem Category="nonui" Command="EN_CMD_GENERIC_COMMAND_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_GET_PRODUCT_PROFILE_REQUEST"/>
+				<CommandItem Category="nonui" Command="SC_UPLOAD_FILE_PRODUCT_UI_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_GET_DATA_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_SET_DATA_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_DEPLOY_AV_ENGINE_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_DEPLOY_AV_PATTERN_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_DEPLOY_PROGRAM_REQUEST"/>
+
+<!-- // TMSM 3.0 does not support OPP
+				<CommandItem Category="nonui" Command="EN_CMD_START_RED_ALERT_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_STOP_RED_ALERT_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_START_BLOCKING_NOW_REQUEST"/>
+-->
+				<CommandItem Category="nonui" Command="MU_CMD_PR_RENEW_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_PR_DEPLOY_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_STOP_SCAN_NOW_REQUEST" />
+				<CommandItem Category="nonui" Command="EN_CMD_STOP_REALTIME_SCAN_REQUEST" />
+				
+			</CommandInfo>
+			<ConfigurationIDInfo>
+			</ConfigurationIDInfo>
+			<ActiveUpdateInfo>
+				<!--TM_AU_ENGINE_VSAPI32_MACOSX_UNIVERSAL-->
+				<ActiveUpdateItem ProductID="192" Language="0x0001" Platform="0x1301" ScanEngine="" VirusPattern="" NonCtxEngine="0x24000040" NonCtxPattern=""/>
+				<!--TM_AU_PATTERN_VSAPI-->
+				<ActiveUpdateItem ProductID="192" Language="0x0001" Platform="0x1301" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x00000004"/>
+				<!--TM_AU_PATTERN_SSA-->
+				<ActiveUpdateItem ProductID="192" Language="0x0001" Platform="0x1301" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x20000400"/>
+			</ActiveUpdateInfo>
+			
+			<LicenseInfo>
+				<PR_Slot SlotID="27601"> <!-- TMAV_MAC_PRODUCT_SERVICE(27601) defined in SLF_ID.h -->
+					<ProductProfile>
+						<ProfileItem ProductCode="OS" ApplicationCode="OA" OSVersion="WW"/>
+						<ProfileItem ProductCode="OS" ApplicationCode="OC" OSVersion="WW"/>
+						<ProfileItem ProductCode="OS" ApplicationCode="MB" OSVersion="MM"/>
+						<ProfileItem ProductCode="NS" ApplicationCode="MB" OSVersion="MM"/>
+					</ProductProfile>
+				</PR_Slot>
+			</LicenseInfo>	
+		</ProductVersionInfo>
+	</ProductInfo>
+</ProductInfos>

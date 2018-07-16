@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<!--
+<!DOCTYPE ProductInfos SYSTEM "ProductInfo.dtd">
+-->
+<ProductInfos>
+	<ProductInfo Category="ANTI-VIRUS" Type="SLF_PRODUCT_OFFICESCAN_CE">
+		<ProductVersionInfo TargetVersion="11.0" MenuVersion="11.01" Language="en_US">
+			<LogFormat Type="VirusLog"/>
+			<LogFormat Type="StatusLog"/>
+			<LogFormat Type="EventLog"/>
+			<EventLogInfo/>
+			<CommandInfo>
+				<CommandItem Command="EN_CMD_START_REALTIME_SCAN_REQUEST"/>
+				<CommandItem Command="EN_CMD_START_SCAN_NOW_REQUEST"/>
+				<CommandItem Command="SC_CMD_QUERY_ENTITY_STATUS_REQUEST"/>
+				<CommandItem Command="SC_CMD_QUERY_STATUS_SUMMARY_REQUEST"/>
+				<CommandItem Command="SC_CMD_QUERY_AV_LOGS_REQUEST"/>
+				<CommandItem Command="MU_CMD_DEPLOY_AV_PATTERN_REQUEST"/>
+				<CommandItem Command="MU_CMD_DEPLOY_AV_ENGINE_REQUEST"/>
+				<CommandItem Command="MU_CMD_DEPLOY_PROGRAM_REQUEST"/>
+				<CommandItem Command="SC_CMD_UI_TVCS_CONFIGURATION_REPLICATION"/>
+				<CommandItem Command="MU_CMD_PR_RENEW_REQUEST"/>
+				<CommandItem Command="EN_CMD_SYNC_OSCE_CLIENTS_REQUEST"/>
+				<CommandItem Category="configure" Command="EN_CMD_SSO_OFFICESCAN_CE" Page="/console/html/cgi/cgiChkMasterPwd.exe" UIModule="SSO_PKI" GroupSetting="false" CommandLevel="OP_ENTITY_ONLY"/>
+				<CommandItem Category="nonui" Command="EN_CMD_GENERIC_COMMAND_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_GET_PRODUCT_PROFILE_REQUEST"/>
+				<CommandItem Category="nonui" Command="SC_UPLOAD_FILE_PRODUCT_UI_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_GET_DATA_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_SET_DATA_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_DEPLOY_PROGRAM_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_DEPLOY_AV_ENGINE_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_DEPLOY_AV_PATTERN_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_START_RED_ALERT_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_STOP_RED_ALERT_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_START_BLOCKING_NOW_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_PR_RENEW_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_STOP_SCAN_NOW_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_STOP_REALTIME_SCAN_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_PR_RENEW_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_PR_DEPLOY_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_SYNC_OSCE_CLIENTS_REQUEST"/>
+			</CommandInfo>
+			<ConfigurationIDInfo/>
+			<ActiveUpdateInfo>
+				<ActiveUpdateItem ProductID="22" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="0x22000010" NonCtxPattern=""/>
+				<ActiveUpdateItem ProductID="22" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="0x22000020" NonCtxPattern=""/>
+				<ActiveUpdateItem ProductID="22" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="0x00000010" NonCtxPattern=""/>
+				<ActiveUpdateItem ProductID="22" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="0x00001000" NonCtxPattern=""/>
+				<ActiveUpdateItem ProductID="22" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="0x21080000" NonCtxPattern=""/>
+				<ActiveUpdateItem ProductID="22" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="0x22000002" NonCtxPattern=""/>
+				<ActiveUpdateItem ProductID="22" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="0x22000040" NonCtxPattern=""/>
+				<ActiveUpdateItem ProductID="22" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="0x22000080" NonCtxPattern=""/>
+				<ActiveUpdateItem ProductID="22" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x40000010"/>
+				<ActiveUpdateItem ProductID="22" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x20000400"/>
+				<ActiveUpdateItem ProductID="22" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x00000200"/>
+				<ActiveUpdateItem ProductID="22" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x00000004"/>
+				<ActiveUpdateItem ProductID="22" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x20000020"/>
+				<ActiveUpdateItem ProductID="22" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x20000040"/>
+				<ActiveUpdateItem ProductID="22" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x00000800"/>
+				<ActiveUpdateItem ProductID="22" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x48020000"/>
+				<ActiveUpdateItem ProductID="22" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x40800000"/>
+				<ActiveUpdateItem ProductID="22" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x41000000"/>
+				<ActiveUpdateItem ProductID="22" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x40000020"/>
+				<ActiveUpdateItem ProductID="22" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x48000020"/>
+				<ActiveUpdateItem ProductID="22" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x48040023"/>
+			</ActiveUpdateInfo>
+			<LicenseInfo>
+				<PR_Slot SlotID="4001">
+					<ProductProfile>
+						<ProfileItem ProductCode="OS" ApplicationCode="OA" OSVersion="WW"/>
+						<ProfileItem ProductCode="OS" ApplicationCode="OC" OSVersion="WW"/>
+						<ProfileItem ProductCode="OS" ApplicationCode="OD" OSVersion="WW"/>
+						<ProfileItem ProductCode="OS" ApplicationCode="OF" OSVersion="WW"/>
+						<ProfileItem ProductCode="OS" ApplicationCode="MB" OSVersion="MM"/>
+						<ProfileItem ProductCode="NS" ApplicationCode="MB" OSVersion="MM"/>
+						<ProfileItem ProductCode="OS" ApplicationCode="ON" OSVersion="WW"/>
+					</ProductProfile>
+				</PR_Slot>
+				<PR_Slot SlotID="4002">
+					<ProductProfile>
+						<ProfileItem ProductCode="OS" ApplicationCode="OB" OSVersion="WW"/>
+						<ProfileItem ProductCode="OS" ApplicationCode="OC" OSVersion="WW"/>
+						<ProfileItem ProductCode="OS" ApplicationCode="OE" OSVersion="WW"/>
+						<ProfileItem ProductCode="OS" ApplicationCode="OF" OSVersion="WW"/>
+						<ProfileItem ProductCode="OS" ApplicationCode="MB" OSVersion="MM"/>
+						<ProfileItem ProductCode="NS" ApplicationCode="MB" OSVersion="MM"/>
+						<ProfileItem ProductCode="OS" ApplicationCode="ON" OSVersion="WW"/>
+					</ProductProfile>
+				</PR_Slot>
+				<PR_Slot SlotID="4003">
+					<ProductProfile>
+						<ProfileItem ProductCode="SW" ApplicationCode="OA" OSVersion="WW"/>
+						<ProfileItem ProductCode="SW" ApplicationCode="OC" OSVersion="WW"/>
+						<ProfileItem ProductCode="OS" ApplicationCode="MB" OSVersion="MM"/>
+						<ProfileItem ProductCode="NS" ApplicationCode="MB" OSVersion="MM"/>
+						<ProfileItem ProductCode="OS" ApplicationCode="ON" OSVersion="WW"/>
+					</ProductProfile>
+				</PR_Slot>
+				<PR_Slot SlotID="4004">
+					<ProductProfile>
+						<ProfileItem ProductCode="SW" ApplicationCode="OB" OSVersion="WW"/>
+						<ProfileItem ProductCode="SW" ApplicationCode="OC" OSVersion="WW"/>
+						<ProfileItem ProductCode="OS" ApplicationCode="MB" OSVersion="MM"/>
+						<ProfileItem ProductCode="NS" ApplicationCode="MB" OSVersion="MM"/>
+						<ProfileItem ProductCode="OS" ApplicationCode="ON" OSVersion="WW"/>
+					</ProductProfile>
+				</PR_Slot>
+				<PR_Slot SlotID="4005">
+					<ProductProfile>
+						<ProfileItem ProductCode="DC" ApplicationCode="DA" OSVersion="ZZ"/>
+						<ProfileItem ProductCode="DC" ApplicationCode="ZZ" OSVersion="ZZ"/>
+						<ProfileItem ProductCode="OS" ApplicationCode="MB" OSVersion="MM"/>
+						<ProfileItem ProductCode="NS" ApplicationCode="MB" OSVersion="MM"/>
+						<ProfileItem ProductCode="OS" ApplicationCode="ON" OSVersion="WW"/>
+					</ProductProfile>
+				</PR_Slot>
+			</LicenseInfo>
+		</ProductVersionInfo>
+	</ProductInfo>
+</ProductInfos>

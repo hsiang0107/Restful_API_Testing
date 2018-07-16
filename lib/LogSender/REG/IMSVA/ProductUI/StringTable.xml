@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!-- <!DOCTYPE StringTables SYSTEM "StringTable.dtd"> -->
+<StringTables>
+  <Language Type="en_US">
+    <Category Type="SLF_PRODUCT_TVCS">
+	 	  <StringTable Name="ProductID">
+        <String ID="SLF_PRODUCT_IMSVA"
+        DisplayName="InterScan Messaging Security Virtual Appliance" />
+      </StringTable>
+      <StringTable Name="CommandID">
+        <String ID="EN_CMD_IMSVA_CONFIG_REQUEST"
+        DisplayName="Configure InterScan Messaging Security Virtual Appliance"
+        Comment="Configuration for InterScan Messaging Security Virtual Appliance" />
+      </StringTable>
+			<StringTable Name="EntityServiceID">
+				<String ID="IMSVA_PRODUCT_SERVICE_TC" DisplayName="Trend Micro Antivirus and Content Filter"/>
+				<String ID="IMSVA_PRODUCT_SERVICE_SPS" DisplayName="Spam Prevention Solution"/>
+				<String ID="IMSVA_PRODUCT_SERVICE_ERS" DisplayName="Email Reputation Service"/>
+				<String ID="IMSVA_PRODUCT_SERVICE_PF" DisplayName="Cloud Pre-Filter"/>
+				<String ID="IMSVA_PRODUCT_SERVICE_IBE" DisplayName="Trend Micro Email Encryption"/>
+				<String ID="IMSVA_PRODUCT_SERVICE_DLP" DisplayName="Regulatory Compliance"/>
+			</StringTable>   
+    </Category>
+  </Language>
+</StringTables>

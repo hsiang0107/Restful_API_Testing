@@ -1,0 +1,36 @@
+CM:
+  browser: chrome
+  address: https://10.1.172.117/WebApp/index.html
+  ip: 10.1.172.117
+  port: 443
+  protocol: https://
+  admin:
+    account:  admin
+    password: P@ssw0rd
+  read_only:
+    account:  guest
+    password: P@ssw0rd
+  folder: C:\Program Files (x86)\Trend Micro\Control Manager
+  # In SystemConfiguration.xml, a value named m_MenuIdHideList control if the pages should be hided.
+  # Unhide the pages by appending the page ID into list and run unhide function.
+  # 6500: MDR page.
+  remove_hiding: ['6500']
+  app_name: ext_app1
+  application_id:  '7ACE92AE-FFD3-4E07-AF35-AE4BF6A6BBB4'
+  api_key:  '1D44452A-1390-483B-AFA8-BFB6E5D78127'
+  api_key_crypted:  '!CRYPT!5279A29799F84C337D9390E7078817954E9AF2A9E6775E923405984A1C4D5591B94E480ACCAF235FC901D4B5D1F'
+
+DB:
+  address:  10.1.172.117
+  port:     1433
+  instance: SQLEXPRESS
+  account:  sa
+  password: P@ssw0rd
+  dbname:   db_ControlManager
+  dbdriver: SQL+Server
+
+Mock Server:
+  address: https://127.0.0.1:4433
+  token: 8cf9cd69-aadc-4aca-a57a-f5c673a22bec
+
+Time Format: '%Y-%m-%d %H:%M:%S'

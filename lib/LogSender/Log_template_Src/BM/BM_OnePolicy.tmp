@@ -1,0 +1,60 @@
+//Log Type(SLF_MsgType), in IDMapping.h
+#define SC_LOG_EVENT_REQUEST							1501
+#define SC_LOG_STATUS_REQUEST							1701
+#define SC_LOG_VIRUS_REQUEST							1703
+#define SC_LOG_SECURITY_REQUEST						1705
+#define SC_LOG_WEB_SECURITY_REQUEST						1707
+#define SC_LOG_URLUSAGELOG_REQUEST						1709
+#define SC_LOG_PERFORMANCEMETRIC_REQUEST					1711
+#define SC_LOG_NETWORK_PACKET_REQUEST					1713
+#define SC_LOG_VULNERABILITY_FOUND_REQUEST				1715
+#define SC_LOG_ENDPOINT_SECURITY_VIOLATIONS_REQUEST     		1717
+#define SC_LOG_ENDPOINT_SECURITY_COMPLIANCE_REQUEST     		1719
+#define SC_LOG_SERVICE_VIOLATION_STATISTICS_REQUEST     		1721
+#define SC_LOG_CVW_REQUEST							1703	//The same with SC_LOG_VIRUS_REQUEST
+#define SC_LOG_BM_REQUEST               1743
+
+//Field format, in commondef.h
+#define X_STRING					1
+#define X_WSTRING					2
+#define X_BYTE					3
+#define X_INT16					4
+#define X_UINT16					5
+#define X_INT32					6
+#define X_UINT32					7
+#define X_INT64					8
+#define X_UINT64					9
+#define X_GROUP_START				100
+#define X_GROUP_END				101
+
+//Field ID(in SLF_UniqueID.h), Field format, Description, Value
+11,7,SLF_MsgType,1743
+1001,2,SLF_ProductGUID,(can't set)
+2021,7,SLF_ProductID,18
+2183,5,SLF_LogVersion,1
+2055,5,SLF_LogMinorVersion,0
+2008,2,SLF_ComputerName,Admin_J
+2191,4,SLF_TimeZoneInMins,-480
+2192,4,SLF_DaylightSavingInMins,0
+
+3025,100,SLF_BM,(no value)
+3001,100,SLF_Info,(no value)
+2189,2,SLF_LogGenUTCDateTime,2012-9-4 22:40:50
+2190,2,SLF_LogGenLocalDateTime,2012-9-4 22:40:50
+1062,4,SLF_Action,11
+3026,4,SLF_TranslatedAction,7
+2063,6,SLF_EventType,2
+2225,6,SLF_RiskLevel,1
+3027,6,SLF_PolicyID,10
+3032,4,SLF_BehaviorCategory,0
+3028,2,SLF_AegisSubject,test-10
+3029,4,SLF_AegisOperation,2
+3030,4,SLF_TranslatedAegisOperation,101
+3031,2,SLF_AegisObject,test-10
+3001,101,SLF_Info,(no value)
+3025,101,SLF_BM,(no value)
+2151,2,SLF_ClientGUID,492E85840114-694DBF9D-CCCC-65D3-0100
+2133,2,SLF_ClientIPAddress,10.1.200.144
+2234,2,SLF_AggreEndUTCDatetime,
+2235,2,SLF_AggreEndLocalDatetime,
+2236,7,SLF_AggreCount,1

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- <!DOCTYPE IDMapping SYSTEM "IDMapping.dtd"> -->
+<IDMapping>
+	<Category Type="SLF_PRODUCT_TVCS">
+		<IDMappingTable Name="ProductTypeCategory" ApplyTo="ProductCategory" BitValue="false">
+			<MapItem ID="31004" Name="SLF_PRODUCT_TMDS" AliasName="SLF_PRODUCT_DESKTOP"/>
+		</IDMappingTable>
+		<IDMappingTable Name="ProductType" ApplyTo="CLF_ProductType" BitValue="false">
+			<MapItem ID="31004" Name="SLF_PRODUCT_TMDS" AliasName="SLF_PRODUCT_DESKTOP"/>
+		</IDMappingTable>
+	</Category>
+</IDMapping>

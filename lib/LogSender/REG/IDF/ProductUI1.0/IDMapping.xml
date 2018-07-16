@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- <!DOCTYPE IDMapping SYSTEM "IDMapping.dtd"> -->
+<IDMapping>
+	<Category Type="SLF_PRODUCT_TVCS">
+		<IDMappingTable Name="CommandID">
+			<MapItem Name="EN_CMD_SSO_IDF" ID="6211200"/>
+		</IDMappingTable>	
+		<IDMappingTable Name="ProductTypeCategory" ApplyTo="ProductCategory" BitValue="false">
+			<MapItem ID="31006" Name="SLF_PRODUCT_IDF" AliasName="SLF_PRODUCT_DESKTOP"/>
+		</IDMappingTable>
+		<IDMappingTable Name="ProductType" ApplyTo="CLF_ProductType" BitValue="false">
+			<MapItem ID="31006" Name="SLF_PRODUCT_IDF" AliasName="SLF_PRODUCT_IDF"/>
+		</IDMappingTable>
+		<IDMappingTable Name="EntityServiceID" ApplyTo="" BitValue="false">
+			<MapItem ID="6202201" Name="IDF_PRODUCT_SERVICE" AliasName="IDF_PRODUCT_SERVICE"/>
+		</IDMappingTable>
+		<IDMappingTable Name="AgentlessProductID" BitValue="false" ApplyTo="">
+			<MapItem ID="31006" Name="SLF_PRODUCT_IDF" AliasName="SLF_PRODUCT_IDF"/>
+		</IDMappingTable>
+		<IDMappingTable Name="AgentlessEndpointProductID" BitValue="false" ApplyTo="">
+			<MapItem ID="31006" Name="SLF_PRODUCT_IDF" AliasName="SLF_PRODUCT_IDF"/>
+		</IDMappingTable>			
+	</Category>
+</IDMapping>

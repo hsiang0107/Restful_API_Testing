@@ -1,0 +1,43 @@
+11,7,SLF_MsgType,1752
+1001,2,SLF_ProductGUID,(can't set)
+2021,4,SLF_ProductID,31003
+2183,5,SLF_LogVersion,1
+2055,5,SLF_LogMinorVersion,0
+2189,2,SLF_LogGenUTCDatetime,2012-06-27 03:14:03
+2190,2,SLF_LogGenLocalDatetime,2012-06-27 11:14:03
+2191,4,SLF_TimeZoneInMins,-480
+2192,4,SLF_DaylightSavingInMins,0
+2079,2,SLF_PatternVersion,129900
+2151,2,SLF_ClientGUID,000000000001-10000001-0001-0000-0008
+2333,2,SLF_ClientUserGUID,
+2334,2,SLF_ClientUserName,QA
+2335,2,SLF_ClientUserDomain,TMCM
+2336,2,SLF_ClientUserDepartment,
+2112,2,SLF_IPAddress,10.1.1.1
+2337,2,SLF_ClientMachineArchitecture,virtual-vmware
+2338,2,SLF_ClientNotficationMessage,TEST
+2339,2,SLF_ClientNotficationMessageUTCDatetime,2012-06-27 11:14:03
+2340,2,SLF_ClientSynchronizationUTCDatetime,2012-06-27 11:14:03
+2341,2,SLF_ClientPolicyChangedUTCDatetime,2012-06-27 11:14:03
+2342,4,SLF_ClientWasOffline,0
+2343,2,SLF_ApplicationFileHash,c0869b72C5606D22D92A6AC986686BB87485A25b
+2344,2,SLF_ApplicationFileName,P2P_TEST.exe
+2345,2,SLF_ApplicationFileCreatedUTCDatetime,2012-05-27 11:14:03
+2346,2,SLF_ApplicationFileModifiedUTCDatetime,2012-05-27 11:14:03
+2347,2,SLF_ApplicationFileOwner,QA
+2348,2,SLF_ApplicationPath,C:\P2P_TEST.exe
+2349,4,SLF_ApplicationDriveType,0
+2350,2,SLF_ApplicationProcessName,P2P_TEST.exe
+2351,2,SLF_ApplicationProcessCommandline,C:\P2P_TEST.exe
+2352,2,SLF_ApplicationProcessOwner,QA
+2353,2,SLF_ApplicationExecutionEnvironment,
+2354,2,SLF_ApplicationGRIDCategory,
+2355,2,SLF_RuleContent,RuleMatch Description
+2356,2,SLF_RuleName,Test
+2357,2,SLF_RuleGUID,AAED89CF-60FE-D075-C3EB-8E4108ED89CF
+2358,4,SLF_RuleType,1
+2099,2,SLF_PolicyName,TestPolicy
+3037,2,SLF_PolicyGUID,AAED89CF-60FE-D075-C3EB-8E4108ED89CF
+3036,2,SLF_PolicyInfo,
+2359,4,SLF_PolicyAction,1
+2360,6,SLF_PolicyActionTriggerCount,1

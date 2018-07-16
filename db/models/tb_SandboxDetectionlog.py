@@ -1,0 +1,42 @@
+from sqlalchemy import Column
+from db.cm_session import cm_session, Base
+from sqlalchemy.dialects.mssql import BIGINT, CHAR, DATETIME, INTEGER, NVARCHAR, VARCHAR
+
+
+class TbSandboxDetectionlog(Base):
+    __tablename__ = 'tb_SandboxDetectionlog'
+    id = Column(BIGINT, primary_key=True, nullable=False)
+    MsgLogID = Column(CHAR(36), nullable=False)
+    CLF_LogReceivedTime = Column(DATETIME)
+    CLF_LogReceivedTimeZone = Column(VARCHAR(10))
+    CLF_LogReceivedUTCTime = Column(DATETIME)
+    SLF_MsgType = Column(INTEGER)
+    SLF_ProductGUID = Column(CHAR(36), nullable=False)
+    SLF_ProductID = Column(INTEGER, nullable=False)
+    SLF_LogVersion = Column(INTEGER, nullable=False)
+    SLF_LogMinorVersion = Column(INTEGER, nullable=False)
+    SLF_LogGenUTCDatetime = Column(DATETIME)
+    SLF_LogGenLocalDatetime = Column(DATETIME)
+    SLF_TimeZoneInMins = Column(INTEGER)
+    SLF_DaylightSavingInMins = Column(INTEGER)
+    SLF_ClientGUID = Column(CHAR(36))
+    SLF_ComputerName = Column(NVARCHAR(128), nullable=False)
+    SLF_EntryChannel = Column(INTEGER)
+    SLF_EntryLocation = Column(NVARCHAR(128))
+    SLF_Source = Column(NVARCHAR(256))
+    SLF_Destination = Column(NVARCHAR(1024))
+    SLF_ProcessName = Column(NVARCHAR(256))
+    SLF_SampleType = Column(INTEGER)
+    SLF_SampleSHA1 = Column(VARCHAR(64), nullable=False)
+    SLF_FileType = Column(NVARCHAR(64))
+    SLF_Filename = Column(NVARCHAR(256))
+    SLF_URL = Column(NVARCHAR(2048))
+    SLF_URLCorrelationKey = Column(VARCHAR(64))
+    SLF_SBXSubmissionTime = Column(DATETIME, nullable=False)
+    SLF_SBXSubmissionRule = Column(VARCHAR(64))
+    SLF_SBXCompletedTime = Column(DATETIME, nullable=False)
+    SLF_SBXDetectionName = Column(VARCHAR(64))
+    SLF_SBXRiskLevel = Column(INTEGER)
+    SLF_SBXThreatCategories = Column(NVARCHAR(128))
+    CE_FilterID = Column(VARCHAR(35))
+    CLF_LogGenCMLocalTime = Column(DATETIME)

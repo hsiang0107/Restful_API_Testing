@@ -1,0 +1,78 @@
+//Field format, in commondef.h
+#define X_STRING                    1
+#define X_WSTRING                   2
+#define X_BYTE                      3
+#define X_INT16                     4
+#define X_UINT16                    5
+#define X_INT32                     6
+#define X_UINT32                    7
+#define X_INT64                     8
+#define X_UINT64                    9
+#define X_GROUP_START               100
+#define X_GROUP_END                 101
+
+11,7,SLF_MsgType,1760
+1001,2,SLF_ProductGUID,(can't set)
+2021,7,SLF_ProductID,15
+2183,5,SLF_LogVersion,1
+2055,5,SLF_LogMinorVersion,0
+2108,2,SLF_JobID,1
+2109,2,SLF_TaskID,2
+2113,2,SLF_TaskName,TaskName
+2008,2,SLF_ComputerName,<COMP_NAME>
+2324,2,SLF_ComputerDomain,TW\RD
+2406,2,SLF_StartTime,2011-4-11 14:00:00
+2407,2,SLF_EndTime,2011-4-11 14:01:00
+8004,6,SLF_ErrorID,0
+2408,2,SLF_SecurityDestination,
+2409,2,SLF_ScheduleRunTime,2011-4-11 14:00:0
+2151,2,SLF_ClientGUID,<CLIENT_GUID>
+2210,2,SLF_UserName,UserName
+2323,2,SLF_UserDomain,TW
+2189,2,SLF_LogGenUTCDatetime,2011-4-11 14:00:00
+2190,2,SLF_LogGenLocalDatetime,2011-4-11 14:00:00
+2191,4,SLF_TimeZoneInMins,0
+3052,100,SLF_DiscoveryTemplate,(no value)
+3001,100,SLF_Template,(no value)
+2108,2,SLF_JobID,1
+2422,2,SLF_FileLogID,3
+2424,2,SLF_TemplateGuid,4
+2426,2,SLF_IdentifierGUID,5
+2427,6,SLF_IdentifierType,0
+2428,6,SLF_MatchNumber,0
+3001,101,SLF_Template,(no value)
+3052,101,SLF_DiscoveryTemplate,(no value)
+3040,100,,(no value)
+3001,100,,(no value)
+2108,2,SLF_JobID,1
+2422,2,SLF_FileLogID,3
+1062,6,SLF_Action,0
+3001,101,,(no value)
+3040,101,,(no value)
+3049,100,,(no value)
+3001,100,,(no value)
+2151,2,SLF_ClientGUID,<CLIENT_GUID>
+2410,2,SLF_DeviceClassName,DeviceClassName
+2411,2,SLF_DeviceDisplayName,DeviceDisplayName
+2152,2,SLF_GUID,492E85840114-694DBF9D-5000-7895-0010
+2414,6,SLF_DeviceDisablable,0
+2412,2,SLF_DeviceProvider,DeviceProvider
+2416,6,SLF_DeviceHidden,0
+2415,6,SLF_DeviceDisabled,0
+2413,6,SLF_DeviceStarted,0
+2407,2,SLF_LastScanTime,2011-4-11 14:00:00
+3001,101,,(no value)
+3049,101,,(no value)
+3051,100,,(no value)
+3001,100,,(no value)
+2422,2,SLF_FileLogID,3
+1066,2,SLF_Filename,Filename.exe
+2122,2,SLF_FilePath,S:\temp
+2197,6,SLF_FileSize,0
+1042,6,SLF_FileType,0
+2134,6,SLF_ResultCode,0
+2423,2,SLF_Checksum,??????
+2054,2,SLF_LastUpdateTime,2011-4-11 14:00:00
+3001,101,,(no value)
+3051,101,,(no value)
+

@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!--
+<!DOCTYPE ProductInfos SYSTEM "ProductInfo.dtd">
+-->
+<ProductInfos>
+	<ProductInfo Category="ANTI-VIRUS" Type="SLF_PRODUCT_IMSS_NT">
+		<ProductVersionInfo TargetVersion="7.5" MenuVersion="3.0" Language="en_US">
+			<LogFormat Type="VirusLog">
+			</LogFormat>
+			<LogFormat Type="StatusLog">
+			</LogFormat>
+			<LogFormat Type="EventLog">
+			</LogFormat>
+			<EventLogInfo/>
+			<CommandInfo>
+				<CommandItem Command="SC_CMD_QUERY_ENTITY_STATUS_REQUEST"/>
+				<CommandItem Command="SC_CMD_QUERY_STATUS_SUMMARY_REQUEST"/>
+				<CommandItem Command="SC_CMD_QUERY_AV_LOGS_REQUEST"/>
+				<CommandItem Command="MU_CMD_DEPLOY_AV_ENGINE_REQUEST"/>
+				<CommandItem Command="MU_CMD_DEPLOY_AV_PATTERN_REQUEST"/>
+				<CommandItem Command="MU_CMD_DEPLOY_RULE_REQUEST"/>
+				<CommandItem Command="SC_CMD_UI_TVCS_CONFIGURATION_REPLICATION"/>
+				<CommandItem Command="SC_CMD_UI_TVCS_CONFIGURATION_REPLICATION_TO_FOLDER"/>
+				<CommandItem Command="MU_CMD_PR_RENEW_REQUEST"/>
+				<CommandItem Command="MU_CMD_PR_DEPLOY_REQUEST"/>
+				<CommandItem Category="configure" Command="EN_CMD_IMSS_NT_CONFIG_REQUEST" Page="Page=[ORIGINAL_CONFIG_URL][NO_RELAY_URL]" UIModule="RELAY" GroupSetting="false" CommandLevel="OP_ENTITY_ONLY"/>
+				<CommandItem Category="nonui" Command="EN_CMD_GENERIC_COMMAND_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_GET_PRODUCT_PROFILE_REQUEST"/>
+				<CommandItem Category="nonui" Command="SC_UPLOAD_FILE_PRODUCT_UI_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_GET_DATA_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_SET_DATA_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_DEPLOY_AV_ENGINE_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_DEPLOY_AV_PATTERN_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_DEPLOY_RULE_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_START_RED_ALERT_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_STOP_RED_ALERT_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_START_BLOCKING_NOW_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_PR_RENEW_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_PR_DEPLOY_REQUEST"/>
+			</CommandInfo>
+			<ConfigurationIDInfo>
+			</ConfigurationIDInfo>
+			<ActiveUpdateInfo>
+				<ActiveUpdateItem ProductID="53" Language="0x0001" Platform="0x01" NonCtxEngine="0x00000004" NonCtxPattern="" ScanEngine="" VirusPattern=""/>
+				<ActiveUpdateItem ProductID="53" Language="0x0001" Platform="0x01" NonCtxEngine="0x02000000" NonCtxPattern="" ScanEngine="" VirusPattern=""/>
+				<ActiveUpdateItem ProductID="53" Language="0x0001" Platform="0x01" NonCtxEngine="0x20000000" NonCtxPattern="" ScanEngine="" VirusPattern=""/>
+				<ActiveUpdateItem ProductID="53" Language="0x0001" Platform="0x01" NonCtxEngine="" NonCtxPattern="0x00000004" ScanEngine="" VirusPattern=""/>
+				<ActiveUpdateItem ProductID="53" Language="0x0001" Platform="0x01" NonCtxEngine="" NonCtxPattern="0x00000400" ScanEngine="" VirusPattern=""/>
+				<ActiveUpdateItem ProductID="53" Language="0x0001" Platform="0x01" NonCtxEngine="" NonCtxPattern="0x00010000" ScanEngine="" VirusPattern=""/>
+				<ActiveUpdateItem ProductID="53" Language="0x0001" Platform="0x01" NonCtxEngine="" NonCtxPattern="0x20000020" ScanEngine="" VirusPattern=""/>
+				<ActiveUpdateItem ProductID="53" Language="0x0001" Platform="0x01" NonCtxEngine="" NonCtxPattern="0x20000040" ScanEngine="" VirusPattern=""/>
+				<ActiveUpdateItem ProductID="53" Language="0x0001" Platform="0x01" NonCtxEngine="" NonCtxPattern="0x10000400" ScanEngine="" VirusPattern=""/>
+				<ActiveUpdateItem ProductID="53" Language="0x0001" Platform="0x01" NonCtxEngine="" NonCtxPattern="0x10000800" ScanEngine="" VirusPattern=""/>
+			</ActiveUpdateInfo>
+			<LicenseInfo>
+				<PR_Slot SlotID="7801">
+					<ProductProfile>
+						<ProfileItem ProductCode="IM" ApplicationCode="ZZ" OSVersion="WW"/>
+						<ProfileItem ProductCode="IM" ApplicationCode="ZZ" OSVersion="MM"/>
+					</ProductProfile>
+				</PR_Slot>
+				<PR_Slot SlotID="7802">
+					<ProductProfile>
+						<ProfileItem ProductCode="AS" ApplicationCode="ZZ" OSVersion="WW"/>
+						<ProfileItem ProductCode="AS" ApplicationCode="ZZ" OSVersion="MM"/>
+					</ProductProfile>
+				</PR_Slot>
+				<PR_Slot SlotID="7803">
+					<ProductProfile>
+						<ProfileItem ProductCode="AS" ApplicationCode="ZZ" OSVersion="WW"/>
+						<ProfileItem ProductCode="AS" ApplicationCode="ZZ" OSVersion="MM"/>
+					</ProductProfile>
+				</PR_Slot>
+			</LicenseInfo>
+		</ProductVersionInfo>
+	</ProductInfo>
+</ProductInfos>

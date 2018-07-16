@@ -1,0 +1,17 @@
+{
+  "UploadedResultInfoList":
+  [
+    {
+      "FileName": "cryptolocker1.ioc",
+      "FileHashID": "fcce66ad8b3a6242b2f35f6bc103683aaf5f3f48",
+      "UploadedStatus": 1
+    }
+  ],
+  "UploadedResultMessageList":
+  [
+    {
+        "MessageType": 1,
+        "Message": "Uploaded 1 OpenIOC file(s) successfully."
+    }
+  ]
+}

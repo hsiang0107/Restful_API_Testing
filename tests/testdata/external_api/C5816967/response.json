@@ -1,0 +1,22 @@
+{
+  "UploadedResultInfoList":
+  [
+    {
+      "FileName": "apt_plead_v1.yar",
+      "FileHashID": "600e52b419c6579215ab8e600cae0946a4d93be7",
+      "UploadedStatus": 1
+    },
+    {
+      "FileName": "apt_plead_v2.yar",
+      "FileHashID": "fceacd325816e4cd3c2d62e634f818acf7afda4f",
+      "UploadedStatus": 1
+    }
+  ],
+  "UploadedResultMessageList":
+  [
+    {
+        "MessageType": 1,
+        "Message": "Uploaded 2 YARA file(s) successfully."
+    }
+  ]
+}

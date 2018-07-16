@@ -1,0 +1,40 @@
+{
+   "Data":{
+      "FilingCabinet":[
+         {
+            "FileHashID":"78F27F34A4EE8E93A8FD5D6F0CA88FD7490FDC7B",
+            "FileName":"DNS activities.ioc",
+            "FileAddedDatetime":"06/06/2018 14:27:42",
+            "UploadedFrom":1,
+            "UploadedBy":"test app 2",
+            "ExtractingStatus":999,
+            "ShortDesc":"2 short description line 2"
+         },
+         {
+            "FileHashID":"C57EA7FF617E1BC3EEEF54FF63F74F8F510A2FBA",
+            "FileName":"User account activities.ioc",
+            "FileAddedDatetime":"06/03/2018 14:27:42",
+            "UploadedFrom":2,
+            "UploadedBy":"kevin_lin",
+            "ExtractingStatus":1,
+            "ShortDesc":"B short description of User account activities.ioc"
+         }
+      ],
+      "TotalIOCCount":2
+   },
+   "Meta":{
+      "Result":1,
+      "ErrorCode":0,
+      "ErrorMsg":""
+   },
+   "PermissionCtrl":{
+      "permission":"255",
+      "elements":"None"
+   },
+   "FeatureCtrl":{
+      "mode":"0"
+   },
+   "SystemCtrl":{
+      "TmcmSoDist_Role":"none"
+   }
+}

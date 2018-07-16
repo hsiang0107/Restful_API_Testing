@@ -1,0 +1,17 @@
+{
+  "UploadedResultInfoList":
+  [
+    {
+      "FileName": "multiobservables1.xml",
+      "FileHashID": "382e595d3878aa2acf76e827f8968d5ad6277b62",
+      "UploadedStatus": 1
+    }
+  ],
+  "UploadedResultMessageList":
+  [
+    {
+        "MessageType": 1,
+        "Message": "Uploaded 1 STIX file(s) successfully."
+    }
+  ]
+}

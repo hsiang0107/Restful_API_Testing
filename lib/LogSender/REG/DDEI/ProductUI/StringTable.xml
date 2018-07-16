@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- <!DOCTYPE StringTables SYSTEM "StringTable.dtd"> -->
+<StringTables>
+  <Language Type="en_US">
+    <Category Type="SLF_PRODUCT_TVCS">
+      <StringTable Name="ProductID">
+        <String ID="SLF_PRODUCT_DEEP_DISCOVERY_EMAIL_INSPECTOR" DisplayName="Deep Discovery Email Inspector" />
+      </StringTable>
+    </Category>
+  </Language>
+</StringTables>

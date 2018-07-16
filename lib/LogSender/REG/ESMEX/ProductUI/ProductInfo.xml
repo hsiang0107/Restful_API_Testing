@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<!-- edited with XML Spy v4.2 U (http://www.xmlspy.com) by james (trend) -->
+<!-- <!DOCTYPE ProductInfos SYSTEM "ProductInfo.dtd"> -->
+<ProductInfos>
+	<!-- 
+		ProdutInfo Show how tag can be used to form a product class info 
+	-->
+	<ProductInfo Category="ANTI-VIRUS" Type="SLF_PRODUCT_EMANAGER_SCANMAIL_EX">
+		<ProductVersionInfo TargetVersion="6.1" MenuVersion="1.0" Language="en_US">
+			<LogFormat Type="VirusLog">
+				<!-- Type="CommonLogFormat" -->
+				<LogItem ID="CLF_ProductVersion"/>
+				<LogItem ID="CLF_ProductCountryCode"/>
+				<LogItem ID="CLF_LogGenerationTime"/>
+				<LogItem ID="CLF_LoGenerationTimeZone"/>
+				<LogItem ID="CLF_ModuleName"/>
+				<!-- This can be "MN_ManualScan", "MN_RealtimeScan" or "MN_ScheduledScan" -->
+				<!-- Type="VirusLogFormat" -->
+				<LogItem ID="VLF_VirusName"/>
+				<LogItem ID="VLF_FirstAction"/>
+				<LogItem ID="VLF_FirstActionResult"/>
+				<LogItem ID="VLF_FileName"/>
+				<!-- This should be "FLMT_Mail" in SMEX -->
+				<LogItem ID="VLF_InfectionSource"/>
+				<!-- This represents "Sender" in SMEX -->
+				<LogItem ID="VLF_InfectionDestination"/>
+				<!-- This represents "Recipient" in SMEX -->
+			</LogFormat>
+			<LogFormat Type="StatusLog">
+				<!-- Type="CommonLogFormat" -->
+				<LogItem ID="CLF_ProductVersion"/>
+				<LogItem ID="CLF_ProductCountryCode"/>
+				<LogItem ID="CLF_LogGenerationTime"/>
+				<LogItem ID="CLF_LogGenerationTimeZone"/>
+				<LogItem ID="CLF_ModuleName"/>
+				<!-- This can be "MN_ManualScan", "MN_RealtimeScan" or "MN_ScheduledScan" -->
+				<!--
+					StatusLogFormat defines what kind of information 
+					can be sent to TVCS server. 
+				-->
+				<!-- Type="StatusLogFormat" -->
+				<LogItem ID="SLF_RealtimeScan"/>
+				<!--
+				<LogItem ID="SLF_PatternVersion"/>
+				<LogItem ID="SLF_EngineVersion"/>
+				-->
+				<LogItem ID="SLF_ProductVersion"/>
+			</LogFormat>
+			<LogFormat Type="EventLog">
+				<!-- Type="EventLogFormat" -->
+				<LogItem ID="CLF_ProductVersion"/>
+				<LogItem ID="CLF_ProductCountryCode"/>
+				<LogItem ID="CLF_LogGenerationTime"/>
+				<LogItem ID="CLF_LogGenerationTimeZone"/>
+				<LogItem ID="CLF_ModuleName"/>
+				<!-- This can be "MN_ManualScan", "MN_RealtimeScan" or "MN_ScheduledScan" -->
+			</LogFormat>
+			<!--
+				DeploymentComponentInfo states what kind of the components product use.
+				This tells TVCS what kind of deployment notification will be sent to product entity.
+			-->
+			<DeploymentComponentInfo>
+				<DeploymentComponentItem ID="DCI_Virus_Pattern"/>
+				<!--
+				<DeploymentComponentItem 	ID="DCI_Virus_Scan_Engine">
+					<DCI_Item ID="ET_VSAPI32_NT_I386"/>
+				</DeploymentComponentItem>
+				<DeploymentComponentItem ID="DCI_Program"/>
+				-->
+			</DeploymentComponentInfo>
+			<!--
+				NotificationInfo defines what kind of notification the product generates (ID).
+				TVCS server will watch for the specific event/status/log 
+				in the pre-defined rule of notification configuration 
+			-->
+			<EventLogInfo>
+				<!--
+				<EventLogItem ID="SC_EVENT_VIRUS_FOUND_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_PATTERN_UPDATE_SUCCESS_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_PATTERN_UPDATE_FAIL_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_ENGINE_UPDATE_SUCCESS_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_ENGINE_UPDATE_FAIL_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_PROGRAM_UPDATE_SUCCESS_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_PROGRAM_UPDATE_FAIL_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_START_REALTIME_SCAN_SUCCESS_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_START_REALTIME_SCAN_FAIL_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_STOP_REALTIME_SCAN_SUCCESS_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_STOP_REALTIME_SCAN_FAIL_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_START_MANUAL_SCAN_SUCCESS_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_START_MANUAL_SCAN_FAIL_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_STOP_MANUAL_SCAN_SUCCESS_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_STOP_MANUAL_SCAN_FAIL_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_START_SCHEDULE_SCAN_SUCCESS_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_START_SCHEDULE_SCAN_FAIL_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_STOP_SCHEDULE_SCAN_SUCCESS_REQUEST"/>
+				<EventLogItem ID="SC_EVENT_STOP_SCHEDULE_SCAN_FAIL_REQUEST"/>
+				-->
+			</EventLogInfo>
+			<!-- 
+				<CommandInfo> shows what kind of commands the product (entity) are able to apply (receive and process)
+			-->
+			<CommandInfo>
+				<!--
+					Note:
+					1. "UseCCGI" indicates that attribute "URL" is refering to a CCGI module
+					   For new product that supports CCGI, this attribute is always "true"
+					   For old product, this attribute is always "false"
+					   
+					   TVCS server uses this attribute to determine whether "Relay Module" needs to 
+					   participate in the scenerio or not.
+					
+					2. "GroupSetting" indicates that whether such configuration supports "group setting" or not.
+					   Any product that uses CCGI module to configure its settings implies that it supports
+					   group settings. For newly developed product, this attribute is only a place-holder
+					   For old products, it is a indicator whether such product supports group settings.
+
+					   For new product, this attribute is always "true"
+					   For old product, this attribute depends on the supported feature.
+
+					3. "URL" is a relative path describing how TVCS can refer to the correct pages
+					   either it be "Common CGI module" or "Relay Module"
+
+					   TVCS maintenance program will translate the URL into a fully functional URL
+					   according to the "product type" and "version". 
+					   For example:
+						
+					   URL="/Config/xml/ServerConfig.xml"
+					   into
+					   URL="/commoncgi/servlet/com.trend.commancgi.CommonCGIServerlt?ApHost=Interscan_NT&amp;Page=/Interscan/3.0/Config/xml/ServerConfig.xml"
+				-->
+				<!--
+					Every anti-virus product supports status summary query
+				-->
+				<CommandItem Category="view" Command="SC_CMD_QUERY_ENTITY_STATUS_REQUEST"/>
+				<CommandItem Category="view" Command="SC_CMD_QUERY_STATUS_SUMMARY_REQUEST"/>
+				<!--
+					Every anti-virus product supports virus log query
+				-->
+				<CommandItem Category="view" Command="SC_CMD_QUERY_AV_LOGS_REQUEST"/>
+								
+				<!--
+					This product supports "ScanNow"(manual scan) command from TVCS server 
+				-->
+				<!--
+				<CommandItem Command="EN_CMD_SCAN_NOW_REQUEST"/>	
+				-->
+				<!--
+					Not yet supported!
+				<CommandItem Category="configure" Command="EN_CMD_CONFIGURATION_REQUEST" Page="Page=file:xmls/Configuration/TopOfSelection.xml" UIModule="CCGI" GroupSetting="true"/>
+				<CommandItem Category="execute" Command="EN_CMD_PRODUCT_SERVICE_REQUEST" Page="Page=file:xmls/Command/ProductService.xml" UIModule="CCGI" GroupSetting="false"/>
+				-->
+				<!--eManager Only support  below Command-->
+				<CommandItem Category="execute" Command="MU_CMD_DEPLOY_AV_PATTERN_REQUEST"/>
+				<!--<CommandItem Category="nonui" Command="MU_CMD_DEPLOY_PROGRAM_REQUEST"/>-->
+				<CommandItem Category="nonui" Command="EN_CMD_GET_PRODUCT_PROFILE_REQUEST"/>
+				<!--<CommandItem Category="nonui" Command="SC_UPLOAD_FILE_PRODUCT_UI_REQUEST"/>-->
+				<CommandItem Category="nonui" Command="EN_CMD_START_BLOCKING_NOW_REQUEST"/>
+			</CommandInfo>
+			<!--
+				ConfigurationIDInfo is used for TVCS to monitor what will be the 
+				final "apply" ID that will take effective when user clicks the 
+				summit button in the UI pages.
+			-->
+			<ConfigurationIDInfo>
+				<!-- 
+				<ConfigurationItem	TagName="Action" ID="ID_Set_Realtime_Scan_Test1"/>
+				<ConfigurationItem	TagName="Action" ID="ID_Proxy_Setting_Test2"/>
+				-->
+			</ConfigurationIDInfo>
+		</ProductVersionInfo>
+	</ProductInfo>
+</ProductInfos>

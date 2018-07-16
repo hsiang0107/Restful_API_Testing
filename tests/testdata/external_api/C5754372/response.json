@@ -1,0 +1,31 @@
+{
+   "Data":{
+      "FilingCabinet":[
+         {
+            "FileHashID":"017D896BE4991423EB6653077B93ADA1DCC7FFB2",
+            "FileName":"STIX_Domain_Watchlist.xml",
+            "FileAddedDatetime":"06/07/2018 18:11:52",
+            "UploadedFrom":1,
+            "UploadedBy":"test app 1",
+            "ExtractingStatus":1,
+            "Title":"Title line 1 test app 1"
+         }
+      ],
+      "TotalIOCCount":1
+   },
+   "Meta":{
+      "Result":1,
+      "ErrorCode":0,
+      "ErrorMsg":""
+   },
+   "PermissionCtrl":{
+      "permission":"255",
+      "elements":"None"
+   },
+   "FeatureCtrl":{
+      "mode":"0"
+   },
+   "SystemCtrl":{
+      "TmcmSoDist_Role":"none"
+   }
+}

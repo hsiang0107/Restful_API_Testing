@@ -1,0 +1,27 @@
+[
+  {
+         "ScanAction": 3,
+         "SLF_Type" : 2,
+         "SLF_Data": "e0110f4ca9d3858bf2da8b4cb0891b549526b534"
+  },
+  {
+         "ScanAction": 2,
+         "SLF_Type" : 0,
+         "SLF_Data": "46.123.99.25"
+  },
+  {
+         "ScanAction": 2,
+         "SLF_Type" : 0,
+         "SLF_Data": "10.0.0.0"
+  },
+  {
+         "ScanAction": 2,
+         "SLF_Type" : 0,
+         "SLF_Data": "10.0.0.1"
+  },
+  {
+         "ScanAction": 2,
+         "SLF_Type" : 0,
+         "SLF_Data": "10.0.0.2"
+  }
+]

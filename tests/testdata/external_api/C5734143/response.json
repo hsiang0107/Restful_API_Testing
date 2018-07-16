@@ -1,0 +1,31 @@
+{
+   "Data":{
+      "FilingCabinet":[
+         {
+            "FileHashID":"8E0D8ED2FE5A4905E272DF1DB0CFF1359760A3F4",
+            "FileName":"BlackEnergy.ioc",
+            "FileAddedDatetime":"06/07/2018 21:13:33",
+            "UploadedFrom":1,
+            "UploadedBy":"test app 1",
+            "ExtractingStatus":1,
+            "ShortDesc":"description line 1"
+         }
+      ],
+      "TotalIOCCount":1
+   },
+   "Meta":{
+      "Result":1,
+      "ErrorCode":0,
+      "ErrorMsg":""
+   },
+   "PermissionCtrl":{
+      "permission":"255",
+      "elements":"None"
+   },
+   "FeatureCtrl":{
+      "mode":"0"
+   },
+   "SystemCtrl":{
+      "TmcmSoDist_Role":"none"
+   }
+}

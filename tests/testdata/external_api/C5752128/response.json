@@ -1,0 +1,21 @@
+{
+  "Data": {
+    "Departments": null,
+    "hasNonOthers": false
+  },
+  "Meta": {
+    "Result": "1",
+    "ErrorCode": "0",
+    "ErrorMsg": "Action successful."
+  },
+  "PermissionCtrl": {
+    "permission": "255",
+    "elements": null
+  },
+  "FeatureCtrl": {
+    "mode": "0"
+  },
+  "SystemCtrl": {
+    "TmcmSoDist_Role": "none"
+  }
+}

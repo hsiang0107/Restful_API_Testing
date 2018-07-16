@@ -1,0 +1,9 @@
+﻿<?xml version="1.0"?>
+<!-- <!DOCTYPE IDMapping SYSTEM "IDMapping.dtd"> -->
+<IDMapping>
+	<Category Type="SLF_PRODUCT_TVCS">
+		<IDMappingTable Name="CommandID">
+			<MapItem Name="EN_CMD_MINORITY_REPORT_APPLIANCE_SSO_REQUEST" ID="40800"/>
+		</IDMappingTable>
+	</Category>
+</IDMapping>

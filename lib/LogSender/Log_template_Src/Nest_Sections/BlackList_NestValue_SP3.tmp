@@ -1,0 +1,27 @@
+3033,100,SLF_BlackListInfo,(no value)
+3001,100,SLF_Info,(no value)
+1062,5,SLF_Action,1
+2240,5,SLF_Type,0
+2389,2,SLF_Data,168.95.1.1/80
+2225,5,SLF_RiskLevel,1
+2393,7,SLF_ExpireDateTimeStamp,1412812800
+2390,2,ViolatedDTASPolicy,Executable code in document headers;Malicious site accessed
+2391,2,SourceFileSHA1,c0869b72c5606d22d92a6ac986686bb87485a25b
+2392,5,Detectable,1
+2495,2,SLF_FilterCRC,c0869b72c5606d22d92a6ac986686bb87485a25b
+2496,2,SLF_SubmitTime,2014-09-04 17:31:50
+2497,2,SLF_AnalyzeTime,,2014-09-05 17:31:50
+2498,2,SLF_OriginalFileName,QA_Log.zip
+2208,2,SLF_TrueFileType,MIME
+2499,2,SLF_Submitter,tw-easonchang
+2500,2,SLF_SubmitterProductName,DDES
+2501,2,SLF_SubmitterIPAddress,10.1.172.9
+2196,2,SLF_DetectionName,TROJ_STARTPA.ITW
+2502,2,SLF_ThreatCategory,1
+2503,2,SLF_ReportID,E9630429-9039-4DF3-9DA4-C27FAEE507E1
+2504,2,SLF_SampleIdentity,111.exe
+2127,7,SLF_Protocol,1
+2505,2,SLF_Source,10.1.1.1
+2506,2,SLF_Destination,10.2.3.4
+3001,101,SLF_Info,(no value)
+3033,101,SLF_BlackListInfo,(no value)

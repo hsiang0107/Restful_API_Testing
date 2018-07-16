@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!-- <!DOCTYPE IDMapping SYSTEM "IDMapping.dtd"> -->
+<IDMapping>
+  <Category Type="SLF_PRODUCT_TVCS">
+    <IDMappingTable Name="CommandID">
+      <MapItem Name="EN_CMD_SSO_DEEP_DISCOVERY_EMAIL_INSPECTOR" ID="41200"/>
+    </IDMappingTable>
+    <IDMappingTable Name="ProductTypeCategory" ApplyTo="ProductCategory" BitValue="false">
+      <MapItem ID="156" Name="SLF_PRODUCT_DEEP_DISCOVERY_EMAIL_INSPECTOR" AliasName="SLF_PRODUCT_MAIL" />
+    </IDMappingTable>
+    <IDMappingTable Name="ProductType" ApplyTo="CLF_ProductType" BitValue="false">
+      <MapItem ID="156" Name="SLF_PRODUCT_DEEP_DISCOVERY_EMAIL_INSPECTOR" AliasName="SLF_PRODUCT_DEEP_DISCOVERY_EMAIL_INSPECTOR" />
+    </IDMappingTable>
+  </Category>
+</IDMapping>

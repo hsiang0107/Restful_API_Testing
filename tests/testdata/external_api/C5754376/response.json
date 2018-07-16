@@ -1,0 +1,40 @@
+{
+   "Data":{
+      "FilingCabinet":[
+         {
+            "FileHashID":"75316315FB66A22C967C9E1C51858900CC6AA8A6",
+            "FileName":"STIX_FileHash_Watchlist.xml",
+            "FileAddedDatetime":"06/05/2018 21:42:38",
+            "UploadedFrom":2,
+            "UploadedBy":"sean_w_huang",
+            "ExtractingStatus":-1,
+            "Title":"3 Title of STIX_FileHash_Watchlist"
+         },
+         {
+            "FileHashID":"A2ACEB3BC817922BF2077B083F0EF25894C638E6",
+            "FileName":"STIX_Indicator_Snort.xml",
+            "FileAddedDatetime":"06/04/2018 21:42:38",
+            "UploadedFrom":2,
+            "UploadedBy":"sean_c_chen",
+            "ExtractingStatus":999,
+            "Title":"A Title of STIX_IP_Watchlist.xml"
+         }
+      ],
+      "TotalIOCCount":3
+   },
+   "Meta":{
+      "Result":1,
+      "ErrorCode":0,
+      "ErrorMsg":""
+   },
+   "PermissionCtrl":{
+      "permission":"255",
+      "elements":"None"
+   },
+   "FeatureCtrl":{
+      "mode":"0"
+   },
+   "SystemCtrl":{
+      "TmcmSoDist_Role":"none"
+   }
+}

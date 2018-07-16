@@ -1,0 +1,43 @@
+{
+   "Data":{
+      "FilingCabinet":[
+         {
+            "FileHashID":"371662C4F14F907775D5EE53128C9F6B313B1B62",
+            "FileName":"Casper_Backdoor_x86.yara",
+            "FileAddedDatetime":"06/09/2018 12:19:10",
+            "UploadedFrom":2,
+            "UploadedBy":"sean_w_huang"
+         },
+         {
+            "FileHashID":"0AE365E2FD7BB29B7B2602E9F0430154AEC0594C",
+            "FileName":"SAV_v1",
+            "FileAddedDatetime":"06/08/2018 12:19:10",
+            "UploadedFrom":2,
+            "UploadedBy":"sean_c_chen"
+         },
+         {
+            "FileHashID":"468017D0D4E8F7207335B563B80A7F82F8FF2471",
+            "FileName":"Trojan.Wipbot 2013 core component_v1",
+            "FileAddedDatetime":"06/07/2018 12:19:10",
+            "UploadedFrom":2,
+            "UploadedBy":"kevin lin"
+         }
+      ],
+      "TotalIOCCount":3
+   },
+   "Meta":{
+      "Result":1,
+      "ErrorCode":0,
+      "ErrorMsg":""
+   },
+   "PermissionCtrl":{
+      "permission":"255",
+      "elements":"None"
+   },
+   "FeatureCtrl":{
+      "mode":"0"
+   },
+   "SystemCtrl":{
+      "TmcmSoDist_Role":"none"
+   }
+}

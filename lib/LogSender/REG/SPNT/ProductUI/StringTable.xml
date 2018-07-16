@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!-- <!DOCTYPE StringTables SYSTEM "StringTable.dtd"> -->
+<StringTables>
+	<Language Type="zh_TW">
+		<Category Type="SLF_PRODUCT_SERVERPROTECT_WINNT">
+			<StringTable Name="CommandID">
+				<String ID="EN_CMD_DEMO_BLOB_DATA" DisplayName="Demo blob data"/>
+				<String ID="EN_CMD_DEMO_TASK_ENFORCE" DisplayName="Demo task enforce"/>
+				<!--
+				<String ID="EN_CMD_CONFIGURATION_REPLICATION" DisplayName="Configuration replication"/>
+				-->
+			</StringTable>
+		</Category>
+	</Language>
+	<Language Type="en_US">
+		<Category Type="SLF_PRODUCT_SERVERPROTECT_WINNT">
+			<StringTable Name="CommandID">
+				<String ID="EN_CMD_DEMO_BLOB_DATA" DisplayName="Demo blob data"/>
+				<String ID="EN_CMD_DEMO_TASK_ENFORCE" DisplayName="Demo task enforce"/>
+				<!--
+				<String ID="EN_CMD_CONFIGURATION_REPLICATION" DisplayName="Configuration replication"/>
+				-->
+			</StringTable>
+		</Category>
+	</Language>
+</StringTables>

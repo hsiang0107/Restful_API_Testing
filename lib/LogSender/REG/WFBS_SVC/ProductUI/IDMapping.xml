@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!-- <!DOCTYPE IDMapping SYSTEM "IDMapping.dtd"> -->
+<!--<IDMapping>
+	<Category Type="SLF_PRODUCT_TVCS">
+		<IDMappingTable Name="ProductTypeCategory" ApplyTo="ProductCategory" BitValue="false">
+			<MapItem ID="31001" Name="SLF_PRODUCT_PLS_TMSM" AliasName="SLF_PRODUCT_DESKTOP"/>
+		</IDMappingTable>
+		<IDMappingTable Name="ProductType" ApplyTo="CLF_ProductType" BitValue="false">
+			<MapItem ID="31001" Name="SLF_PRODUCT_PLS_TMSM" AliasName="SLF_PRODUCT_DESKTOP"/>
+		</IDMappingTable>
+		<IDMappingTable Name="EntityServiceID" ApplyTo="" BitValue="false">
+			<MapItem ID="6200201" Name="TMSM_PRODUCT_SERVICE" AliasName="TMSM_PRODUCT_SERVICE"/>
+		</IDMappingTable>		
+	</Category>
+</IDMapping>-->
+
+<IDMapping>
+	<Category Type="SLF_PRODUCT_TVCS">
+		<IDMappingTable Name="CommandID">
+			<MapItem Name="EN_CMD_SSO_WFBS" ID="6230400"/>
+		</IDMappingTable>	
+		<IDMappingTable Name="ProductTypeCategory" ApplyTo="ProductCategory" BitValue="false">
+			<MapItem ID="31102" Name="SLF_PRODUCT_WFBS_SVC" AliasName="SLF_PRODUCT_DESKTOP"/>
+		</IDMappingTable>
+		<IDMappingTable Name="ProductType" ApplyTo="CLF_ProductType" BitValue="false">
+			<MapItem ID="31102" Name="SLF_PRODUCT_WFBS_SVC" AliasName="SLF_PRODUCT_WFBS_SVC"/>
+		</IDMappingTable>
+		<IDMappingTable Name="EntityServiceID" ApplyTo="" BitValue="false">
+			<MapItem ID="6221401" Name="WFBS_PRODUCT_SERVICE" AliasName="WFBS_PRODUCT_SERVICE"/>
+		</IDMappingTable>		
+	</Category>
+</IDMapping>

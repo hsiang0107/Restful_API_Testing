@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ProductInfos>
+	<ProductInfo Category="ANTI-VIRUS" Type="SLF_PRODUCT_DDAN">
+		<ProductVersionInfo TargetVersion="5.1" MenuVersion="1.0" Language="en_US">
+			<LogFormat Type="VirusLog">
+			</LogFormat>
+			<LogFormat Type="StatusLog">
+			</LogFormat>
+			<LogFormat Type="EventLog">
+			</LogFormat>
+			<EventLogInfo/>
+			<CommandInfo>
+				<CommandItem Category="configure" Command="EN_CMD_SSO_DDAN" Page="" UIModule="SSO_PKI" GroupSetting="false" CommandLevel="OP_ENTITY_ONLY"/>				
+			</CommandInfo>						
+			<ConfigurationIDInfo>
+			</ConfigurationIDInfo>
+			<ActiveUpdateInfo>				
+			</ActiveUpdateInfo>
+		</ProductVersionInfo>
+	</ProductInfo>
+</ProductInfos>

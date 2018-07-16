@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<ProductInfos>
+	<ProductInfo Category="ANTI-VIRUS" Type="SLF_PRODUCT_TMDS">
+		<ProductVersionInfo TargetVersion="9.0" MenuVersion="1.0" Language="en_US">
+			<LogFormat Type="VirusLog">
+			</LogFormat>
+			<LogFormat Type="StatusLog">
+			</LogFormat>
+			<LogFormat Type="EventLog">
+			</LogFormat>
+			<EventLogInfo/>
+			<CommandInfo/>				
+			<ConfigurationIDInfo>
+			</ConfigurationIDInfo>
+			<LicenseInfo/>
+		</ProductVersionInfo>
+	</ProductInfo>
+</ProductInfos>

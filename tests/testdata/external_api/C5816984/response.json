@@ -1,0 +1,18 @@
+{
+   "Data":"",
+   "Meta":{
+      "Result":0,
+      "ErrorCode":7,
+      "ErrorMsg":"Incorrect Parameter"
+   },
+   "PermissionCtrl":{
+      "permission":"255",
+      "elements":"None"
+   },
+   "FeatureCtrl":{
+      "mode":"0"
+   },
+   "SystemCtrl":{
+      "TmcmSoDist_Role":"none"
+   }
+}

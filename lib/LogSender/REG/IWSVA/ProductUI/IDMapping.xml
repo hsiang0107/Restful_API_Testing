@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- <!DOCTYPE IDMapping SYSTEM "IDMapping.dtd"> -->
+<IDMapping>
+	<Category Type="SLF_PRODUCT_TVCS">
+		<IDMappingTable Name="CommandID">
+			<!-- Private command ID base for SLF_PRODUCT_IS_WEB_SECURITY_SUITE_VIRTUAL_APPLIANCE (46),
+			       base 10000 + 46*200 = 19200,
+			       upper limit 10000 + (46+1)*200 -1 = 19399 -->
+			<MapItem Name="EN_CMD_SSO_IWSVA" ID="19200"/>
+		</IDMappingTable>
+		<IDMappingTable Name="ProductTypeCategory" ApplyTo="ProductCategory" BitValue="false">
+			<MapItem ID="46" Name="SLF_PRODUCT_IS_WEB_SECURITY_SUITE_VIRTUAL_APPLIANCE" AliasName="SLF_PRODUCT_GATEWAY"/>
+		</IDMappingTable>
+		<IDMappingTable Name="ProductType" ApplyTo="CLF_ProductType" BitValue="false">
+			<MapItem ID="46" Name="SLF_PRODUCT_IS_WEB_SECURITY_SUITE_VIRTUAL_APPLIANCE" AliasName="SLF_PRODUCT_IS_WEB_SECURITY_SUITE_VIRTUAL_APPLIANCE"/>
+		</IDMappingTable>
+		<IDMappingTable Name="EntityServiceID" ApplyTo="" BitValue="false">
+			<MapItem ID="10201" Name="IWSVA_PRODUCT_SERVICE" AliasName="IWSVA_PRODUCT_SERVICE" /> 
+		</IDMappingTable>
+	</Category>
+</IDMapping>

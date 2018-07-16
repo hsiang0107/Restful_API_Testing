@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!-- <!DOCTYPE StringTables SYSTEM "StringTable.dtd"> -->
+<StringTables>
+	<Language Type="zh_TW">
+		<Category Type="SLF_PRODUCT_EMANAGER_SCANMAIL_EX">
+			<StringTable Name="ResourceID"/>
+		</Category>
+	</Language>
+	<Language Type="en_US">
+		<Category Type="SLF_PRODUCT_TVCS">
+		<StringTable Name="ProductID">
+			<String ID="SLF_PRODUCT_EMANAGER_SCANMAIL_EX" DisplayName="ScanMail eManager"/>
+		</StringTable>
+		</Category>
+		<Category Type="SLF_PRODUCT_EMANAGER_SCANMAIL_EX">
+			<StringTable Name="ResourceID"/>
+		</Category>
+	</Language>
+</StringTables>

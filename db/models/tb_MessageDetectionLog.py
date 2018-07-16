@@ -1,0 +1,41 @@
+from sqlalchemy import Column
+from db.cm_session import cm_session, Base
+from sqlalchemy.dialects.mssql import BIGINT, CHAR, DATETIME, INTEGER, NVARCHAR, SMALLINT, VARCHAR
+
+
+class TbMessageDetectionLog(Base):
+    __tablename__ = 'tb_MessageDetectionLog'
+    id = Column(BIGINT, primary_key=True, nullable=False)
+    MsgLogID = Column(CHAR(36))
+    SLF_MsgType = Column(INTEGER)
+    SLF_ProductGUID = Column(CHAR(36), nullable=False)
+    SLF_ProductID = Column(INTEGER, nullable=False)
+    SLF_LogVersion = Column(INTEGER, nullable=False)
+    SLF_LogMinorVersion = Column(INTEGER, nullable=False)
+    SLF_ComputerName = Column(NVARCHAR(128), nullable=False)
+    SLF_ProductVersion = Column(VARCHAR(21), nullable=False)
+    SLF_ProductPlatformCode = Column(INTEGER)
+    SLF_ProductLanguageCode = Column(INTEGER)
+    SLF_SeverityLevel = Column(INTEGER)
+    SLF_SeverityCode = Column(INTEGER)
+    SLF_LogGenerationTime = Column(DATETIME, nullable=False)
+    SLF_LogGenerationTimeZone = Column(INTEGER, nullable=False)
+    SLF_IsDayLightSaving = Column(SMALLINT, nullable=False)
+    SLF_Sender = Column(NVARCHAR(254))
+    SLF_Recipient = Column(NVARCHAR)
+    SLF_Subject = Column(NVARCHAR(254))
+    SLF_MailID = Column(VARCHAR(256))
+    SLF_RiskLevel = Column(INTEGER)
+    SLF_MessageDirection = Column(INTEGER)
+    SLF_MsgRecvTimeUTC = Column(DATETIME)
+    SLF_SBXCompletedTimeUTC = Column(DATETIME)
+    SLF_Instance_ID = Column(VARCHAR(256))
+    SLF_MailHeaderFrom = Column(NVARCHAR(1024))
+    SLF_MailHeaderTo = Column(NVARCHAR)
+    SLF_RelayServerIP = Column(NVARCHAR)
+    SLF_SNAP_DetectionName = Column(VARCHAR(128))
+    SLF_Url_Macth_Count = Column(INTEGER)
+    SLF_File_Match_Count = Column(INTEGER)
+    SLF_SourceIP = Column(VARCHAR(256))
+    SLF_Country = Column(VARCHAR(256))
+    SLF_City = Column(VARCHAR(256))

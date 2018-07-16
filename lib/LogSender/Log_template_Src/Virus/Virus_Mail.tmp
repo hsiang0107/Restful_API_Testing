@@ -1,0 +1,84 @@
+//Log Type(SLF_MsgType), in IDMapping.h
+#define SC_LOG_EVENT_REQUEST						1501
+#define SC_LOG_STATUS_REQUEST						1701
+#define SC_LOG_VIRUS_REQUEST						1703
+#define SC_LOG_SECURITY_REQUEST						1705
+#define SC_LOG_WEB_SECURITY_REQUEST					1707
+#define SC_LOG_URLUSAGELOG_REQUEST					1709
+#define SC_LOG_PERFORMANCEMETRIC_REQUEST				1711
+#define SC_LOG_NETWORK_PACKET_REQUEST					1713
+#define SC_LOG_VULNERABILITY_FOUND_REQUEST				1715
+#define SC_LOG_ENDPOINT_SECURITY_VIOLATIONS_REQUST     			1717
+#define SC_LOG_ENDPOINT_SECURITY_COMPLIANCE_REQUEST    			1719
+#define SC_LOG_SERVICE_VIOLATION_STATISTICS_REQUEST    			1721
+#define SC_LOG_CVW_REQUEST						1703	//The same with SC_LOG_VIRUS_REQUEST
+#define SC_LOG_SPYWARE_REQUEST						1703	//The same with SC_LOG_VIRUS_REQUEST
+
+//Field format, in commondef.h
+#define X_STRING					1
+#define X_WSTRING					2
+#define X_BYTE						3
+#define X_INT16						4
+#define X_UINT16					5
+#define X_INT32						6
+#define X_UINT32					7
+#define X_INT64						8
+#define X_UINT64					9
+#define X_GROUP_START					100
+#define X_GROUP_END					101
+
+//Field ID(in SLF_UniqueID.h), Field format, Description, Value
+11,7,SLF_MsgType,1703
+1001,2,SLF_ProductGUID,(can't set)
+2021,4,SLF_ProductID,18
+2055,2,SLF_LogMinorVersion,3055
+2008,2,SLF_ComputerName,tw-richard
+2014,2,SLF_ProductVersion,3.51
+2056,4,SLF_ProductPlatformCode,8
+2057,7,SLF_ProductLanguageCode,1701708616
+2058,4,SLF_SeverityCode,1
+2059,4,SLF_ComponentCode,9
+2001,2,SLF_LogGenerationTime,2012-01-18 17:35:10
+2002,4,SLF_LogGenerationTimeZone,-480
+2060,4,SLF_IsDayLightSaving,0
+2061,2,SLF_ReasonCode,access violation
+2062,4,SLF_ReasonCodeSource,20
+2118,4,SLF_FunctionCode,11
+2068,4,SLF_VirusLogType,2
+1133,2,SLF_VirusName,VBS_5
+2119,5,SLF_IsMoreThanOneVirus,0
+1011,4,SLF_FirstAction,4
+1012,4,SLF_SecondAction,2
+2120,4,SLF_FirstActionResult,24
+2121,4,SLF_SecondActionResult,124
+1066,2,SLF_Filename,virus05.exe
+2122,2,SLF_FilePath,D:\\Windows
+2123,2,SLF_FileNameInCompressedFile,005.rar
+2124,2,SLF_InfectionSource,Admin05
+2125,2,SLF_InfectionDestination,Admin05
+2076,7,SLF_EngineType,256
+2077,2,SLF_EngineVersion,1.53
+2028,2,SLF_PatternNumber,899
+2126,2,SLF_InternalPatternNumber,1234567
+2127,4,SLF_Protocol,2
+2096,2,SLF_Subject,test05
+2128,2,SLF_DeliverTime,1900-01-01 00:00:00
+2129,2,SLF_StorageGroup,SLF_StorageGroup
+2130,2,SLF_DataBaseName,SLF_DataBaseName
+2131,2,SLF_FolderName,SLF_FolderName
+2132,4,SLF_MessageID,2
+2133,2,SLF_ClientIPAddress,10.1.200.144
+2134,4,SLF_ResultCode,2
+2135,2,SLF_InfectTarget,2
+2136,2,SLF_LoginUser,trend\UserE
+2108,4,SLF_JobID,1
+2109,4,SLF_TaskID,2
+2137,4,SLF_MAJOR_VIRUS_TYPE,3
+2138,4,SLF_SUB_VIRUS_TYPE,70
+2147,2,SLF_FromTime,2004-12-17 14:00:00
+2148,2,SLF_ToTime,2004-12-17 15:00:00
+2149,7,SLF_VirusCount,1
+2150,7,SLF_DetectedSite,2
+2012,2,SLF_DomainName,Trend
+2151,2,SLF_ClientGUID,492E85840114-694DBF9D-CCCC-65D3-0100
+2067,3,SLF_PrivateAttribute_CM35,abcdefgh

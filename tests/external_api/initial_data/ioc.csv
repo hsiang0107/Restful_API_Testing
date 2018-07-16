@@ -1,0 +1,6 @@
+FileHashID,FileName,ShortDesc_Title,UploadedFrom,UploadedBy,ExtractingStatus
+8E0D8ED2FE5A4905E272DF1DB0CFF1359760A3F4,BlackEnergy.ioc,description line 1,1,test app 1,1
+78F27F34A4EE8E93A8FD5D6F0CA88FD7490FDC7B,DNS activities.ioc,2 short description line 2,1,test app 2,999
+68D9AB8744D6728BF37AF6D84953968B4E90E11C,File activities.ioc,3 short description of file Activities,2,sean_w_huang,-1
+7D5B81757459F31217CC55C96C6C8C3218C0046D,Process and network activities.ioc,A short description of User account activities.ioc,2,sean_c_chen,999
+C57EA7FF617E1BC3EEEF54FF63F74F8F510A2FBA,User account activities.ioc,B short description of User account activities.ioc,2,kevin_lin,1

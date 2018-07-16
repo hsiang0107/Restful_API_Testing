@@ -1,0 +1,29 @@
+{
+   "Data":{
+      "FilingCabinet":[
+         {
+            "FileHashID":"0AE365E2FD7BB29B7B2602E9F0430154AEC0594C",
+            "FileName":"SAV_v1",
+            "FileAddedDatetime":"06/08/2018 12:31:46",
+            "UploadedFrom":2,
+            "UploadedBy":"sean_c_chen"
+         }
+      ],
+      "TotalIOCCount":1
+   },
+   "Meta":{
+      "Result":1,
+      "ErrorCode":0,
+      "ErrorMsg":""
+   },
+   "PermissionCtrl":{
+      "permission":"255",
+      "elements":"None"
+   },
+   "FeatureCtrl":{
+      "mode":"0"
+   },
+   "SystemCtrl":{
+      "TmcmSoDist_Role":"none"
+   }
+}

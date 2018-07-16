@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!-- <!DOCTYPE StringTables SYSTEM "StringTable.dtd"> -->
+<StringTables>
+	<Language Type="en_US">
+		<Category Type="SLF_PRODUCT_TVCS">
+			<StringTable Name="ProductID">
+				<String ID="SLF_PRODUCT_SCANMAIL_EX" DisplayName="ScanMail for Microsoft Exchange"/>
+			</StringTable>
+			<StringTable Name="CommandID">
+				<String ID="EN_CMD_SSO_SCANMAIL_EX" DisplayName="ScanMail for Microsoft Exchange Single Sign On"/>
+			</StringTable>
+			<StringTable Name="EntityServiceID">
+				<String ID="SMEX_PRODUCT_SERVICE" DisplayName="ScanMail for Microsoft Exchange"/>
+			</StringTable>
+		</Category>
+	</Language>
+</StringTables>

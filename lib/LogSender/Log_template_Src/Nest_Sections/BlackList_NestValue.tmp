@@ -1,0 +1,14 @@
+3033,100,SLF_BlackListInfo,(no value)
+3001,100,SLF_Info,(no value)
+1062,5,SLF_Action,1
+2240,5,SLF_Type,0
+2389,2,SLF_Data,168.95.1.1/80
+2225,5,SLF_RiskLevel,1
+2393,7,SLF_ExpireDateTimeStamp,1308845939
+2390,2,SLF_ViolatedDTASPolicy,Executable code in document headers;Malicious site accessed
+2391,2,SLF_SourceSHA1,c0869b72c5606d22d92a6ac986686bb87485a25b
+2392,5,SLF_Detectable,1
+3001,101,SLF_Info,(no value)
+3033,101,SLF_BlackListInfo,(no value)
+
+

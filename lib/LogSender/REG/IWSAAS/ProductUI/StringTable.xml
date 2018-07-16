@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!-- <!DOCTYPE StringTables SYSTEM "StringTable.dtd"> -->
+<!--<StringTables>
+	<Language Type="en_US">
+		<Category Type="SLF_PRODUCT_TVCS">
+			<StringTable Name="ProductID">
+				<String ID="SLF_PRODUCT_PLS_TMSM" DisplayName="Trend Micro Security (for Mac)"/>
+			</StringTable>
+			<StringTable Name="EntityServiceID">
+				<String ID="TMSM_PRODUCT_SERVICE" DisplayName="Trend Micro Security (for Mac)"/>
+			</StringTable>		
+		</Category>
+	</Language>
+</StringTables>-->
+
+<StringTables>
+	<Language Type="en_US">
+		<Category Type="SLF_PRODUCT_TVCS">
+			<StringTable Name="ProductID">
+				<String ID="SLF_PRODUCT_IWSAAS" DisplayName="IWSaaS"/>
+			</StringTable>
+			<StringTable Name="EntityServiceID">
+				<String ID="IWSAAS_PRODUCT_SERVICE" DisplayName="IWSaaS Service"/>
+			</StringTable>		
+		</Category>
+	</Language>
+</StringTables>

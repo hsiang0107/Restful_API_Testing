@@ -1,0 +1,43 @@
+from sqlalchemy import Column
+from db.cm_session import cm_session, Base
+from sqlalchemy.dialects.mssql import BIGINT, BIT, CHAR, DATETIME, INTEGER, NVARCHAR, SMALLINT, UNIQUEIDENTIFIER, VARCHAR
+
+
+class TbTmpEntityInfo(Base):
+    __tablename__ = 'tb_TmpEntityInfo'
+    id = Column(INTEGER, primary_key=True, nullable=False)
+    Entity_SeqID = Column(INTEGER, nullable=False)
+    EI_EntityID = Column(CHAR(36), nullable=False)
+    EI_State = Column(INTEGER)
+    EI_ProductType = Column(INTEGER)
+    EI_LastStartupTime = Column(DATETIME)
+    EI_OS_Name = Column(NVARCHAR(128))
+    EI_OS_Version = Column(VARCHAR(64))
+    EI_OS_SPVersion = Column(VARCHAR(32))
+    EI_OS_Language = Column(INTEGER)
+    EI_OS_ContryCode = Column(VARCHAR(8))
+    EI_OS_MachineName = Column(NVARCHAR(64))
+    EI_IPAddressList = Column(VARCHAR(1024))
+    EI_MACAddressList = Column(VARCHAR(256))
+    EI_DomainName = Column(NVARCHAR(64))
+    EI_Timezone = Column(VARCHAR(8))
+    EI_ADObjectGuid = Column(UNIQUEIDENTIFIER)
+    EI_UpdateAgentType = Column(INTEGER)
+    EI_MachineID = Column(CHAR(36))
+    EI_UserGuid = Column(VARCHAR(36))
+    EI_UserAccount = Column(NVARCHAR(32))
+    EI_UserDomain = Column(NVARCHAR(256))
+    EI_UserMail = Column(NVARCHAR(450))
+    EI_SystemModel = Column(SMALLINT)
+    EI_OS_Type = Column(VARCHAR(16))
+    EI_Platform_Type = Column(VARCHAR(16))
+    EI_AD_DomainName = Column(NVARCHAR(64))
+    EI_NetworkQuarantineSetting = Column(SMALLINT)
+    EI_NetworkQuarantineSettingResult = Column(SMALLINT)
+    Ext_CDSM_Status = Column(INTEGER)
+    Ext_DirtyRecord = Column(BIT)
+    EI_IsOffPremise = Column(SMALLINT)
+    EI_LastCompliantState = Column(BIGINT)
+    EI_LastLogonTime = Column(DATETIME)
+    EI_LastLogoffTime = Column(DATETIME)
+    EI_IsCoExist = Column(SMALLINT)

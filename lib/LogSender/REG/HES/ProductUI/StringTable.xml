@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<StringTables>
+	<Language Type="en_US">
+		<Category Type="SLF_PRODUCT_TVCS">
+			<StringTable Name="ProductID">
+				<String ID="SLF_PRODUCT_HES" DisplayName="Hosted Email Security"/>
+			</StringTable>
+			<StringTable Name="EntityServiceID">
+				<String ID="HES_PRODCT_SERVICE" DisplayName="Hosted Email Security"/>
+			</StringTable>		
+		</Category>
+	</Language>
+</StringTables>

@@ -1,0 +1,89 @@
+// Log Type(SLF_MsgType), in IDMapping.h
+#define SC_LOG_EVENT_REQUEST                        1501
+#define SC_LOG_STATUS_REQUEST                       1701
+#define SC_LOG_VIRUS_REQUEST                        1703
+#define SC_LOG_SECURITY_REQUEST                     1705
+#define SC_LOG_WEB_SECURITY_REQUEST                 1707
+#define SC_LOG_URLUSAGELOG_REQUEST                  1709
+#define SC_LOG_PERFORMANCEMETRIC_REQUEST            1711
+#define SC_LOG_NETWORK_PACKET_REQUEST               1713
+#define SC_LOG_VULNERABILITY_FOUND_REQUEST          1715
+#define SC_LOG_ENDPOINT_SECURITY_VIOLATIONS_REQUEST 1717
+#define SC_LOG_ENDPOINT_SECURITY_COMPLIANCE_REQUEST 1719
+#define SC_LOG_SERVICE_VIOLATION_STATISTICS_REQUEST 1721
+#define SC_LOG_CVW_REQUEST                          1703 // The same with SC_LOG_VIRUS_REQUEST
+#define SC_LOG_SPYWARE_REQUEST                      1703 // The same with SC_LOG_VIRUS_REQUEST
+#define SC_LOG_CAV_REQUEST                          1723
+#define SC_LOG_NRS_REQUEST                          1725
+#define SC_LOG_DESKTOP_SPYWARE_GRAYWARE_REQUEST     1727
+
+// Field format, in commondef.h
+#define X_STRING      1
+#define X_WSTRING     2
+#define X_BYTE        3
+#define X_INT16       4
+#define X_UINT16      5
+#define X_INT32       6
+#define X_UINT32      7
+#define X_INT64       8
+#define X_UINT64      9
+#define X_GROUP_START 100
+#define X_GROUP_END   101
+
+// Field ID(in SLF_UniqueID.h), Field format, Description, Value
+11,7,SLF_MsgType,1727
+1001,2,SLF_ProductGUID,(can't set)
+2021,7,SLF_ProductID,18
+2183,5,SLF_LogVersion,1
+2055,5,SLF_LogMinorVersion,0
+2008,2,SLF_ComputerName,SSAPI
+2189,2,SLF_LogGenUTCDateTime,2007-7-3 22:31:50
+2190,2,SLF_LogGenLocalDateTime,2007-7-3 22:31:50
+2191,4,SLF_TimeZoneInMins,480
+2192,4,SLF_DaylightSavingInMins,0
+1008,2,SLF_RedAlertID,123456789012-12345678-1234-1234-1234
+2151,2,SLF_ClientGUID,492E85840114-694DBF9D-CCCC-65D3-0100
+2136,2,SLF_LoginUser,Lyon Wang
+1133,2,SLF_VirusName,e_Spyware
+2221,4,SLF_ScanType,0
+2076,7,SLF_EngineType,1
+2077,2,SLF_EngineVersion,2
+2222,7,SLF_PatternType,3
+2079,2,SLF_PatternVersion,4
+2227,2,SLF_Description,Spyware Log Testing
+
+
+3008,100,SLF_SSAPIScanGroup,(no value)
+
+3001,100,SLF_Info,(no value)
+1066,2,SLF_Filename,file1.txt
+2223,6,SLF_ScannerID,10
+2227,6,SLF_ScannerSubType,11
+2224,6,SLF_ThreatType,12
+2225,6,SLF_RiskLevel,13
+2226,6,SLF_ActionResult,14
+3001,101,SLF_Info,(no value)
+
+3001,100,SLF_Info,(no value)
+1066,2,SLF_Filename,file2.txt
+2223,6,SLF_ScannerID,20
+2227,6,SLF_ScannerSubType,21
+2224,6,SLF_ThreatType,22
+2225,6,SLF_RiskLevel,23
+2226,6,SLF_ActionResult,24
+3001,101,SLF_Info,(no value)
+
+3001,100,SLF_Info,(no value)
+1066,2,SLF_Filename,file3.txt
+2223,6,SLF_ScannerID,30
+2227,6,SLF_ScannerSubType,31
+2224,6,SLF_ThreatType,32
+2225,6,SLF_RiskLevel,33
+2226,6,SLF_ActionResult,34
+3001,101,SLF_Info,(no value)
+
+3008,101,SLF_SSAPIScanGroup,(no value)
+2234,2,SLF_AggreEndUTCDatetime,
+2235,2,SLF_AggreEndLocalDatetime,
+2236,7,SLF_AggreCount,1
+2226,6,SLF_ActionResult,1

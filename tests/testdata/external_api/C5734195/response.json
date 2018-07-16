@@ -1,0 +1,40 @@
+{
+   "Data":{
+      "FilingCabinet":[
+         {
+            "FileHashID":"7D5B81757459F31217CC55C96C6C8C3218C0046D",
+            "FileName":"Process and network activities.ioc",
+            "FileAddedDatetime":"06/17/2018 11:37:59",
+            "UploadedFrom":2,
+            "UploadedBy":"sean_c_chen",
+            "ExtractingStatus":999,
+            "ShortDesc":"A short description of User account activities.ioc"
+         },
+         {
+            "FileHashID":"C57EA7FF617E1BC3EEEF54FF63F74F8F510A2FBA",
+            "FileName":"User account activities.ioc",
+            "FileAddedDatetime":"06/16/2018 11:37:59",
+            "UploadedFrom":2,
+            "UploadedBy":"kevin_lin",
+            "ExtractingStatus":1,
+            "ShortDesc":"B short description of User account activities.ioc"
+         }
+      ],
+      "TotalIOCCount":4
+   },
+   "Meta":{
+      "Result":1,
+      "ErrorCode":0,
+      "ErrorMsg":""
+   },
+   "PermissionCtrl":{
+      "permission":"255",
+      "elements":"None"
+   },
+   "FeatureCtrl":{
+      "mode":"0"
+   },
+   "SystemCtrl":{
+      "TmcmSoDist_Role":"none"
+   }
+}

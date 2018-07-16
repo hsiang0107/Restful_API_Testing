@@ -1,0 +1,115 @@
+11,7,SLF_MsgType,1701
+1001,2,SLF_ProductGUID,(can't set)
+2021,7,SLF_ProductID,15
+2183,5,SLF_LogVersion,1
+2055,5,SLF_LogMinorVersion,5
+2008,2,SLF_ComputerName,tw-samchang
+2189,2,SLF_LogGenUTCDatetime,2012-06-27 03:14:03
+2190,2,SLF_LogGenLocalDatetime,2012-06-27 11:14:03
+2191,4,SLF_TimeZoneInMins,-480
+2192,4,SLF_DaylightSavingInMins,0
+2036,4,SLF_Status,100
+2067,3,SLF_PrivateAttribute_CM35,1
+2401,7,SLF_UpdateAgentType,0
+2333,2,SLF_ClientUserGUID,
+2434,2,SLF_UserLogonAccount,
+2323,2,SLF_UserDomain,
+2402,4,SLF_SystemModel,3
+3018,100,SLF_CommonInfo,(no value)
+3001,100,SLF_Info,(no value)
+2010,2,SLF_IPAddressList,10.201.207.19,[fe80::9c16:bc75:32bb:28c5]
+2011,2,SLF_MACAddressList,00-50-56-16-04-57
+3001,101,SLF_Info,(no value)
+3018,101,SLF_CommonInfo,(no value)
+3019,100,SLF_ProductInfo,(no value)
+3001,100,SLF_Info,(no value)
+2014,2,SLF_ProductVersion,10.6
+2015,7,SLF_ProductBuildNumber,2102
+2057,7,SLF_ProductLanguageCode,1701707776
+2056,7,SLF_ProductPlatformCode,4
+2016,2,SLF_ServicePack,
+2278,7,SLF_ServicePackBuildNumber,0
+2279,2,SLF_Patch,
+2280,7,SLF_PatchBuildNumber,0
+3001,101,SLF_Info,(no value)
+3019,101,SLF_ProductInfo,(no value)
+3002,100,SLF_ScanPatternInfo,(no value)
+3001,100,SLF_Info,(no value)
+2052,7,SLF_Name,1208221826
+2053,2,SLF_Version,130364
+2054,2,SLF_LastUpdateTime,2012-03-28 17:41:49
+2272,4,SLF_IsInUse,1
+3001,101,SLF_Info,(no value)
+3002,101,SLF_ScanPatternInfo,(no value)
+3003,100,SLF_ScanEngineInfo,(no value)
+3001,100,SLF_Info,(no value)
+2052,7,SLF_Name,570425600
+2053,2,SLF_Version,2.95.1150
+2054,2,SLF_LastUpdateTime,2012-03-28 17:41:49
+2272,4,SLF_IsInUse,1
+3001,101,SLF_Info,(no value)
+3003,101,SLF_ScanEngineInfo,(no value)
+3023,100,SLF_CloudScanServerInfo,(no value)
+3001,100,SLF_Info,(no value)
+2295,4,SLF_CloudScanMode,0
+2296,4,SLF_CloudScanMethod,0
+2297,2,SLF_ScanServerSourcesHashes,
+3001,101,SLF_Info,(no value)
+3023,101,SLF_CloudScanServerInfo,(no value)
+3024,100,SLF_CloudScanServerSourceList,(no value)
+3024,101,SLF_CloudScanServerSourceList,(no value)
+3034,100,SLF_ActiveDirectoryInfo,(no value)
+3001,100,SLF_Info,(no value)
+2309,2,SLF_AD_DN,1
+2308,2,SLF_ObjectGuid,8F6BC2D7-61DF-4BBF-B3F9-2D613859FF05
+3001,101,SLF_Info,(no value)
+3034,101,SLF_ActiveDirectoryInfo,(no value)
+3035,100,SLF_OSCEClientTreeInfo,(no value)
+3001,100,SLF_Info,(no value)
+2310,2,SLF_ClientTreePath,Workgroup\
+2311,2,SLF_RealParentGuid,a3afe9ef9d93-4618ab57-a85d-5ae1-9b40
+3001,101,SLF_Info,(no value)
+3035,101,SLF_OSCEClientTreeInfo,(no value)
+3036,100,SLF_PolicyInfo,(no value)
+3001,100,SLF_Info,(no value)
+3037,2,SLF_PolicyGUID,
+2036,4,SLF_Status,0
+2054,2,SLF_LastUpdateTime,2012-06-27 03:14:03
+2210,2,SLF_UserName,SERVERADMIN
+3038,2,SLF_PolicyType,15.4
+2064,2,SLF_ErrorDescription,
+3001,101,SLF_Info,(no value)
+3036,101,SLF_PolicyInfo,(no value)
+3041,100,SLF_PluginServiceInfo,(no value)
+3001,100,SLF_Info,(no value)
+3042,6,SLF_PropertyID,8
+3043,6,SLF_PluginServiceID,561
+2053,2,SLF_Version,1.0
+2036,6,SLF_Status,7
+3001,101,SLF_Info,(no value)
+3041,101,SLF_PluginServiceInfo,(no value)
+3021,100,SLF_OSCEClientTreeInfo,(no value)
+3001,100,SLF_Info,(no value)
+2152,2,SLF_ProductGUID,492E85840114-694DBF9D-5000-7895-0010
+2286,4,SLF_SlotID,3
+2036,4,SLF_Status,100
+2050,2,SLF_ACKey,TM-22DX-VXZK8-AMMZ5-7GU2N-W7QS5-PJMLE
+2287,2,SLF_ExpirationDate,2020-06-27 03:14:03
+2288,4,SLF_SeatCount,6000
+2111,2,SLF_Description,TrendMicro
+3001,101,SLF_Info,(no value)
+3021,101,SLF_OSCEClientTreeInfo,(no value)
+3044,100,SLF_OSCEScanningInfo,(no value)
+3001,100,SLF_Info,(no value)
+1001,2,SLF_ProductGUID,
+2221,4,ScanningType,4
+2054,2,LastUpdateUTCTime,2012-06-27 03:14:03
+3001,101,SLF_Info,(no value)
+3044,101,SLF_OSCEScanningInfo,(no value)
+3045,100,SLF_OSCESystemInfo,(no value)
+3001,100,SLF_Info,(no value)
+1001,2,SLF_ProductGUID,
+3046,4,SettingKind,2
+3047,2,SettingValue,1
+3001,101,SLF_Info,(no value)
+3045,101,SLF_OSCESystemInfo,(no value)

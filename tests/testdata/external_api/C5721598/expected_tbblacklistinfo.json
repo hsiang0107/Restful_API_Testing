@@ -1,0 +1,17 @@
+[
+  {
+         "ScanAction": 2,
+         "SLF_Type" : 1,
+         "SLF_Data": "http://example.com/index1.html"
+  },
+  {
+         "ScanAction": 1,
+         "SLF_Type" : 3,
+         "SLF_Data": "example.com"
+  },
+  {
+         "ScanAction": 2,
+         "SLF_Type" : 1,
+         "SLF_Data": "http://remarry-thunderous.ly/trinkets-perpetual/mastoid.htm"
+  }
+]

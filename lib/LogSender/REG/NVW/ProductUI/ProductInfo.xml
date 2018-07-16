@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<!--
+<!DOCTYPE ProductInfos SYSTEM "ProductInfo.dtd">
+-->
+<ProductInfos>
+	<!-- 
+		ProdutInfo Show how tag can be used to form a product class info 
+	-->
+	<ProductInfo Category="ANTI-VIRUS" Type="SLF_PRODUCT_NETWORK_VIRUSWALL2500_LINUX_K26">
+		<ProductVersionInfo TargetVersion="2.0" MenuVersion="21.1" Language="en_US">
+			<LogFormat Type="VirusLog">
+				<!-- Type="CommonLogFormat" -->
+				<!-- This represents "Recipient" in SMEX -->
+			</LogFormat>
+			<LogFormat Type="StatusLog">
+				<!-- Type="CommonLogFormat" -->
+			</LogFormat>
+			<LogFormat Type="EventLog">
+				<!-- Type="EventLogFormat" -->
+				<!-- This can be "MN_ManualScan", "MN_RealtimeScan" or "MN_ScheduledScan" -->
+			</LogFormat>
+			<!--
+				DeploymentComponentInfo states what kind of the components product use.
+				This tells TVCS what kind of deployment notification will be sent to product entity.
+			-->
+			<!--
+				NotificationInfo defines what kind of notification the product generates (ID).
+				TVCS server will watch for the specific event/status/log 
+				in the pre-defined rule of notification configuration 
+			-->
+			<EventLogInfo/>
+			<!-- 
+				<CommandInfo> shows what kind of commands the product (entity) are able to apply (receive and process)
+			-->
+			<CommandInfo>
+				<!--
+					Note:
+					1. "UseCCGI" indicates that attribute "URL" is refering to a CCGI module
+					   For new product that supports CCGI, this attribute is always "true"
+					   For old product, this attribute is always "false"
+					   
+					   TVCS server uses this attribute to determine whether "Relay Module" needs to 
+					   participate in the scenerio or not.
+					
+					2. "GroupSetting" indicates that whether such configuration supports "group setting" or not.
+					   Any product that uses CCGI module to configure its settings implies that it supports
+					   group settings. For newly developed product, this attribute is only a place-holder
+					   For old products, it is a indicator whether such product supports group settings.
+
+					   For new product, this attribute is always "true"
+					   For old product, this attribute depends on the supported feature.
+
+					3. "URL" is a relative path describing how TVCS can refer to the correct pages
+					   either it be "Common CGI module" or "Relay Module"
+
+					   TVCS maintenance program will translate the URL into a fully functional URL
+					   according to the "product type" and "version". 
+					   For example:
+						
+					   URL="/Config/xml/ServerConfig.xml"
+					   into
+					   URL="/commoncgi/servlet/com.trend.commancgi.CommonCGIServerlt?ApHost=Interscan_NT&amp;Page=/Interscan/3.0/Config/xml/ServerConfig.xml"
+				-->
+				<!--
+					Every anti-virus product supports status summary query
+				-->
+				<CommandItem Command="SC_CMD_QUERY_ENTITY_STATUS_REQUEST"/>
+				<CommandItem Command="SC_CMD_QUERY_STATUS_SUMMARY_REQUEST"/>
+				<!--
+					Every anti-virus product supports virus log query
+				-->
+				<CommandItem Command="SC_CMD_QUERY_AV_LOGS_REQUEST"/>
+				<!--
+					Every product supports component deployment 
+				-->
+				<CommandItem Command="MU_CMD_DEPLOY_AV_PATTERN_REQUEST"/>
+				<CommandItem Command="MU_CMD_DEPLOY_AV_ENGINE_REQUEST"/>
+				<CommandItem Command="MU_CMD_DEPLOY_PROGRAM_REQUEST"/>
+				<CommandItem Command="SC_CMD_UI_TVCS_CONFIGURATION_REPLICATION"/>
+				<CommandItem Command="SC_CMD_UI_TVCS_CONFIGURATION_REPLICATION_TO_FOLDER"/>
+				<CommandItem Category="configure" Command="EN_CMD_SSO_NETWORK_VIRUSWALL2500_LINUX" Page="/cgi-bin/logon.cgi" UIModule="SSO_PKI" GroupSetting="false" CommandLevel="OP_ENTITY_ONLY"/>
+				<!--
+Use Category "nonui" to deicide to accept which command in product library, not have menu item in CM server
+[[[[[NOTE]]]]]: If the below item doens't exist, that means the product library won't receive such command at all.
+-->
+				<CommandItem Category="nonui" Command="EN_CMD_GENERIC_COMMAND_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_GET_PRODUCT_PROFILE_REQUEST"/>
+				<CommandItem Category="nonui" Command="SC_UPLOAD_FILE_PRODUCT_UI_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_GET_DATA_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_SET_DATA_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_DEPLOY_PROGRAM_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_DEPLOY_AV_ENGINE_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_DEPLOY_AV_PATTERN_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_START_RED_ALERT_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_STOP_RED_ALERT_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_START_BLOCKING_NOW_REQUEST"/>
+			</CommandInfo>
+			<!--
+				ConfigurationIDInfo is used for TVCS to monitor what will be the 
+				final "apply" ID that will take effective when user clicks the 
+				summit button in the UI pages.
+			-->
+			<ConfigurationIDInfo>
+				<!-- 
+				<ConfigurationItem	TagName="Action" ID="ID_Set_Realtime_Scan_Test1"/>
+				<ConfigurationItem	TagName="Action" ID="ID_Proxy_Setting_Test2"/>
+				-->
+			</ConfigurationIDInfo>
+			<ActiveUpdateInfo>
+				<ActiveUpdateItem ProductID="123" Language="0x0001" Platform="0x101" ScanEngine="" VirusPattern="" NonCtxEngine="0x10" NonCtxPattern=""/>
+				<ActiveUpdateItem ProductID="123" Language="0x0001" Platform="0x101" ScanEngine="" VirusPattern="" NonCtxEngine="0x04" NonCtxPattern=""/>
+				<ActiveUpdateItem ProductID="123" Language="0x0001" Platform="0x101" ScanEngine="" VirusPattern="" NonCtxEngine="0x02" NonCtxPattern=""/>
+				<ActiveUpdateItem ProductID="123" Language="0x0001" Platform="0x101" ScanEngine="" VirusPattern="" NonCtxEngine="0x01" NonCtxPattern=""/>
+				<ActiveUpdateItem ProductID="123" Language="0x0001" Platform="0x101" ScanEngine="" VirusPattern="" NonCtxEngine="0x01000000" NonCtxPattern=""/>
+				<ActiveUpdateItem ProductID="123" Language="0x0001" Platform="0x101" ScanEngine="" VirusPattern="" NonCtxEngine="0x20000020" NonCtxPattern=""/>
+				<ActiveUpdateItem ProductID="123" Language="0x0001" Platform="0x101" ScanEngine="" VirusPattern="" NonCtxEngine="0x24000080" NonCtxPattern=""/>
+				<ActiveUpdateItem ProductID="123" Language="0x0001" Platform="0x101" ScanEngine="" VirusPattern="" NonCtxEngine="0x21000080" NonCtxPattern=""/>
+				<ActiveUpdateItem ProductID="123" Language="0x0001" Platform="0x101" ScanEngine="" VirusPattern="" NonCtxEngine="0x24040000" NonCtxPattern=""/>
+				<ActiveUpdateItem ProductID="123" Language="0x0001" Platform="0x101" ScanEngine="" VirusPattern="" NonCtxEngine="0x28084000" NonCtxPattern=""/>
+				<ActiveUpdateItem ProductID="123" Language="0x0001" Platform="0x101" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x04"/>
+				<ActiveUpdateItem ProductID="123" Language="0x0001" Platform="0x101" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x800"/>
+				<ActiveUpdateItem ProductID="123" Language="0x0001" Platform="0x101" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x80000"/>
+				<ActiveUpdateItem ProductID="123" Language="0x0001" Platform="0x101" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x100000"/>
+				<ActiveUpdateItem ProductID="123" Language="0x0001" Platform="0x101" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x00002000"/>
+				<ActiveUpdateItem ProductID="123" Language="0x0001" Platform="0x101" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x20000800"/>
+				<ActiveUpdateItem ProductID="123" Language="0x0001" Platform="0x101" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x48000008"/>
+				<!-- LANGUAGE_ENU (0x0001) -->
+				<!-- PLATFORM_LINUX_I386 (0x101) -->
+				<!--
+				TM_AU_PRODUCT_NVW2500_26 123
+
+				ENGINE_VSAPI32_95	0x00000001
+				ENGINE_VSAPI32_VXD	0x00000002
+				ENGINE_VSAPI32_NT_I386	0x00000004
+				ENGINE_VSAPI32_NT_KD	0x00000010
+				ENGINE_DCS		0x01000000
+				ENGINE_OPSWATAV		0x24040000
+				ENGINE_VAS              0x00000008
+				ENGINE_NVW_1.x		0x10000080
+				ENGINE_NVW_2.x		0x20000020
+
+				PATTERN_VSAPI   0x00000004
+				PATTERN_DCS     0x00000800	DCT
+				PATTERN_VAS     0x00080000	VAP
+				PATTERN_VAI     0x00100000	VAI
+				PATTERN_NVW     0x00002000	NVP, VSAPI2 Pattern
+				PATTERN_CAV     0x00004000	Network Outbreak Rule
+				PATTERN_AVC     0x20000800      OPSWAT AntiVirus
+				-->
+
+			</ActiveUpdateInfo>
+		</ProductVersionInfo>
+	</ProductInfo>
+</ProductInfos>

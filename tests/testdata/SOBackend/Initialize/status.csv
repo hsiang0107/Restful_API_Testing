@@ -1,0 +1,14 @@
+EntityName,Product,LogType,Filename,LogCount,TimeDeviation,SLF_IPAddressList,SLF_MACAddressList,SLF_UserDomain,SLF_UserAccount,SLF_UserGUID,SLF_ObjectGuid,SLF_UserMail,SLF_SystemModel,SLF_ComputerName
+Client11,OSCE,Status,status_15_OSCE,1,,20.1.1.1,00-51-56-A7-69-01,,Admin01,,,,3,Client11
+Client12,OSCE,Status,status_15_OSCE,1,,20.1.1.2,00-51-56-A7-69-02,,Admin02,,,,3,Client12
+Client13,OSCE,Status,status_15_OSCE,1,,20.1.1.3,00-51-56-A7-69-03,,Admin03,,,,3,Client13
+Client14,OSCE,Status,status_15_OSCE,1,,20.1.1.4,00-51-56-A7-69-04,,Admin04,,,,3,Client14
+Client15,OSCE,Status,status_15_OSCE,1,,20.1.1.5,00-51-56-A7-69-05,,Admin05,,,,3,Client15
+Client21,OSCE,Status,status_15_OSCE,1,,100.1.1.1,00-51-56-A7-69-06,,Admin06,,,,3,Client21
+Client22,OSCE,Status,status_15_OSCE,1,,100.1.1.2,00-51-56-A7-69-07,,Admin07,,,,3,Client22
+Client23,OSCE,Status,status_15_OSCE,1,,100.1.1.3,00-51-56-A7-69-08,,Admin08,,,,3,Client23
+Client24,OSCE,Status,status_15_OSCE,1,,100.1.1.4,00-51-56-A7-69-09,,Admin09,,,,3,Client24
+Client25,OSCE,Status,status_15_OSCE,1,,100.1.1.5,00-51-56-A7-69-10,,Admin10,,,,3,Client25
+Client31,DDES,Status,status_15_DDES,1,,80.20.1.1,00-51-56-A7-69-11,,Admin11,,,,3,Client31
+Client32,DDES,Status,status_15_DDES,1,,80.20.1.2,00-51-56-A7-69-12,,Admin12,,,,3,Client32
+Client33,DDES,Status,status_15_DDES,1,,201.10.8.8,00-51-56-A7-69-13,,Admin13,,,,3,Client33

@@ -1,0 +1,66 @@
+11,7,SLF_MsgType,1705
+1001,2,SLF_ProductGUID,(can't set)
+2021,4,SLF_ProductID,<PRODUCT_ID>
+2183,5,SLF_LogVersion,1
+2055,5,SLF_LogMinorVersion,3
+2008,2,SLF_ComputerName,Security_Com
+2014,2,SLF_ProductVersion,3.51
+2056,4,SLF_ProductPlatformCode,8
+2057,7,SLF_ProductLanguageCode,1701708616
+2058,4,SLF_SeverityCode,2
+2059,4,SLF_ComponentCode,9
+2001,2,SLF_LogGenerationTime,2012-06-27 03:14:03
+2002,4,SLF_LogGenerationTimeZone,-480
+2060,4,SLF_IsDayLightSaving,0
+2061,2,SLF_ReasonCode,access violation
+2062,4,SLF_ReasonCodeSource,20
+2091,4,SLF_FilterAction,2
+2092,4,SLF_FilterActionResult,21
+2093,4,SLF_MessageAction,5
+1066,2,SLF_Filename,SexyGirl.exe
+2094,2,SLF_Sender,aaa
+2095,2,SLF_Recipient,aaa
+2096,2,SLF_Subject,See this girl
+2097,2,SLF_Q_Area_PathName,Q area path
+2098,2,SLF_Q_Area_EntityName,Q area entity
+2099,2,SLF_PolicyName,This is a policy name
+2100,2,SLF_PolicyContent,This is policy content
+2101,4,SLF_FilterType,10
+2102,2,SLF_FilterName,This is filter name
+2103,2,SLF_FilterContent,This is filter content
+2104,2,SLF_ViolationDescription,This is violation description
+2086,2,SLF_ProtocolName,tcp
+2105,4,SLF_DeliveryTimeInElapsedSeconds,20
+2106,2,SLF_MailID,102
+2107,2,SLF_QuarantineAreaName,All RD Department
+2067,3,SLF_PrivateAttribute_CM35,12345
+2261,2,SLF_FullPathURL,http://xyz.sexy.com
+2209,2,SLF_URL,verysexviolent.avi
+2225,6,SLF_RiskLevel,0
+2385,6,SLF_MessageDirection,0
+2377,6,SLF_Is_CCCA_Detection,0
+2378,6,SLF_CCCA_DetectionSource,0
+2379,6,SLF_CCCA_RiskLevel,3
+2386,6,SLF_CCCA_DetectedPart,8
+2383,2,SLF_CCCA_Destination,www.CnCMaliciousSite.com
+2387,2,SLF_CCCA_Initiator,CnC_Sender@trend.com
+2484,2,SLF_Composed_URL,composed.url
+2485,2,SLF_MsgRecvTimeUTC,2012-06-27 03:14:03
+2486,2,SLF_Instance_ID,123123123
+2487,2,SLF_Composed_Message_Action,aaa
+2488,2,SLF_Attachement_Type,aaa
+1133,2,SLF_VirusName,AAA
+2224,6,SLF_ThreatType,1
+2266,6,SLF_SeverityLevel,2
+2491,6,SLF_Url_Macth_Count,6
+2492,6,SLF_File_Match_Count,6
+2204,2,SLF_SourceIP,10.1.1.1
+2493,2,SLF_Country,Taiwan
+2494,2,SLF_City,Taipei
+3056,100,SLF_SuspiciousObject_Info,(no value)
+3001,100,SLF_Info,(no value)
+2489,6,SLF_SuspiciousObject_Type,1
+2490,2,SLF_SuspiciousObject_Data,AAAAA-AAAAA
+2225,6,SLF_RiskLevel,1
+3001,101,SLF_Info,(no value)
+3056,101,SLF_SuspiciousObject_Info,(no value)

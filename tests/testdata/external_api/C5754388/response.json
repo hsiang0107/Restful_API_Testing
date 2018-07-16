@@ -1,0 +1,40 @@
+{
+   "Data":{
+      "FilingCabinet":[
+         {
+            "FileHashID":"96EA602EDB62CD84D79AFAE3160151A164D07E7C",
+            "FileName":"STIX_Email_wLink.xml",
+            "FileAddedDatetime":"06/19/2018 11:46:30",
+            "UploadedFrom":1,
+            "UploadedBy":"test app 2",
+            "ExtractingStatus":999,
+            "Title":"2 Title line 2"
+         },
+         {
+            "FileHashID":"75316315FB66A22C967C9E1C51858900CC6AA8A6",
+            "FileName":"STIX_FileHash_Watchlist.xml",
+            "FileAddedDatetime":"06/18/2018 11:46:30",
+            "UploadedFrom":2,
+            "UploadedBy":"sean_w_huang",
+            "ExtractingStatus":-1,
+            "Title":"3 Title of STIX_FileHash_Watchlist"
+         }
+      ],
+      "TotalIOCCount":4
+   },
+   "Meta":{
+      "Result":1,
+      "ErrorCode":0,
+      "ErrorMsg":""
+   },
+   "PermissionCtrl":{
+      "permission":"255",
+      "elements":"None"
+   },
+   "FeatureCtrl":{
+      "mode":"0"
+   },
+   "SystemCtrl":{
+      "TmcmSoDist_Role":"none"
+   }
+}

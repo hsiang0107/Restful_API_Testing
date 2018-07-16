@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<IDMapping>
+	<Category Type="SLF_PRODUCT_TVCS">
+		<IDMappingTable Name="CommandID">
+			<MapItem Name="EN_CMD_SSO_DDAN" ID="6211600"/>
+		</IDMappingTable>		
+		<IDMappingTable Name="ProductTypeCategory" ApplyTo="ProductCategory" BitValue="false">
+			<MapItem ID="31008" Name="SLF_PRODUCT_DDAN" AliasName="SLF_PRODUCT_GATEWAY"/>
+		</IDMappingTable>
+		<IDMappingTable Name="ProductType" ApplyTo="CLF_ProductType" BitValue="false">
+			<MapItem ID="31008" Name="SLF_PRODUCT_DDAN" AliasName="SLF_PRODUCT_DDAN"/>
+		</IDMappingTable>
+		<IDMappingTable Name="EntityServiceID" ApplyTo="" BitValue="false">
+			<MapItem ID="6202601" Name="DDAN_PRODCT_SERVICE" AliasName="DDAN_PRODCT_SERVICE"/>
+		</IDMappingTable>
+		<IDMappingTable Name="AgentlessProductID" BitValue="false" ApplyTo="">
+			<MapItem ID="31008" Name="SLF_PRODUCT_DDAN" AliasName="SLF_PRODUCT_DDAN"/>
+		</IDMappingTable>			
+	</Category>
+</IDMapping>	

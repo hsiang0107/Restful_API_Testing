@@ -1,0 +1,22 @@
+[
+  {
+         "ScanAction": 1,
+         "SLF_Type" : 0,
+         "SLF_Data": "46.123.99.25"
+  },
+  {
+         "ScanAction": 1,
+         "SLF_Type" : 2,
+         "SLF_Data": "e0110f4ca9d3858bf2da8b4cb0891b549526b534"
+  },
+  {
+         "ScanAction": 1,
+         "SLF_Type" : 1,
+         "SLF_Data": "http://phonied-carmelo.io/orchestra-inculcating/1.1/chintzier.jsp"
+  },
+  {
+         "ScanAction": 1,
+         "SLF_Type" : 1,
+         "SLF_Data": "http://phonied-carmelo.io/orchestra-inculcating/1.0/chintzier.jsp"
+  }
+]

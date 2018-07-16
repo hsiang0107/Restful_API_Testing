@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!-- <!DOCTYPE StringTables SYSTEM "StringTable.dtd"> -->
+<StringTables>
+	<Language Type="en_US">
+		<Category Type="SLF_PRODUCT_TVCS">
+			<StringTable Name="CommandID">
+				<String ID="EN_CMD_SSO_IWSVA" DisplayName="Configure InterScan Web Security Virtual Appliance"/>
+			</StringTable>
+      <StringTable Name="ProductID">
+        <String ID="SLF_PRODUCT_IS_WEB_SECURITY_SUITE_VIRTUAL_APPLIANCE"  DisplayName="InterScan Web Security Virtual Appliance"/>
+      </StringTable>
+      <StringTable Name="EntityServiceID">
+				<String ID="IWSVA_PRODUCT_SERVICE" DisplayName="InterScan Web Security Virtual Appliance" />
+			</StringTable>		
+		</Category>
+	</Language>
+</StringTables>

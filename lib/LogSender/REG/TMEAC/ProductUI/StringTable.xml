@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!-- <!DOCTYPE StringTables SYSTEM "StringTable.dtd"> -->
+<StringTables>
+    <Language Type="en_US">
+        <Category Type="SLF_PRODUCT_TVCS">
+            <StringTable Name="ProductID">
+                <String ID="SLF_PRODUCT_TMEAC" DisplayName="Trend Micro Endpoint Application Control"/>
+            </StringTable>
+            <StringTable Name="EntityServiceID">
+                <String ID="TMEAC_PRODUCT_SERVICE" DisplayName="Trend Micro Endpoint Application Control"/>
+            </StringTable>
+            <StringTable Name="UserCentralInstalledProduct">
+                <String ID="31003.4" DisplayName="Trend Micro Endpoint Application Control Client" />
+            </StringTable>
+        </Category>
+    </Language>
+</StringTables>

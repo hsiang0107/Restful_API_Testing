@@ -1,0 +1,17 @@
+[
+  {
+         "ScanAction": 2,
+         "SLF_Type" : 0,
+         "SLF_Data": "46.123.99.25"
+  },
+  {
+         "ScanAction": 2,
+         "SLF_Type" : 0,
+         "SLF_Data": "23.5.111.68"
+  },
+  {
+         "ScanAction": 2,
+         "SLF_Type" : 0,
+         "SLF_Data": "23.5.111.99"
+  }
+]

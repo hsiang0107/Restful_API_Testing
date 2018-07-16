@@ -1,0 +1,17 @@
+[
+  {
+         "ScanAction": 2,
+         "SLF_Type" : 1,
+         "SLF_Data": "https://test.com"
+  },
+  {
+         "ScanAction": 2,
+         "SLF_Type" : 1,
+         "SLF_Data": "http://test.com.tw"
+  },
+  {
+         "ScanAction": 2,
+         "SLF_Type" : 1,
+         "SLF_Data": "http://123.com"
+  }
+]

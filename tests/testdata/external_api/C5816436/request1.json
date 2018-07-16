@@ -1,0 +1,12 @@
+{
+  "param":
+    {
+      "FileHashIDList": ["C5734251C5734251C5734251C5734251C573425"],
+      "ScanType":{
+         "File":1,
+         "IP":1,
+         "URL":1,
+         "Domain":1
+      }
+    }
+}

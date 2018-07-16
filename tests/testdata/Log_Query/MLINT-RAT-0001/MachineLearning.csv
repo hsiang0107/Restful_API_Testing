@@ -1,0 +1,11 @@
+EntityName,Product,LogType,Filename,LogCount,TimeDeviation,SLF_IPAddress,SLF_ParentProcess,SLF_ProcessCommandLine,SLF_ProtocolLocation,SLF_InfectionSource
+OSCEClient01,OSCE,MachineLearning,MachineLearning_v1_0,1,-192,10.1.1.1,cmd.exe,cmd.exe -test,http://55.66.95.21,aaa
+OSCEClient01,OSCE,MachineLearning,MachineLearning_v1_0,1,-192,10.1.1.2,cmd.exe,cmd.exe -test,http://55.66.95.22,aabb
+OSCEClient01,OSCE,MachineLearning,MachineLearning_v1_0,1,-192,10.1.1.3,notepad.exe,notepad.exe -test,http://55.66.95.23,bbb
+OSCEClient01,OSCE,MachineLearning,MachineLearning_v1_0,1,-192,10.1.1.4,notepad.exe,notepad.exe -test,http://55.66.95.24,aaa
+OSCEClient01,OSCE,MachineLearning,MachineLearning_v1_0,1,-192,10.1.1.5,calc.exe,calc.exe -test,http://55.66.95.25,aabb
+OSCEClient01,OSCE,MachineLearning,MachineLearning_v1_0,1,-192,10.1.1.6,calc.exe,calc.exe -test,http://55.66.95.26,bbb
+OSCEClient01,OSCE,MachineLearning,MachineLearning_v1_0,1,-192,10.1.1.7,mspaint.exe,mspaint.exe -test,http://55.66.95.27,aaa
+OSCEClient01,OSCE,MachineLearning,MachineLearning_v1_0,1,-192,10.1.1.8,mspaint.exe,mspaint.exe -test,http://55.66.95.28,aabb
+OSCEClient01,OSCE,MachineLearning,MachineLearning_v1_0,1,-192,10.1.1.9,mstsc.exe,mstsc.exe -test,http://55.66.95.29,bbb
+OSCEClient01,OSCE,MachineLearning,MachineLearning_v1_0,1,-192,10.1.1.10,mstsc.exe,mstsc.exe -test,http://55.66.95.20,qqq

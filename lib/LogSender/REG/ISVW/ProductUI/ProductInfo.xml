@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!--
+<!DOCTYPE ProductInfos SYSTEM "ProductInfo.dtd">
+-->
+<ProductInfos>
+	<ProductInfo Category="ANTI-VIRUS" Type="SLF_PRODUCT_ISVW">
+		<ProductVersionInfo TargetVersion="6.02" MenuVersion="2.0" Language="en_US">
+			<LogFormat Type="VirusLog">
+			</LogFormat>
+			<LogFormat Type="StatusLog">
+			</LogFormat>
+			<LogFormat Type="EventLog">
+			</LogFormat>
+			<EventLogInfo/>
+			<CommandInfo>
+				<CommandItem Command="SC_CMD_QUERY_ENTITY_STATUS_REQUEST"/>
+				<CommandItem Command="SC_CMD_QUERY_STATUS_SUMMARY_REQUEST"/>
+				<CommandItem Command="SC_CMD_QUERY_AV_LOGS_REQUEST"/>
+				<CommandItem Command="MU_CMD_DEPLOY_AV_PATTERN_REQUEST"/>
+				<CommandItem Command="MU_CMD_DEPLOY_RULE_REQUEST"/>
+				<CommandItem Command="MU_CMD_DEPLOY_AV_ENGINE_REQUEST"/>
+				<CommandItem Command="SC_CMD_UI_TVCS_CONFIGURATION_REPLICATION"/>
+				<CommandItem Command="SC_CMD_UI_TVCS_CONFIGURATION_REPLICATION_TO_FOLDER"/>
+				<CommandItem Command="MU_CMD_PR_RENEW_REQUEST"/>
+				<CommandItem Category="configure" Command="EN_CMD_SSO_ISVW" Page="/login" UIModule="SSO_PKI" GroupSetting="false" CommandLevel="OP_ENTITY_ONLY"/>
+				<CommandItem Category="nonui" Command="EN_CMD_GENERIC_COMMAND_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_GET_PRODUCT_PROFILE_REQUEST"/>
+				<CommandItem Category="nonui" Command="SC_UPLOAD_FILE_PRODUCT_UI_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_GET_DATA_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_SET_DATA_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_DEPLOY_AV_ENGINE_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_DEPLOY_AV_PATTERN_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_DEPLOY_RULE_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_START_RED_ALERT_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_STOP_RED_ALERT_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_START_BLOCKING_NOW_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_PR_RENEW_REQUEST"/>
+			</CommandInfo>
+			<ConfigurationIDInfo>
+			</ConfigurationIDInfo>
+			<ActiveUpdateInfo>
+				<ActiveUpdateItem ProductID="1001" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="0x00000004" NonCtxPattern=""/>
+				<ActiveUpdateItem ProductID="1001" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="0x02000000" NonCtxPattern=""/>
+				<ActiveUpdateItem ProductID="1001" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="0x14000000" NonCtxPattern=""/>
+				<ActiveUpdateItem ProductID="1001" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x00000004"/>
+				<ActiveUpdateItem ProductID="1001" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x00008000"/>
+				<ActiveUpdateItem ProductID="1001" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x20000400"/>
+				<ActiveUpdateItem ProductID="1001" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x20000020"/>
+				<ActiveUpdateItem ProductID="1001" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x20000040"/>
+				<ActiveUpdateItem ProductID="1001" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x10000400"/>
+				<ActiveUpdateItem ProductID="1001" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x10000800"/>
+				<ActiveUpdateItem ProductID="1001" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x00010000"/>
+				<ActiveUpdateItem ProductID="1001" Language="0x0001" Platform="0x01" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x04000000"/>
+			</ActiveUpdateInfo>
+		</ProductVersionInfo>
+	</ProductInfo>
+</ProductInfos>

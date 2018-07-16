@@ -1,0 +1,39 @@
+#define X_STRING                    1
+#define X_WSTRING                   2
+#define X_BYTE                      3
+#define X_INT16                     4
+#define X_UINT16                    5
+#define X_INT32                     6
+#define X_UINT32                    7
+#define X_INT64                     8
+#define X_UINT64                    9
+#define X_GROUP_START               100
+#define X_GROUP_END                 101
+
+11,7,SLF_MsgType,1777
+1001,2,SLF_ProductGUID,(can't set)
+2021,7,SLF_ProductID,15
+2183,5,SLF_LogVersion,1
+2055,5,SLF_LogMinorVersion,0
+2189,2,SLF_LogGenUTCDatetime,2016-11-02 17:31:50
+2190,2,SLF_LogGenLocalDatetime,2016-11-02 17:31:50
+2191,4,SLF_TimeZoneInMins,0
+2192,4,SLF_DaylightSavingInMins,0
+2151,2,SLF_ClientGUID,61352F10-CA48-4E2E-9DFF-DA428836E2A4
+2008,2,SLF_ComputerName,tw-richard
+3115,4,SLF_EntryChannel,0
+3116,2,SLF_EntryLocation,TW
+2505,2,SLF_Source,Sam_Chang@trend.com.tw
+2506,2,SLF_Destination,Emily_Kao@tmcm.extbeta.com;Masky_Li@tmcm.extbeta.com
+2229,2,SLF_ProcessName,VA
+3117,4,SLF_SampleType,0
+3118,2,SLF_SampleSHA1,3395856CE81F2B7382DEE72602F798B642F14140
+1042,2,SLF_FileType,sample
+1066,2,SLF_FileName,C:\\QA_Log.zip
+2209,2,SLF_URL,http://127.1.1.1
+3103,2,SLF_SBXSubmissionTime,2016-11-02 17:31:50
+3104,2,SLF_SBXSubmissionRule,SBX
+3119,2,SLF_SBXCompletedTime,2016-11-02 17:31:50
+3102,2,SLF_SBXDetectionName,VAN_RANSOMWARE.umxxhelloransom_abc
+3105,4,SLF_SBXRiskLevel,0
+3106,2,SLF_SBXThreatCategories,file

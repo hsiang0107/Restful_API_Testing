@@ -1,0 +1,23 @@
+11,7,SLF_MsgType,1766
+1001,2,SLF_ProductGUID,(can't set)
+2021,7,SLF_ProductID,120
+2183,5,SLF_LogVersion,1
+2055,5,SLF_LogMinorVersion,0
+2008,2,SLF_ComputerName,tw-richard
+2014,2,SLF_ProductVersion,11
+2001,2,SLF_LogGenerationTime,2014-09-04 17:31:50
+2002,4,SLF_LogGenerationTimeZone,-480
+2060,4,SLF_IsDayLightSaving,0
+2151,2,SLF_ClientGUID,492E85840114-694DBF9D-44CC-65D3-0001
+2088,2,SLF_ClientIP,10.1.1.1
+2198,2,SLF_HostName,tw-easonchang
+2210,2,SLF_UserName,eason_chang
+2208,2,SLF_TrueFileType,SLF_TrueFileType 
+2440,2,SLF_FileSHA1,c0869b72c5606d22d92a6ac986686bb87485a25b
+2524,2,SLF_FileSource,C:\\Windows\\archive.zip
+2507,5,SLF_SourceType,0
+1062,5,SLF_Action,1
+2221,6,SLF_ScanType,2
+2508,2,SLF_FileCreatedUTCTime,2014-09-04 10:31:50
+2523,2,SLF_FileModifiedUTCTime,2014-09-10 10:31:50
+2226,5,SLF_ActionResult,

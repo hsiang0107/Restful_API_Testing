@@ -1,0 +1,22 @@
+[
+  {
+         "ScanAction": 1,
+         "SLF_Type" : 3,
+         "SLF_Data": "chuck-promissory-stix"
+  },
+  {
+         "ScanAction": 1,
+         "SLF_Type" : 3,
+         "SLF_Data": "mango-stix"
+  },
+  {
+         "ScanAction": 1,
+         "SLF_Type" : 3,
+         "SLF_Data": "chins-stix"
+  },
+  {
+         "ScanAction": 1,
+         "SLF_Type" : 3,
+         "SLF_Data": "chuck-promissory"
+  }
+]

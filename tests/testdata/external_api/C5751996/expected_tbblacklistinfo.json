@@ -1,0 +1,57 @@
+[
+  {
+         "ScanAction": 2,
+         "SLF_Type" : 0,
+         "SLF_Data": "10.0.0.1"
+  },
+  {
+         "ScanAction": 2,
+         "SLF_Type" : 0,
+         "SLF_Data": "10.0.0.2"
+  },
+  {
+         "ScanAction": 2,
+         "SLF_Type" : 0,
+         "SLF_Data": "123.1.1.1"
+  },
+  {
+         "ScanAction": 2,
+         "SLF_Type" : 0,
+         "SLF_Data": "123.1.1.2"
+  },
+  {
+         "ScanAction": 2,
+         "SLF_Type" : 0,
+         "SLF_Data": "123.1.1.3"
+  },
+  {
+         "ScanAction": 2,
+         "SLF_Type" : 0,
+         "SLF_Data": "123.1.1.4"
+  },
+  {
+         "ScanAction": 2,
+         "SLF_Type" : 0,
+         "SLF_Data": "123.1.1.5"
+  },
+  {
+         "ScanAction": 2,
+         "SLF_Type" : 0,
+         "SLF_Data": "123.1.1.6"
+  },
+  {
+         "ScanAction": 2,
+         "SLF_Type" : 0,
+         "SLF_Data": "123.1.1.7"
+  },
+  {
+         "ScanAction": 2,
+         "SLF_Type" : 0,
+         "SLF_Data": "123.1.1.8"
+  },
+  {
+         "ScanAction": 2,
+         "SLF_Type" : 0,
+         "SLF_Data": "222.222.222.222"
+  }
+]

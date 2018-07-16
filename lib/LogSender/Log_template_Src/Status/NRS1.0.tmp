@@ -1,0 +1,16 @@
+11,7,SLF_MsgType,1725
+1001,2,SLF_ProductGUID,
+2021,7,SLF_ProductID,3
+2183,5,SLF_LogVersion,1
+2055,5,SLF_LogMinorVersion,0
+2008,2,SLF_ComputerName,tw-samchang
+2189,2,SLF_LogGenUTCDatetime,2010-1-1 10:20:30
+2190,2,SLF_LogGenLocalDatetime,2012/8/30 11:34
+2191,4,SLF_TimeZoneInMins,0
+2192,4,SLF_DaylightSavingInMins,0
+1173,2,SLF_BlockedIP,192.168.10.1
+2101,4,SLF_FilterType,1
+2091,4,SLF_FilterAction,3
+2234,2,SLF_AggreEndUTCDatetime,
+2235,2,SLF_AggreEndLocalDatetime,
+2236,7,SLF_AggreCount,109

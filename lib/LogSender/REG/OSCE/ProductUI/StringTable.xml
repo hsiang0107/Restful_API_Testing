@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- <!DOCTYPE StringTables SYSTEM "StringTable.dtd"> -->
+<StringTables>
+	<Language Type="en_US">
+		<Category Type="SLF_PRODUCT_TVCS">
+			<StringTable Name="ProductID">
+				<String ID="SLF_PRODUCT_OFFICESCAN_CE" DisplayName="OfficeScan 11.0"/>
+			</StringTable>
+			<StringTable Name="CommandID">
+				<String ID="EN_CMD_SSO_OFFICESCAN_CE" DisplayName="OfficeScan Single Sign On"/>
+			</StringTable>
+			<StringTable Name="EntityServiceID">
+				<String ID="OSCE_SERVICE_ANTI_VIRUS_DESKTOP" DisplayName="Antivirus for desktops"/>
+				<String ID="OSCE_SERVICE_ANTI_VIRUS_SERVER" DisplayName="Antivirus for servers"/>
+				<String ID="OSCE_SERVICE_WEB_THREAT_PROTECT_DESKTOP" DisplayName="Web threat protection for desktops"/>
+				<String ID="OSCE_SERVICE_WEB_THREAT_PROTECT_SERVER" DisplayName="Web threat protection for servers"/>
+				<String ID="OSCE_SERVICE_DCS" DisplayName="Damage Cleanup Services"/>
+			</StringTable>
+		</Category>
+	</Language>
+</StringTables>

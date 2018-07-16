@@ -1,0 +1,67 @@
+{
+   "Data":{
+      "FilingCabinet":[
+         {
+            "FileHashID":"78F27F34A4EE8E93A8FD5D6F0CA88FD7490FDC7B",
+            "FileName":"DNS activities.ioc",
+            "FileAddedDatetime":"06/06/2018 17:11:06",
+            "UploadedFrom":1,
+            "UploadedBy":"test app 2",
+            "ExtractingStatus":999,
+            "ShortDesc":"2 short description line 2"
+         },
+         {
+            "FileHashID":"8E0D8ED2FE5A4905E272DF1DB0CFF1359760A3F4",
+            "FileName":"BlackEnergy.ioc",
+            "FileAddedDatetime":"06/07/2018 17:11:06",
+            "UploadedFrom":1,
+            "UploadedBy":"test app 1",
+            "ExtractingStatus":1,
+            "ShortDesc":"description line 1"
+         },
+         {
+            "FileHashID":"68D9AB8744D6728BF37AF6D84953968B4E90E11C",
+            "FileName":"File activities.ioc",
+            "FileAddedDatetime":"06/05/2018 17:11:06",
+            "UploadedFrom":2,
+            "UploadedBy":"sean_w_huang",
+            "ExtractingStatus":-1,
+            "ShortDesc":"3 short description of file Activities"
+         },
+         {
+            "FileHashID":"7D5B81757459F31217CC55C96C6C8C3218C0046D",
+            "FileName":"Process and network activities.ioc",
+            "FileAddedDatetime":"06/04/2018 17:11:06",
+            "UploadedFrom":2,
+            "UploadedBy":"sean_c_chen",
+            "ExtractingStatus":999,
+            "ShortDesc":"A short description of User account activities.ioc"
+         },
+         {
+            "FileHashID":"C57EA7FF617E1BC3EEEF54FF63F74F8F510A2FBA",
+            "FileName":"User account activities.ioc",
+            "FileAddedDatetime":"06/03/2018 17:11:06",
+            "UploadedFrom":2,
+            "UploadedBy":"kevin_lin",
+            "ExtractingStatus":1,
+            "ShortDesc":"B short description of User account activities.ioc"
+         }
+      ],
+      "TotalIOCCount":5
+   },
+   "Meta":{
+      "Result":1,
+      "ErrorCode":0,
+      "ErrorMsg":""
+   },
+   "PermissionCtrl":{
+      "permission":"255",
+      "elements":"None"
+   },
+   "FeatureCtrl":{
+      "mode":"0"
+   },
+   "SystemCtrl":{
+      "TmcmSoDist_Role":"none"
+   }
+}

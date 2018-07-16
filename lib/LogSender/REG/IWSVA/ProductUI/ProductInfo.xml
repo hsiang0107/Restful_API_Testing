@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!--
+<! DOCTYPE ProductInfos SYSTEM "ProductInfo.dtd">
+-->
+<ProductInfos>
+	<!-- 
+		ProdutInfo Show how tag can be used to form a product class info 
+	-->
+	<ProductInfo Category="ANTI-VIRUS" Type="SLF_PRODUCT_IS_WEB_SECURITY_SUITE_VIRTUAL_APPLIANCE">
+		<ProductVersionInfo TargetVersion="5.6" MenuVersion="3.1" Language="en_US">
+			<LogFormat Type="VirusLog">
+			</LogFormat>
+			<LogFormat Type="StatusLog">
+			</LogFormat>
+			<LogFormat Type="EventLog">
+			</LogFormat>
+			<EventLogInfo/>
+			<CommandInfo>
+				<CommandItem Command="EN_CMD_START_REALTIME_SCAN_REQUEST"/>
+				<CommandItem Command="EN_CMD_STOP_REALTIME_SCAN_REQUEST"/>
+				<CommandItem Command="SC_CMD_QUERY_ENTITY_STATUS_REQUEST"/>
+				<CommandItem Command="SC_CMD_QUERY_STATUS_SUMMARY_REQUEST"/>
+				<CommandItem Command="SC_CMD_QUERY_AV_LOGS_REQUEST"/>
+				<CommandItem Command="MU_CMD_DEPLOY_AV_PATTERN_REQUEST"/>
+				<CommandItem Command="MU_CMD_DEPLOY_AV_ENGINE_REQUEST"/>
+				<CommandItem Command="SC_CMD_UI_TVCS_CONFIGURATION_REPLICATION"/>
+				<CommandItem Command="SC_CMD_UI_TVCS_CONFIGURATION_REPLICATION_TO_FOLDER"/>
+				<CommandItem Command="MU_CMD_PR_RENEW_REQUEST"/>
+				
+				<CommandItem Category="configure" Command="EN_CMD_SSO_IWSVA" 
+					Page="/uilogonsubmit.jsp?SSO=1" 
+					UIModule="SSO_PKI" 
+					GroupSetting="false" 
+					CommandLevel="OP_ENTITY_ONLY"/>
+
+				<CommandItem Category="nonui" Command="EN_CMD_GENERIC_COMMAND_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_GET_PRODUCT_PROFILE_REQUEST"/>
+				<CommandItem Category="nonui" Command="SC_UPLOAD_FILE_PRODUCT_UI_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_GET_DATA_REQUEST"/>
+				<CommandItem Category="nonui" Command="EN_CMD_SET_DATA_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_DEPLOY_AV_ENGINE_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_DEPLOY_AV_PATTERN_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_PR_RENEW_REQUEST"/>
+				<CommandItem Category="nonui" Command="MU_CMD_PR_DEPLOY_REQUEST"/>
+			</CommandInfo>
+
+			<ConfigurationIDInfo>
+			</ConfigurationIDInfo>
+			<ActiveUpdateInfo>
+			  <!-- VSAPI32_LINUX_X86 -->
+				<ActiveUpdateItem ProductID="196" Language="0x0001" Platform="0x101" ScanEngine="" VirusPattern="" NonCtxEngine="0x00020000" NonCtxPattern=""/>
+				<!-- TM_AU_ENGINE_TMUFE_LINUX -->
+				<ActiveUpdateItem ProductID="196" Language="0x0001" Platform="0x101" ScanEngine="" VirusPattern="" NonCtxEngine="0x20000000" NonCtxPattern=""/>
+				<!-- TM_AU_PATTERN_TMUFE_LINUX -->
+                <ActiveUpdateItem ProductID="196" Language="0x0001" Platform="0x101" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x48000100"/>
+				<!-- TM_AU_PATTERN_VSAPI -->
+				<ActiveUpdateItem ProductID="196" Language="0x0001" Platform="0x101" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x00000004"/>
+				<!-- TM_AU_PATTERN_SSA -->
+				<ActiveUpdateItem ProductID="196" Language="0x0001" Platform="0x101" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x20000400"/>
+				<!-- TM_AU_PATTERN_PHISH -->
+				<ActiveUpdateItem ProductID="196" Language="0x0001" Platform="0x101" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x00008000"/>
+				<!-- TM_AU_PATTERN_INTELLITRAP_BLACK -->
+				<ActiveUpdateItem ProductID="196" Language="0x0001" Platform="0x101" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x20000040"/>
+				<!-- TM_AU_PATTERN_INTELLITRAP_WHITE -->
+				<ActiveUpdateItem ProductID="196" Language="0x0001" Platform="0x101" ScanEngine="" VirusPattern="" NonCtxEngine="" NonCtxPattern="0x20000020"/>
+			</ActiveUpdateInfo>
+			
+			<LicenseInfo>
+				<PR_Slot SlotID="10201"> <!-- IWSVA_PRODUCT_SERVICE, defined in SLF_ID.h -->
+					<ProductProfile>
+						<ProfileItem ProductCode="IH" ApplicationCode="HT" OSVersion="VS"/>
+						<ProfileItem ProductCode="IH" ApplicationCode="HT" OSVersion="MM"/>
+						<ProfileItem ProductCode="IH" ApplicationCode="ZA" OSVersion="VS"/>
+						<ProfileItem ProductCode="IH" ApplicationCode="ZA" OSVersion="MM"/>
+						<ProfileItem ProductCode="AP" ApplicationCode="ZZ" OSVersion="VS"/>
+						<ProfileItem ProductCode="AP" ApplicationCode="ZZ" OSVersion="MM"/>
+						<ProfileItem ProductCode="IH" ApplicationCode="DL" OSVersion="VS"/>
+					</ProductProfile>
+				</PR_Slot>
+			</LicenseInfo>
+			
+		</ProductVersionInfo>
+	</ProductInfo>
+</ProductInfos>

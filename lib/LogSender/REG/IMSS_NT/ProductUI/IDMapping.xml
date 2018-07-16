@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<IDMapping>
+	<Category Type="SLF_PRODUCT_TVCS">
+		<IDMappingTable Name="CommandID" BitValue="false">
+			<MapItem Name="EN_CMD_OLD_IMSS_CONFIG_REQUEST" ID="1413"/>
+		</IDMappingTable>
+	</Category>
+</IDMapping>

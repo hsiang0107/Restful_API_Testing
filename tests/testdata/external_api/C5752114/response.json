@@ -1,0 +1,52 @@
+{
+   "TotalCount": "2",
+   "List": [
+      {
+         "ID": "C5752114",
+         "SuspiciousObject": "1.1.1.1",
+         "Type": "2",
+         "TypeDesc": "File SHA-1",
+         "ScanAction": "1",
+         "ScanActionDesc": "Log",
+         "AddedDate": "06/13/2018 00:00:00",
+         "Notes": "",
+         "IsWildcardException": "",
+         "IsExceptionDueToWildcard": "",
+         "AtRiskEndpoints": "0",
+         "AtRiskRecipients": "0",
+         "SourceInfo": [
+            {
+               "FileHashID": "C5752114C5752114C5752114C5752114C5752114",
+               "Source": 4,
+               "SourceContext": "aaa",
+               "FileName": "C5752114",
+               "Deleted": false
+            }
+         ]
+      },
+      {
+         "ID": "C5752115",
+         "SuspiciousObject": "1.1.1.1",
+         "Type": "2",
+         "TypeDesc": "File SHA-1",
+         "ScanAction": "1",
+         "ScanActionDesc": "Log",
+         "AddedDate": "06/13/2018 00:00:00",
+         "Notes": "",
+         "IsWildcardException": "",
+         "IsExceptionDueToWildcard": "",
+         "AtRiskEndpoints": "0",
+         "AtRiskRecipients": "0",
+         "SourceInfo": [
+            {
+               "FileHashID": "C5752114C5752114C5752114C5752114C5752115",
+               "Source": 3,
+               "SourceContext": "aaa",
+               "FileName": "C5752115",
+               "Deleted": false
+            }
+         ]
+      }
+   ],
+   "ExportTotalCount": "2"
+}

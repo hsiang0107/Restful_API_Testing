@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<ProductInfos>	
+	<ProductInfo Category="ANTI-VIRUS" Type="SLF_PRODUCT_IDF">
+		<ProductVersionInfo TargetVersion="2.0" MenuVersion="1.0" Language="en_US">
+			<LogFormat Type="VirusLog">
+			</LogFormat>
+			<LogFormat Type="StatusLog">
+			</LogFormat>
+			<LogFormat Type="EventLog">
+			</LogFormat>
+			<EventLogInfo/>
+			<CommandInfo>
+				<CommandItem Category="configure" Command="EN_CMD_SSO_IDF" Page="" UIModule="SSO_PKI" GroupSetting="false" CommandLevel="OP_ENTITY_ONLY"/>
+			</CommandInfo>				
+			<ConfigurationIDInfo>
+			</ConfigurationIDInfo>
+			<LicenseInfo>
+				<PR_Slot SlotID="6202201">
+					<ProductProfile>
+						<ProfileItem ProductCode="EI" ApplicationCode="3B" OSVersion="WW"/>
+					</ProductProfile>
+				</PR_Slot>
+			</LicenseInfo>
+		</ProductVersionInfo>
+	</ProductInfo>
+</ProductInfos>
